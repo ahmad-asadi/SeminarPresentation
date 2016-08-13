@@ -1,0 +1,623 @@
+<!doctype html>
+<html>
+	<s>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/Bootstrap/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/extra/snippet.css">
+        <link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/extra/layout_utility.css">
+
+        <script  src="js/jquery.js"></script>
+        <script src="js/game.js"></script>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="js/reveal.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!--FIRST PAGE-->
+                <section data-transition="fade" data-background="#001111">
+					<img id="main_logo"  data-src="./Imgs/aut_logo_1.png">
+					<h2>
+						 تولید خودکار شرح بر تصاویر
+					</h2>
+
+					<div class="extra-container">
+						<blockquote class="right-container">
+						ارائه دهنده
+						<br/>
+						احمد اسدی
+						</blockquote>
+						<blockquote class="left-container">
+						استاد راهنما
+						<br/>
+						دکتر صفابخش
+						</blockquote>
+					</div>
+					<aside class="footer">
+						مردادماه ۱۳۹۵
+					</aside>
+
+				</section>
+
+				<section data-transition="fade" data-background="#003333" data-state="chapter_intro">
+						<h2>
+							فهرست مطالب
+						</h2>
+
+						<ul>
+							<li class="fragment fade-up">
+								اولین جرقه‌های پیدایش، تعریف و کاربردهای مساله
+							</li>
+							<li class="fragment fade-up">
+								ایده‌های اولیه و چالش‌ها
+							</li>
+							<li class="fragment fade-up">
+								چالش درک صحنه و روش‌های پیشنهادی
+							</li>
+							<li class="fragment fade-up">
+								چالش تولید جمله و روش‌های پیشنهادی
+							</li>
+							<li class="fragment fade-up">
+								جمع‌بندی و نتیجه‌گیری
+							</li>
+						</ul>
+				</section>
+
+				<section data-background="#005555"  data-state="chapter_definition">
+					<section>
+						<h3>
+							تولید خودکار شرح بر تصاویر
+						</h3>
+
+						<ul>
+							<li>
+								توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام.
+							</li>
+							<li>
+								توصیف و دسته‌بندی دقیق و صحیح اجسام.
+							</li>
+							<li>
+								جملات تولید شده به لحاظ دستور زبان، معنا و املایی صحیح باشد.
+							</li>
+							<li>
+								جملات توصیف شده با تصویر مورد نظر سازگار باشند.
+							</li>
+						</ul>
+
+					</section>
+					<section>
+						<h3>
+							کاربردها
+						</h3>
+
+						<ul>
+							<li>
+								دسته‌بندی خودکار تصاویر آرشیوی
+							</li>
+							<li>
+								جستجوی تصویری
+							</li>
+							<li>
+								جملات توصیف شده با تصویر مورد نظر سازگار باشند.
+							</li>
+						</ul>
+
+					</section>
+				</section>
+
+				<section data-background="#004455"  data-state="chapter_Overview">
+					<section>
+						<h3>
+							ایده‌های اولیه
+						</h3>
+
+						<ul>
+							<li>
+								اقتباس از پژوهش‌های مرتبط با ترجمه ماشینی
+							</li>
+							<ol>
+								<li>
+									نگاشت تصویر به فضای معنایی
+								</li>
+								<li>
+									نگاشت فضای معنایی به فضای جملات
+								</li>
+							</ol>
+						</ul>
+					</section>
+
+					<section>
+						<h3>
+							چالش‌های پیش‌رو
+						</h3>
+
+						<div class="extra-container">
+							<blockquote class="right-container">
+								درک صحنه
+							</blockquote>
+							<blockquote class="left-container">
+								تولید جمله
+							</blockquote>
+
+						</div>
+
+					</section>
+					<section>
+                        <div id="notGame">
+						    <h3>
+        							        چالش درک صحنه
+						    </h3>
+						    <p>
+		    					توصیف صحنه باید بیان‌گر موارد زیر باشد
+						    </p>
+						    <ul>
+						    	<li>
+			    					کلاس صحنه
+					    		</li>
+				    			<li>
+				    				کلاس هرکدام از اجسام
+			    				</li>
+		    					<li>
+					    			رابطه مکانی بین اجسام
+	    						</li>
+    							<li>
+						    		    توصیف رخ‌داد به تصویر کشیده شده
+							    </li>
+						    </ul>
+						    <div class="container">
+                                <button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">
+                                                                چالش مغز انسان
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="gameSec" >
+                        </div>
+					</section>
+					<section>
+						<h3>
+							چالش تولید جمله
+						</h3>
+						<p>
+							جملات تولید شده باید شرایط زیر را داشته باشند
+						</p>
+						<ul>
+							<li>
+								 صحت معنایی، دستور زبانی و املایی
+							</li>
+							<li>
+								استفاده از قالب‌های مختلف جمله
+							</li>
+							<li>
+								سازگاری با تصویر مورد نظر
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#224466">
+					<section data-state="chapter_scene">
+						<h3>
+							درک صحنه
+						</h3>
+
+						<blockquote>
+							استخراج اطلاعات بصری نهفته در تصویر و بازنمایی مناسب اطلاعات به‌دست آمده
+						</blockquote>
+
+						<p>
+						نکاتی که هم‌چنان مبهم باقی می‌مانند
+						</p>
+
+						<ul>
+							<li>
+								چه اطلاعاتی باید از تصویر استخراج شوند
+							</li>
+							<li>
+								بازنمایی مناسب اطلاعات به چه معنیست
+							</li>
+						</ul>
+
+						<p>
+							بسته به پژوهش تعریف می‌شوند
+						</p>
+					</section>
+
+					<section>
+						<h3>
+							تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان
+						</h3>
+
+						<ul>
+							<li>
+								نمایش دنباله تصاویر در ۲۰۰ میلی‌ثانیه
+							</li>
+							<li>
+								این مدت برای توصیف کافیست اما برای به‌خاطرسپاری کم است.
+							</li>
+							<li>
+								انجام آزمایش مشابه با افرادی که در مورد تصاویر پیش‌زمینه ندارند.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>
+							روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
+						</h3>
+
+						<blockquote>
+							با استفاده از دانش‌های آمار و احتمالات، نظریه گراف و با توجه به مجموعه‌ داده‌های موجود، سعی در ارائه توزیع احتمالاتی و تخمین بهترین پارامترهای ممکن دارند.
+						</blockquote>
+
+						<p>
+							مدل‌های استاندارد مورد استفاده
+						</p>
+
+						<ul>
+							<li>
+								میدان تصادفی مارکف
+							</li>
+							<li>
+								میدان تصادفی شرطی
+							</li>
+							<li>
+								سایر مدل‌ها
+							</li>
+						</ul>
+					</section>
+						<section>
+							<h3>
+								میدان تصادفی مارکف
+							</h3>
+
+							<ul>
+								<li>
+									تعریف سه‌تایی «جسم، فعالیت، صحنه» به ازای هر تصویر
+								</li>
+								<li>
+									مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده
+								</li>
+								<li>
+									فاکتورهای گره
+									<ul>
+										<li>
+											آشکار‌کننده‌های فلزنسوالب
+										</li>
+										<li>
+											استفاده از پاسخ دسته‌بندی‌کننده دیوالا
+										</li>
+										<li>
+											استفاده از دسته‌بندی کننده مبتنی بر گیست
+										</li>
+									</ul>
+									<p>
+										خروجی موارد بالا یک بردار ویژگی را تشکیل می‌دهند. یک ماشین بردار پشتیبان،‌ قادر به دسته‌بندی این بردارهای ویژگی است.
+									</p>
+								</li>
+								<li>
+									فاکتور یال که میزان ارتباط گره‌ها را با یک‌دیگر مورد بررسی قرار می‌دهد.
+								</li>
+							</ul>
+						</section>
+						<section>
+							<h3>
+								میدان تصادفی شرطی
+							</h3>
+							<blockquote>
+								استنتاج توزیع شرطی متغیر تصادفی مطلوب
+							</blockquote>
+
+							<ul>
+								<li>
+									متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر
+									<p>
+										این متغیرها در یک ساختار سلسله‌مراتبی با دو سطح، سازمان‌دهی شده‌اند.
+									</p>
+								</li>
+								<li>
+									متغیرهای تصادفی باینری بیان‌کننده صحت برچسب تشخیص‌داده‌شده برای اجسام
+								</li>
+								<li>
+									استفاده از توابع پتانسیل مختلف
+									<ol>
+										<li>
+											پتانسیل قطعه‌بندی یگانی
+											<p>
+												به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.
+											</p>
+										</li>
+										<li>
+											پتانسیل انطباق متغیرهای سطوح مختلف
+											<p>
+												یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.
+											</p>
+										</li>
+										<li>
+											پتانسیل انطباق تصویر و دسته اجسام
+											<p>
+												روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ul>
+						</section>
+
+						<section>
+							<h3>
+								سایر مدل‌ها
+							</h3>
+
+							<blockquote>
+								یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند.
+							</blockquote>
+
+							<ul>
+								<li>
+									X: حضور یا عدم حضور هر یک از دسته‌های صحنه. با استفاده از توصیف‌گر سیفت محاسبه می‌شود.
+								</li>
+								<li>
+									E: نماینده رخ‌داد به تصویر کشیده شده است.
+								</li>
+								<li>استنتاج با استفاده از نمونه‌برداری گیبس، توضیح داده شود.</li>
+							</ul>
+						</section>
+
+					<section>
+						<h3>
+							روش‌های مبتنی بر شبکه‌های عصبی
+						</h3>
+						<blockquote>
+							در این دسته از روش‌ها، تصاویر ورودی، با استفاده از شبکه‌های عصبی عمیق به فضای ویژگی‌ها نگاشت می‌شوند.
+						</blockquote>
+						<p>
+							در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم.
+						</p>
+					</section>
+
+						<section>
+							<h3>
+								اختصاص معنا به قسمت‌های مختلف تصویر
+							</h3>
+							<blockquote>
+								روش استفاده ناحیه‌ای از شبکه عصبی کانولوشنی عمیق، ناحیه‌های مختلف از تصویر را که شامل یک جسم هستند استخراج کرده و به هر ناحیه، یک برچسب تخصیص می‌دهد. نواحی استخراج شده در این روش به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند.
+							</blockquote>
+							<ol>
+								<li>
+									طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی.
+									<p>
+										ناحیه‌بندی تصویر به نواحی بسیار کوچک و توسعه نواحی با ترکیب نواحی مشابه.
+										استفاده از ویژگی‌های مختلف مانند شدت روشنایی، بافت و رنگ برای ترکیب نواحی با یک‌دیگر
+									</p>
+								</li>
+								<li>
+									استفاده از یک شبکه عصبی کانولوشنی که برای هر ناحیه یک بردار ویژگی استخراج کند.
+									<p>
+										شبکه عصبی کانولوشنی کریشفسکی که در چالش ImageNet ارائه شده است.
+									</p>
+								</li>
+								<li>
+									استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته.
+								</li>
+							</ol>
+
+						</section>
+
+						<section>
+							<h3>
+								ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+							</h3>
+							<ul>
+								<li>
+									استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
+								</li>
+								<li>
+									انتخاب ۱۹ ناحیه با بیشترین اطمینان و استخراج ۴۰۹۶ ویژگی برای هر ناحیه
+								</li>
+								<li>
+									 نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر (که بعدا مینویسم!)
+								</li>
+								<li>
+									استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف ناحیه‌ای و سراسری
+								</li>
+								<li>
+									هم‌ترازسازی ناحیه‌ای، به این منظور تعریف می‌شود که جملات و تصاویری که در محاسبات، بیشترین شباهت را با یک‌دیگر دارند، در واقعیت نیز شبیه‌ترین به یک‌دیگر باشند.
+								</li>
+								<li>
+									هم‌ترازسازی ناحیه‌ای، به منظور یافتن بهترین عبارات برای نواحی مختلف تصویر تعریف شده است به طوری‌که عباراتی که به یکی از نواحی تصویر، شباهت زیادی دارد، از نواحی دیگر فاصله داشته باشد.
+								</li>
+
+							</ul>
+						</section>
+				</section>
+
+				<section data-background="#004455"  data-state="chapter_sentence">
+					<section>
+						<h3>
+							تولید جمله
+						</h3>
+						<p>
+							چهار روش کلی برای این بخش ارائه شده است.
+						</p>
+						<blockquote>
+							<ol>
+								<li>استفاده از شبیه‌ترین جمله موجود در مجموعه‌داده</li>
+								<li>استفاده از شبیه‌ترین عبارات موجود در مجموعه داده و ساخت جمله با کنارهم قرار دادن
+									آن‌ها
+								</li>
+								<li>استفاده از قالب‌‌‌های آماده و جایگزینی برخی از کلمات با بهترین انتخاب‌های ممکن</li>
+								<li>استفاده از شبکه‌های عصبی بازگشتی برای ساخت جملات جدید</li>
+							</ol>
+						</blockquote>
+					</section>
+					<section>
+						<h3>
+							استفاده از شبیه‌ترین جمله موجود
+						</h3>
+						<ul>
+							<li>پیاده‌سازی ساده‌ای دارد</li>
+							<li>ممکن است بهترین جمله، توصیف‌گر خوبی نباشد</li>
+							<li>نیاز به وجود تعداد زیادی جمله از پیش نوشته شده دارد</li>
+							<li>سرعت پایینی دارد</li>
+						</ul>
+					</section>
+					<section>
+						<h3>
+							استفاده از بهترین عبارات موجود
+						</h3>
+						<ul>
+							<li>شکستن جمله به عبارات معنادار</li>
+							<li>تعداد عبارات موجود بسیار زیاد است</li>
+							<li>کنار هم قرار دادن عبارات برای ساخت جمله ممکن است جمله صحیحی ایجاد نکند</li>
+							<li>توصیف‌های بهتری نسبت به روش قبلی ارائه می‌دهند</li>
+							<li>سرعت پایینی دارد</li>
+						</ul>
+					</section>
+					<section>
+						<h3>
+							استفاده از قالب‌های آماده
+						</h3>
+						<ul>
+							<li>یک قالب خبری مورد استفاده قرار می‌گیرد.</li>
+							<li>جملات تولید شده همگی یک شکل هستند و مورد پسند خواننده قرار نمی‌گیرند.</li>
+							<li>سرعت بالایی دارد.</li>
+							<li>توصیف‌های خوبی ارائه می‌دهد.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>
+							استفاده از شبکه‌های عصبی بازگشتی
+						</h3>
+						<ul>
+							<li>کلمه بعدی را با در نظر گرفتن کلمات قبلی تشخیص می‌دهند.</li>
+							<li>جمله تولید شده ممکن است کامل نباشد.</li>
+							<li>جملات جدیدی تولید می‌کند</li>
+							<li>سرعت بالایی دارد</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#003333" data-state="chapter_conclusion">جمع‌بندی و نتیجه‌گیری</section>
+				<section data-background="#001111" data-state="chapter_refs">منابع و مراجع</section>
+
+			</div>
+
+
+        </div>
+		</div>
+
+		<!--<div id="current_slide_cursor_container">-->
+			<!--<input type="button" id="current_slide" value="صفحه نخست">-->
+		<!--</div>-->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+			Reveal.addEventListener( 'ready', function( event ) {
+				// event.currentSlide, event.indexh, event.indexv
+				// Shows the slide number using default formatting
+				Reveal.configure({ slideNumber: true });
+
+// Slide number formatting can be configured using these variables:
+//  "h.v":  horizontal . vertical slide number (default)
+//  "h/v":  horizontal / vertical slide number
+//    "c":  flattened slide number
+//  "c/t":  flattened slide number / total slides
+				Reveal.configure({ slideNumber: 'c/t' });
+
+				Reveal.configure({backgroundTransition: "zoom"});
+
+
+				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
+				Reveal.addEventListener('chapter_intro', changeSlideState("مقدمات"),false);
+				Reveal.addEventListener('chapter_definition', changeSlideState("تعاریف"),true);
+				Reveal.addEventListener('chapter_overview', changeSlideState("اولین ایده‌ها"),false);
+				Reveal.addEventListener('chapter_scene', changeSlideState("درک صحنه"),false);
+				Reveal.addEventListener('chapter_sentence', changeSlideState("تولید جمله"),false);
+				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
+				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
+				Reveal.addEventListener('eventchanged', nextSlide(event),false)
+			} );
+
+			var currentSlide ;
+			var currentSlideBtn ;
+			function startSlideStates() {
+				// Current slide cursor
+				var wrapper = document.querySelector( '.reveal' );
+				currentSlide = createSingletonNode(wrapper, 'div', 'current_slide',
+						'<button class="current_slide_btn" ></button>');
+				currentSlideBtn = currentSlide.querySelector('button')
+
+			}
+
+			function nextSlide(event) {
+				console.log(event.currentSlide);
+			}
+
+			function changeSlideState(state) {
+				currentSlideBtn.innerHTML = state ;
+			}
+
+			function createSingletonNode( container, tagname, classname, innerHTML ) {
+
+				// Find all nodes matching the description
+				var nodes = container.querySelectorAll( '.' + classname );
+
+				// Check all matches to find one which is a direct child of
+				// the specified container
+				for( var i = 0; i < nodes.length; i++ ) {
+					var testNode = nodes[i];
+					if( testNode.parentNode === container ) {
+						return testNode;
+					}
+				}
+
+				// If no node was found, create it now
+				var node = document.createElement( tagname );
+				node.classList.add( classname );
+				if( typeof innerHTML === 'string' ) {
+					node.innerHTML = innerHTML;
+				}
+				container.appendChild( node );
+
+				return node;
+
+			}
+
+
+		</script>
+	</body>
+</html>

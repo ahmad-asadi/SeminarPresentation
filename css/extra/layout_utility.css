@@ -1,0 +1,54 @@
+.extra-container{
+    display: block;
+}
+
+.extra-container .left-container{
+    float: left;
+    max-width: 45%;
+}
+
+.extra-container .right-container{
+    float: right;
+    max-width: 45%;
+}
+
+.current_slide{
+    display: block;
+}
+.current_slide_btn{
+    position: fixed;
+    height: 30px;
+    max-width: 150px;
+    background: #e7ad52;
+    top: 90%;
+    bottom: 10%;
+    color: black;
+    border-radius: 20px;
+}
+
+.footer{
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 0%;
+    top: 100%;
+    right: 44%;
+}
+
+#main_logo{
+    max-width: 30%;
+    max-height: 30%;
+    align-self: center;
+    border: none;
+    background: none;
+}
+
+#gameBtn{
+    display: block;
+    color: black;
+    font-size: xx-large;
+}
+
+#game-img{
+    width: 500px;
+    height: 500px;
+}
