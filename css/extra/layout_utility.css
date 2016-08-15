@@ -1,5 +1,6 @@
 .extra-container{
     display: block;
+    text-align: center;
 }
 
 .extra-container .left-container{
@@ -10,6 +11,12 @@
 .extra-container .right-container{
     float: right;
     max-width: 45%;
+}
+
+.extra-container .center-container{
+    clear: both;
+    max-width: 45%;
+    display: block;
 }
 
 .current_slide{
@@ -32,6 +39,18 @@
     bottom: 0%;
     top: 100%;
     right: 44%;
+}
+
+.reveal .figure_caption{
+    font-size: 15px;
+    font-family: "B Zar";
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+.reveal table{
+    direction: rtl;
+    font-size: 25px;
 }
 
 #main_logo{

@@ -157,7 +157,9 @@
 			viewDistance: 3,
 
 			// Script dependencies to load
-			dependencies: []
+			dependencies: [
+                { src: 'plugin/math/math.js', async: true }
+            ]
 
 		},
 

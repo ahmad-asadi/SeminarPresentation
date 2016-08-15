@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-	<s>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -90,16 +89,16 @@
 
 						<ul>
 							<li>
-								توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام.
+								توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام
 							</li>
 							<li>
-								توصیف و دسته‌بندی دقیق و صحیح اجسام.
+								توصیف و دسته‌بندی دقیق و صحیح اجسام
 							</li>
 							<li>
-								جملات تولید شده به لحاظ دستور زبان، معنا و املایی صحیح باشد.
+								جملات تولید شده به لحاظ دستور زبان، معنا و املایی صحیح باشد
 							</li>
 							<li>
-								جملات توصیف شده با تصویر مورد نظر سازگار باشند.
+								جملات توصیف شده با تصویر مورد نظر سازگار باشند
 							</li>
 						</ul>
 
@@ -117,7 +116,7 @@
 								جستجوی تصویری
 							</li>
 							<li>
-								جملات توصیف شده با تصویر مورد نظر سازگار باشند.
+								جملات توصیف شده با تصویر مورد نظر سازگار باشند
 							</li>
 						</ul>
 
@@ -162,7 +161,6 @@
 
 					</section>
 					<section>
-                        <div id="notGame">
 						    <h3>
         							        چالش درک صحنه
 						    </h3>
@@ -183,15 +181,6 @@
 						    		    توصیف رخ‌داد به تصویر کشیده شده
 							    </li>
 						    </ul>
-						    <div class="container">
-                                <button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">
-                                                                چالش مغز انسان
-                                </button>
-                            </div>
-                        </div>
-
-                        <div id="gameSec" >
-                        </div>
 					</section>
 					<section>
 						<h3>
@@ -224,40 +213,54 @@
 							استخراج اطلاعات بصری نهفته در تصویر و بازنمایی مناسب اطلاعات به‌دست آمده
 						</blockquote>
 
+						<div class="fragment zoom-in">
 						<p>
 						نکاتی که هم‌چنان مبهم باقی می‌مانند
 						</p>
 
 						<ul>
-							<li>
+							<li class="fragment">
 								چه اطلاعاتی باید از تصویر استخراج شوند
 							</li>
-							<li>
+							<li class="fragment">
 								بازنمایی مناسب اطلاعات به چه معنیست
 							</li>
 						</ul>
 
-						<p>
+						<p class="fragment zoom-in highlight-green">
 							بسته به پژوهش تعریف می‌شوند
 						</p>
+						</div>
 					</section>
 
 					<section>
-						<h3>
-							تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان
-						</h3>
+						<div id="notGame">
+							<h3>
+								تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان
+							</h3>
 
-						<ul>
-							<li>
-								نمایش دنباله تصاویر در ۲۰۰ میلی‌ثانیه
-							</li>
-							<li>
-								این مدت برای توصیف کافیست اما برای به‌خاطرسپاری کم است.
-							</li>
-							<li>
-								انجام آزمایش مشابه با افرادی که در مورد تصاویر پیش‌زمینه ندارند.
-							</li>
-						</ul>
+							<ul>
+								<li>
+									نمایش دنباله تصاویر در ۲۰۰ میلی‌ثانیه
+								</li>
+								<li>
+									این مدت برای توصیف کافیست اما برای به‌خاطرسپاری کم است.
+								</li>
+								<li>
+									انجام آزمایش مشابه با افرادی که در مورد تصاویر پیش‌زمینه ندارند.
+								</li>
+							</ul>
+							<div class="container">
+								<button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">
+									چالش مغز انسان
+								</button>
+							</div>
+
+						</div>
+
+						<div id="gameSec">
+
+						</div>
 					</section>
 					<section>
 						<h3>
@@ -272,17 +275,17 @@
 							مدل‌های استاندارد مورد استفاده
 						</p>
 
-						<ul>
-							<li>
+						<div class="extra-container">
+							<blockquote class="right-container fragment highlight-current-green">
 								میدان تصادفی مارکف
-							</li>
-							<li>
+							</blockquote>
+							<blockquote class="left-container fragment highlight-current-green">
 								میدان تصادفی شرطی
-							</li>
-							<li>
+							</blockquote>
+							<blockquote class="center-container fragment highlight-current-green">
 								سایر مدل‌ها
-							</li>
-						</ul>
+							</blockquote>
+						</div>
 					</section>
 						<section>
 							<h3>
@@ -290,34 +293,139 @@
 							</h3>
 
 							<ul>
-								<li>
-									تعریف سه‌تایی «جسم، فعالیت، صحنه» به ازای هر تصویر
+								<li class="fragment">
+									تعریف سه‌تایی
+									«
+									<span class="fragment highlight-blue">
+										جسم
+									</span>
+									،
+									<span class="fragment highlight-green">
+										رخ‌داد
+									</span>
+									،
+									<span class="fragment highlight-red">
+										صحنه
+									</span>
+									 »
+									به ازای هر تصویر
 								</li>
-								<li>
+								<li class="fragment">
 									مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده
 								</li>
-								<li>
-									فاکتورهای گره
-									<ul>
-										<li>
-											آشکار‌کننده‌های فلزنسوالب
-										</li>
-										<li>
-											استفاده از پاسخ دسته‌بندی‌کننده دیوالا
-										</li>
-										<li>
-											استفاده از دسته‌بندی کننده مبتنی بر گیست
-										</li>
-									</ul>
-									<p>
-										خروجی موارد بالا یک بردار ویژگی را تشکیل می‌دهند. یک ماشین بردار پشتیبان،‌ قادر به دسته‌بندی این بردارهای ویژگی است.
-									</p>
-								</li>
-								<li>
-									فاکتور یال که میزان ارتباط گره‌ها را با یک‌دیگر مورد بررسی قرار می‌دهد.
-								</li>
+							</ul>
+							<figure class="fragment">
+								<img src="Imgs/scenepgm1.png" style="width: 75%"/>
+								<figcaption class="figure_caption">
+									شکل ۱. مدل گرافی احتمالاتی روش اول
+								</figcaption>
+							</figure>
+						</section>
+
+						<section>
+							<h3>
+								میدان تصادفی مارکف
+							</h3>
+							<ul>
+							<li class="fragment">
+								فاکتورهای گره
+								<div class="extra-container">
+									<blockquote class="right-container">
+										آشکار‌کننده‌های فلزنسوالب
+									</blockquote>
+									<blockquote class="left-container">
+										دسته‌بندی‌کننده دیوالا
+									</blockquote>
+									<blockquote class="center-container">
+										دسته‌بندی کننده مبتنی برگیست
+									</blockquote>
+								</div>
+							</li>
+							<li class="fragment">
+								فاکتور یال
+								<blockquote class="extra-container center-container" style="width: 45%">
+									میزان ارتباط گره‌ها با یک‌دیگر
+								</blockquote>
+							</li>
+							<li class="fragment">
+								استفاده از ماشین بردار پشتیبان برای دسته‌بندی بردارهای ویژگی استخراج شده
+							</li>
 							</ul>
 						</section>
+
+						<section>
+							<h3>
+								میدان تصادفی مارکف
+							</h3>
+							<blockquote>
+								نتایج
+							</blockquote>
+							<br/>
+							<figure>
+								<figcaption class="figure_caption">
+									جدول ۱. نتایج میدان تصادفی مارکف
+								</figcaption>
+							<table class="table table-responsive">
+								<thead>
+								<tr>
+									<td>نام روش</td>
+									<td>روش ۱</td>
+									<td>روش۲</td>
+									<td>روش۳</td>
+									<td>روش۴</td>
+									<td>روش۵</td>
+									<td>روش۶</td>
+								</tr>
+								</thead>
+								<tr>
+									<td></td>
+									<td>0.44</td>
+									<td class="fragment highlight-red">۰.۵۲</td>
+									<td>۰.۳۸</td>
+									<td>۰.۴۵</td>
+									<td>۰.۴۷</td>
+									<td>۰.۵۱</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>0.24</td>
+									<td>0.27</td>
+									<td>0.16</td>
+									<td>0.58</td>
+									<td class="fragment highlight-red">0.76</td>
+									<td>0.74</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="fragment highlight-red">0.59</td>
+									<td>0.58</td>
+									<td>0.36</td>
+									<td>0.53</td>
+									<td>0.55</td>
+									<td>0.57</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>0.27</td>
+									<td class="fragment highlight-red">0.52</td>
+									<td>0.50</td>
+									<td>0.37</td>
+									<td>0.42</td>
+									<td>0.47</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>0.28</td>
+									<td class="fragment highlight-red">0.48</td>
+									<td>0.28</td>
+									<td>0.44</td>
+									<td>0.46</td>
+									<td class="fragment highlight-red">0.48</td>
+								</tr>
+							</table>
+							</figure>
+						</section>
+
 						<section>
 							<h3>
 								میدان تصادفی شرطی
@@ -326,61 +434,339 @@
 								استنتاج توزیع شرطی متغیر تصادفی مطلوب
 							</blockquote>
 
-							<ul>
-								<li>
-									متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر
-									<p>
-										این متغیرها در یک ساختار سلسله‌مراتبی با دو سطح، سازمان‌دهی شده‌اند.
-									</p>
-								</li>
-								<li>
-									متغیرهای تصادفی باینری بیان‌کننده صحت برچسب تشخیص‌داده‌شده برای اجسام
-								</li>
-								<li>
-									استفاده از توابع پتانسیل مختلف
-									<ol>
-										<li>
-											پتانسیل قطعه‌بندی یگانی
-											<p>
-												به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.
-											</p>
-										</li>
-										<li>
-											پتانسیل انطباق متغیرهای سطوح مختلف
-											<p>
-												یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.
-											</p>
-										</li>
-										<li>
-											پتانسیل انطباق تصویر و دسته اجسام
-											<p>
-												روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.
-											</p>
-										</li>
-									</ol>
-								</li>
-							</ul>
+							<figure class="fragment">
+								<img src="Imgs/scenepgm2.png" style="width: 70%;">
+								<figcaption class="figure_caption">
+									شکل ۲. روش میدان تصادفی شرطی
+								</figcaption>
+							</figure>
 						</section>
 
 						<section>
 							<h3>
+								میدان تصادفی شرطی
+							</h3>
+							
+							<ul>
+								<li class="fragment highlight-current-green">
+									متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر
+								</li>
+								<li class="fragment highlight-current-green">
+									متغیرهای تصادفی باینری بیان‌کننده صحت تشخیص
+								</li>
+								<li class="fragment highlight-current-green">
+									استفاده از توابع پتانسیل مختلف
+									<div class="extra-container" >
+										<blockquote class="right-container fragment fade-up highlight-current-blue">
+											قطعه‌بندی یگانی
+											<!--<p>-->
+												<!--به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.-->
+											<!--</p>-->
+										</blockquote>
+										<blockquote class="left-container fragment fade-up highlight-current-blue">
+											انطباق متغیرها
+											<!--<p>-->
+												<!--یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.-->
+											<!--</p>-->
+										</blockquote>
+										<blockquote class="center-container fragment fade-up highlight-current-blue" style="font-size: 35px;">
+											انطباق تصویر و اجسام
+											<!--<p>-->
+												<!--روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.-->
+											<!--</p>-->
+										</blockquote>
+									</div>
+								</li>
+
+							</ul>
+						</section>
+
+					<section>
+						<h3>
+							میدان تصادفی شرطی
+						</h3>
+						<blockquote>
+							نتایج
+						</blockquote>
+						<br>
+						<figure>
+							<figcaption class="figure_caption">
+								جدول ۲. نتایج میدان تصادفی شرطی
+							</figcaption>
+							<table class="table table-responsive">
+								<thead>
+								<tr>
+									<td>پشت</td>
+									<td>هوا</td>
+									<td>دوچرخه</td>
+									<td>پرنده</td>
+									<td>قایق</td>
+									<td>اتوبوس</td>
+									<td>ماشین</td>
+									<td>گربه</td>
+									<td>صندلی</td>
+									<td>گاو</td>
+								</tr>
+								</thead>
+								<tr>
+									<td>76.9</td>
+									<td>31.3</td>
+									<td>29.7</td>
+									<td>37.3</td>
+									<td>27.7</td>
+									<td>29.5</td>
+									<td>52.1</td>
+									<td>40.0</td>
+									<td>38.0</td>
+									<td>6.6</td>
+								</tr>
+							</table>
+							<table class="table table-responsive">
+								<thead>
+								<tr>
+									<td>میز</td>
+									<td>سگ</td>
+									<td>اسب</td>
+									<td>موتور</td>
+									<td>انسان</td>
+									<td>گیاه</td>
+									<td>گوسفند</td>
+									<td>کاناپه</td>
+									<td>قطار</td>
+									<td>مانیتور</td>
+								</tr>
+								</thead>
+								<tr>
+									<td>25.2</td>
+									<td>33.2</td>
+									<td>38.2</td>
+									<td>44.3</td>
+									<td>42.5</td>
+									<td>15.2</td>
+									<td>32.0</td>
+									<td>22.2</td>
+									<td>40.7</td>
+									<td>48.4</td>
+								</tr>
+							</table>
+						</figure>
+
+						<blockquote class="fragment fade-up">
+							میانگین دقت:
+							 <span class="fragment highlight-green">
+								 36.4
+							 </span>
+						</blockquote>
+					</section>
+
+
+					<section style="width: 100%;">
+							<h3>
 								سایر مدل‌ها
 							</h3>
 
-							<blockquote>
-								یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند.
+							<blockquote class="extra-container">
+								یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند
+							<blockquote class="left-container">
+								<img src="Imgs/scenepgm3.png" style="width: 100%; height: 335px;">
+								<figcaption class="figure_caption">
+									شکل ۳. مدل مولد ارائه شده در...
+								</figcaption>
 							</blockquote>
 
-							<ul>
-								<li>
-									X: حضور یا عدم حضور هر یک از دسته‌های صحنه. با استفاده از توصیف‌گر سیفت محاسبه می‌شود.
-								</li>
-								<li>
-									E: نماینده رخ‌داد به تصویر کشیده شده است.
-								</li>
-								<li>استنتاج با استفاده از نمونه‌برداری گیبس، توضیح داده شود.</li>
-							</ul>
+							<blockquote class="right-container" style="font-size:20px;">
+								<p class="fragment highlight-current-green">
+									یک متغیر تصادفی، بیان‌گر حضور یا عدم حضور هر یک از دسته‌های صحنه
+								</p>
+								<p class="fragment highlight-current-green">
+									یک متغیر تصادفی، بیان‌گر رخ‌داد به تصویر کشیده شده
+								</p>
+								<p class="fragment highlight-current-green">
+									یک جفت متغیر برای حضور یا عدم حضور دسته‌های اجسام و شکل کلی هر دسته
+								</p>
+								<p class="fragment highlight-current-green">
+									گره‌های تیره نماینده متغیرهایی که در تصاویر آموزشی دیده می‌شوند
+								</p>
+								<p class="fragment highlight-current-green">
+									گره‌های روشن‌تر فقط در فرآیند آموزش دیده می‌شوند  و بقیه متغیرهای مخفی هستند
+								</p>
+								<!--<p>-->
+									<!--گره‌هایی که تیره نیستند، نماینده متغیرهای مخفی هستند-->
+								<!--</p>-->
+							</blockquote>
+							</blockquote>
 						</section>
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<h6 style="font-size: 35px;">
+							«
+							ادامه
+							»
+						</h6>
+
+						<blockquote>
+						<ol>
+							فرآیند اختصاص دسته صحنه به تصاویر
+							<li class="fragment fade-up">
+								اختصاص یک دسته اولیه مطابق با p(s|E,si)
+							</li>
+							<li class="fragment fade-up">
+								تولید پارامتر w مطابق با توزیع ...
+							</li>
+							<li class="fragment fade-up">
+								برای تولید هر یک از M ناحیه تصویر:
+								<ol>
+									<li class="fragment fade-up">
+										تولید عنوان مربوط به هر بخش با توزیع ....
+									</li>
+									<li class="fragment fade-up">
+										تولید متغیر تصادفی X با توزیع .... 
+									</li>
+								</ol>
+							</li>
+						</ol>
+						</blockquote>
+
+					</section>
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<h6 style="font-size: 35px;">
+							«
+							ادامه
+							»
+						</h6>
+
+						<ul>
+							<li class="fragment highlight-current-blue">اختصاص تصویر اجسام به تصویر ورودی با فرآیند مشابه</li>
+							<li class="fragment highlight-current-blue"> هر تصویر می‌تواند بیش از یک جسم داشته باشد</li>
+							<li class="fragment highlight-current-blue">تعداد کل اجسام موجود در تصویر با K نمایش داده‌ می‌شود</li>
+							<li class="fragment highlight-current-blue">تعداد کل دسته‌های اجسام موجود با O نمایش داده می‌شود</li>
+						</ul>
+
+					</section>
+
+
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<h6 style="font-size: 35px;">
+							«
+							ادامه
+							»
+						</h6>
+
+						<blockquote>
+							<ol>
+								فرآیند اختصاص تصویر اجسام به تصاویر
+								<h6 style="font-size:30px;">
+									«
+									به ازای هریک از K جسم موجود در تصویر
+									»
+								</h6>
+								<li class="fragment fade-up">
+									اختصاص یک دسته اولیه با توزیع ...
+								</li>
+								<li class="fragment fade-up">
+									با داشتن O می‌توان تمامی A و G ها را تولید کرد:
+									<ol>
+										<li class="fragment fade-up">
+											تولید عنوان مربوط به هر بخش با توزیع ....
+										</li>
+										<li class="fragment fade-up">
+											تولید نواحی مطلوب A و G با توزیع .... 
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</blockquote>
+
+					</section>
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<h6 style="font-size: 35px;">
+							«
+							ادامه
+							»
+						</h6>
+
+						<blockquote>
+							توزیع احتمالی توام کل سیستم
+						</blockquote>
+
+						<blockquote>
+							اون رابطه بزرگه !
+						</blockquote>
+
+					</section>
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<h6 style="font-size: 35px;">
+							«
+							ادامه
+							»
+						</h6>
+
+						<p>
+							یک تخمین‌گر بیشینه احتمال بر مبنای توزیع احتمالی توام ارائه شده است
+						</p>
+
+						<blockquote>
+							رابطه تناسب
+						</blockquote>
+						
+						<ul>
+							<li>
+								برای تخمین مقدار بهینه پارامترهای سای، رو تتا از روش
+								«
+								<span class="fragment highlight-green">
+								انتقال پیام متغیر
+								</span>
+								»
+								استفاده شده است
+							</li>
+							<li>
+								برای تخمین مقدار بهینه پارامترهای پای، بتا و لمدا از روش
+								«
+								<span class="fragment highlight-green">
+								نمونه‌برداری گیبس
+								</span>
+								»
+								استفاده شده است
+							</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h3>
+							سایر مدل‌ها
+						</h3>
+						<blockquote>
+							نتایج
+						</blockquote>
+						<figure>
+							<img src="Imgs/scenepgm4.png" style="width: 50%;">
+							<figcaption class="figure_caption">
+								شکل ۴. ماتریس‌ درهم‌ریختگی مدل
+							</figcaption>
+						</figure>
+					</section>
+
+
 
 					<section>
 						<h3>
@@ -389,8 +775,8 @@
 						<blockquote>
 							در این دسته از روش‌ها، تصاویر ورودی، با استفاده از شبکه‌های عصبی عمیق به فضای ویژگی‌ها نگاشت می‌شوند.
 						</blockquote>
-						<p>
-							در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم.
+						<p class="fragment zoom-in">
+							در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم
 						</p>
 					</section>
 
@@ -398,57 +784,426 @@
 							<h3>
 								اختصاص معنا به قسمت‌های مختلف تصویر
 							</h3>
-							<blockquote>
-								روش استفاده ناحیه‌ای از شبکه عصبی کانولوشنی عمیق، ناحیه‌های مختلف از تصویر را که شامل یک جسم هستند استخراج کرده و به هر ناحیه، یک برچسب تخصیص می‌دهد. نواحی استخراج شده در این روش به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند.
-							</blockquote>
-							<ol>
-								<li>
-									طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی.
-									<p>
-										ناحیه‌بندی تصویر به نواحی بسیار کوچک و توسعه نواحی با ترکیب نواحی مشابه.
-										استفاده از ویژگی‌های مختلف مانند شدت روشنایی، بافت و رنگ برای ترکیب نواحی با یک‌دیگر
-									</p>
-								</li>
-								<li>
-									استفاده از یک شبکه عصبی کانولوشنی که برای هر ناحیه یک بردار ویژگی استخراج کند.
-									<p>
-										شبکه عصبی کانولوشنی کریشفسکی که در چالش ImageNet ارائه شده است.
-									</p>
-								</li>
-								<li>
-									استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته.
-								</li>
-							</ol>
-
+							<ul>
+								<li class="fragment fade-right">نواحی مختلف تصویر که شامل تصویر یک جسم هستند استخراج می‌شود</li>
+								<li class="fragment fade-right">به هر یک از نواحی استخراج شده، یک برچسب اختصاص داده می‌شود</li>
+								<li class="fragment fade-right">نواحی استخراج شده به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند</li>
+							</ul>
 						</section>
 
-						<section>
+					<section>
+						<h3>
+							اختصاص معنا به قسمت‌های مختلف تصویر
+						</h3>
+						<div class="extra-container">
+							<blockquote class="right-container fragment highlight-current-green">
+								ناحیه‌بندی تصویر
+							</blockquote>
+							<blockquote class="left-container fragment highlight-current-green">
+								استخراج ویژگی برای هر ناحیه
+							</blockquote>
+							<blockquote class="center-container fragment highlight-current-green">
+								دسته‌بندی
+							</blockquote>
+						</div>
+						
+						<figure>
+							<img src="Imgs/sceneann1.png">
+							<figcaption class="figure_caption">
+								شکل ۵. مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+							</figcaption>
+						</figure>
+
+					</section>
+					<section>
+						<h3>
+							اختصاص معنا به قسمت‌های مختلف تصویر
+						</h3>
+						<p>
+							طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی
+						</p>
+						<ol>
+							<li>
+								ناحیه‌بندی اولیه تصویر به نواحی بسیار کوچک
+							</li>
+							<li>
+								توسعه نواحی از طریق ترکیب نواحی مشابه
+							</li>
+						</ol>
+						<div class="extra-container">
+							<blockquote class="right-container">
+								<p>
+									چالش‌ها
+								</p>
+								<ul>
+									<li class="fragment highlight-current-red" data-fragment-index="1">استخراج نواحی با ابعاد مختلف</li>
+									<li class="fragment highlight-current-red" data-fragment-index="3">ارائه نواحی مناسب در شرایط مختلف</li>
+								</ul>
+							</blockquote>
+							<blockquote class="left-container">
+								<p>
+									راه‌حل‌ها
+								</p>
+								<ul>
+									<li class="fragment highlight-current-green" data-fragment-index="2">ناحیه‌بندی سلسله‌مراتبی</li>
+									<li class="fragment highlight-current-green" data-fragment-index="4">استفاده از ویژگی‌های مختلف برای مشابهت نواحی</li>
+								</ul>
+							</blockquote>
+						</div>
+					</section>
+					
+					
+					<section>
+						<h3>
+							اختصاص معنا به قسمت‌های مختلف تصویر
+						</h3>
+	‍‍					<p class="fragment">
+						استفاده از یک شبکه عصبی کانولوشنی که برای هر ناحیه یک بردار ویژگی استخراج کند
+						</p>
+
+						<blockquote class="fragment">
+							شبکه عصبی کانولوشنی
+							<span class="fragment highlight-green">
+							کریشفسکی
+							</span>
+						</blockquote>
+
+						<ul class="fragment">
+							<li>
+								شبکه از پیش آموزش ‌دیده
+							</li>
+							<li>
+								د ر چالش ImgaNet کارکرد خوبی داشته است
+							</li>
+						</ul>
+
+						<blockquote class="fragment">
+							دسته‌بندی با استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته انجام می‌شود
+						</blockquote>
+					</section>
+
+
+					<section>
+						<h3>
+							اختصاص معنا به قسمت‌های مختلف
+						</h3>
+						<blockquote>
+							نتایج
+						</blockquote>
+						<figure>
+							<img src="Imgs/sceneann2.png">
+							<figcaption class="figure_caption">
+								شکل ۶. نواحی استخراج شده توسط روش شبکه عصبی کانولوشنی ناحیه‌ای
+							</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h3>
+							اختصاص معنا به قسمت‌های مختلف
+						</h3>
+						<blockquote>
+							نتایج
+						</blockquote>
+						
+						<figure>
+							<figcaption class="figure_caption">
+								جدول ۴. نتایج به‌دست‌آمده از تخصیص برچسب به اجسام در مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+							</figcaption>
+							<table class="table table-responsive">
+								<thead>
+								<tr>
+									<td>هواپیما</td>
+									<td>دوچرخه</td>
+									<td>پرنده</td>
+									<td>قایق</td>
+									<td>بطری</td>
+									<td>اتوبوس</td>
+									<td>ماشین</td>
+									<td>گربه</td>
+									<td>صندلی</td>
+									<td>گاو</td>
+								</tr>
+								</thead>
+								<tr>
+									<td>71.8</td>
+									<td>65.8</td>
+									<td>53.0</td>
+									<td>36.8</td>
+									<td>35.9</td>
+									<td>59.7</td>
+									<td>60.0</td>
+									<td>69.9</td>
+									<td>27.9</td>
+									<td>50.6</td>
+								</tr>
+							</table>
+							<table class="table table-responsive">
+								<thead>
+								<tr>
+									<td>میز</td>
+									<td>سگ</td>
+									<td>اسب</td>
+									<td>موتور</td>
+									<td>انسان</td>
+									<td>گیاه</td>
+									<td>گوسفند</td>
+									<td>کاناپه</td>
+									<td>قطار</td>
+									<td>مانیتور</td>
+								</tr>
+								</thead>
+								<tr>
+									<td>41.4</td>
+									<td>70.0</td>
+									<td>62.0</td>
+									<td>69.0</td>
+									<td>58.1</td>
+									<td>29.5</td>
+									<td>59.4</td>
+									<td>39.3</td>
+									<td>61.2</td>
+									<td>52.4</td>
+								</tr>
+							</table>
+						</figure>
+
+						<blockquote>
+							میانگین دقت:
+							<span class="fragment highlight-green">
+								53.7
+							</span>
+
+						</blockquote>
+					</section>
+					
+					<section>
 							<h3>
 								ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
 							</h3>
-							<ul>
-								<li>
-									استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
-								</li>
-								<li>
-									انتخاب ۱۹ ناحیه با بیشترین اطمینان و استخراج ۴۰۹۶ ویژگی برای هر ناحیه
-								</li>
-								<li>
-									 نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر (که بعدا مینویسم!)
-								</li>
-								<li>
-									استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف ناحیه‌ای و سراسری
-								</li>
-								<li>
-									هم‌ترازسازی ناحیه‌ای، به این منظور تعریف می‌شود که جملات و تصاویری که در محاسبات، بیشترین شباهت را با یک‌دیگر دارند، در واقعیت نیز شبیه‌ترین به یک‌دیگر باشند.
-								</li>
-								<li>
-									هم‌ترازسازی ناحیه‌ای، به منظور یافتن بهترین عبارات برای نواحی مختلف تصویر تعریف شده است به طوری‌که عباراتی که به یکی از نواحی تصویر، شباهت زیادی دارد، از نواحی دیگر فاصله داشته باشد.
-								</li>
+						
+						<ul style="width:80%;">
+							<li>ارائه نگاشت دوطرفه عمیق برای بازیابی تصاویر و جملات</li>
+							<li>ارائه یک تابع هدف و تخمین پارامترها با روش‌های بهینه‌سازی</li>
+						</ul>
+						
+						<figure>
+							<img src="Imgs/sceneann3.png" style="width: 80%;">
+							<figcaption class="figure_caption">
+								شکل ۷. نمای کلی از مدل نگاشت دوطرفه تصاویر و جملات
+							</figcaption>
+						</figure>
+					</section>
 
-							</ul>
-						</section>
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<ul>
+							<li>
+								استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
+
+								<div class="extra-container">
+									<blockquote class="right-container">
+										انتخاب 20 ناحیه از تصویر
+									</blockquote>
+									<blockquote class="left-container">
+										۴۰۹۶ ویژگی برای هر ناحیه
+									</blockquote>
+								</div>
+							</li>
+						</ul>
+
+						<figure>
+							<img src="Imgs/sceneann4.png" style="width: 80%;">
+							<figcaption class="figure_caption">
+								شکل ۸. محاسبه شباهت نواحی تصاویر با عبارات مختلف از جمله
+							</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<ul>
+							<li>
+								نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر (که بعدا مینویسم!)
+							</li>
+						</ul>
+
+						<blockquote class="extra-container">
+							استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف
+
+							<blockquote class="right-container">
+							هم‌ترازسازی سراسری
+							</blockquote>
+
+							<blockquote class="left-container">
+							هم‌ترازسازی ناحیه‌ای
+							</blockquote>
+						</blockquote>
+
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<p>
+							هم‌ترازسازی سراسری
+						</p>
+
+						<blockquote class="fragment">
+								شباهت بین یک تصویر و یک جمله بیشینه شود اگر و تنها اگر شباهت تصویر و جمله در واقعیت نیز بیشینه باشد
+						</blockquote>
+
+						<ul>
+							<li class="fragment fade-up">
+								تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
+								(رابطه شباهت)
+							</li>
+							<li class="fragment fade-up">
+								رابطه کلی تابع هدف هم‌ترازسازی سراسری
+								(رابطه کلی!)
+							</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h3>
+						ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<p>
+							هم‌ترازسازی ناحیه‌ای
+						</p>
+
+						<blockquote class="fragment" style="font-size: 30px;">
+						اگر یک جمله با یک تصویر شباهت زیادی پیدا کرد، حداقل یک ناحیه در تصویر باشد که با یک عبارت از جمله شباهت زیادی داشته باشد و بقیه نواحی با آن عبارت شباهت کمی داشته باشند
+						</blockquote>
+
+						<p class="fragment">
+							شرایط رد فرض بالا
+						</p>
+
+						<ol class="fragment">
+							<li class="fragment highlight-red">
+								ناحیه متشابه با عبارت، استخراج نشده باشد
+							</li>
+							<li class="fragment highlight-red">
+								عبارت موجود به هیچ بخشی از ویژگی‌های بصری تصویر اشاره نکند
+							</li>
+							<li class="fragment highlight-red">
+								عبارت توصیف کننده در هیچ یک از تصاویر دیگر تکرار نشده باشد
+							</li>
+						</ol>
+						
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<ul>
+							<li class="fragment highlight-current-green">
+								تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
+								(رابطه شباهت)
+							</li>
+							<li class="fragment highlight-current-green" data-markdown>
+								رابطه کلی تابع هدف هم‌ترازسازی سراسری
+							</li>
+						</ul>
+						$a = \frac{a}{b}$
+
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<figure>
+							<img src="Imgs/sceneann5.png">
+							<figcaption class="figure_caption">
+								شکل ۹. .........
+							</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<blockquote>
+							نتایج
+						</blockquote>
+
+						<figure>
+							<img src="Imgs/sceneann6.png">
+							<figcaption class="figure_caption">
+								شکل 10. .........
+							</figcaption>
+						</figure>
+
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<blockquote>
+							نتایج
+						</blockquote>
+
+						<figure>
+							<img src="Imgs/sceneann7.png" style="width: 80%;">
+							<figcaption class="figure_caption">
+								شکل 11. .........
+							</figcaption>
+						</figure>
+
+					</section>
+
+					<section>
+						<h3>
+							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+						</h3>
+
+						<blockquote>
+							نتایج
+						</blockquote>
+
+						<figure>
+							<figcaption>
+								جدول 5. نتایج مدل ......
+							</figcaption>
+							<table>
+								<thead>
+									<tr>
+										<td>
+											مدل
+										</td>
+										<td>
+											دقت
+										</td>
+									</tr>
+								</thead>
+							</table>
+						</figure>
+
+					</section>
+
+
 				</section>
+
 
 				<section data-background="#004455"  data-state="chapter_sentence">
 					<section>
@@ -561,15 +1316,15 @@
 				Reveal.configure({backgroundTransition: "zoom"});
 
 
-				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
-				Reveal.addEventListener('chapter_intro', changeSlideState("مقدمات"),false);
-				Reveal.addEventListener('chapter_definition', changeSlideState("تعاریف"),true);
-				Reveal.addEventListener('chapter_overview', changeSlideState("اولین ایده‌ها"),false);
-				Reveal.addEventListener('chapter_scene', changeSlideState("درک صحنه"),false);
-				Reveal.addEventListener('chapter_sentence', changeSlideState("تولید جمله"),false);
-				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
-				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
-				Reveal.addEventListener('eventchanged', nextSlide(event),false)
+//				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
+//				Reveal.addEventListener('chapter_intro', changeSlideState("مقدمات"),false);
+//				Reveal.addEventListener('chapter_definition', changeSlideState("تعاریف"),true);
+//				Reveal.addEventListener('chapter_overview', changeSlideState("اولین ایده‌ها"),false);
+//				Reveal.addEventListener('chapter_scene', changeSlideState("درک صحنه"),false);
+//				Reveal.addEventListener('chapter_sentence', changeSlideState("تولید جمله"),false);
+//				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
+//				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
+//				Reveal.addEventListener('eventchanged', nextSlide(event),false)
 			} );
 
 			var currentSlide ;
