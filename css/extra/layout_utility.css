@@ -53,12 +53,44 @@
     font-size: 25px;
 }
 
-#main_logo{
+.reveal .slide-number{
+    font-size: 20px;
+    right: 95% ;
+    bottom: 2%;
+}
+
+.reveal .math-block{
+    text-align: center;
+    font-size: 60px;
+}
+
+.reveal .math-inline{
+    font-size: 50px;
+}
+
+.reveal .ref{
+    font-family: Georgia;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.reveal .cite{
+    direction: ltr;
+    display: inline-block;
+    /*font-family: "Georgia";*/
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#my_main_logo{
     max-width: 30%;
     max-height: 30%;
     align-self: center;
     border: none;
     background: none;
+    display: block;
 }
 
 #gameBtn{

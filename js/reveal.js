@@ -158,8 +158,8 @@
 
 			// Script dependencies to load
 			dependencies: [
-                { src: 'plugin/math/math.js', async: true }
-            ]
+				
+			]
 
 		},
 
