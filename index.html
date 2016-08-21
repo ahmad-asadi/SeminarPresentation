@@ -1,1672 +1,1674 @@
 <!doctype html>
 <html>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/Bootstrap/css/bootstrap-theme.css">
-        <link rel="stylesheet" href="css/extra/snippet.css">
-        <link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css">
-		<link rel="stylesheet" href="css/extra/layout_utility.css">
+<link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/Bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/extra/snippet.css">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css">
+<link rel="stylesheet" href="css/extra/layout_utility.css">
 
-		<script  src="js/jquery.js"></script>
-        <script src="js/game.js"></script>
+<script  src="js/jquery.js"></script>
+<script src="js/game.js"></script>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<script src="js/reveal.js"></script>
-
-
-		<!--Conclusion Slider-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="css/Slider/ninja-slider.css" rel="stylesheet" type="text/css" />
-		<script src="js/Slider/ninja-slider.js" type="text/javascript"></script>
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<script src="js/reveal.js"></script>
 
 
-		</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+<!--Conclusion Slider-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/Slider/ninja-slider.css" rel="stylesheet" type="text/css" />
+<script src="js/Slider/ninja-slider.js" type="text/javascript"></script>
 
-				<!--FIRST PAGE-->
-                <section data-transition="fade" data-background="#001111">
-					<img id="my_main_logo"  data-src="./Imgs/aut_logo_1.png">
-					<h2>
-						 تولید خودکار شرح بر تصاویر
-					</h2>
 
-					<div class="extra-container">
-						<blockquote class="right-container">
-						ارائه دهنده
-						<br/>
-						احمد اسدی
-						</blockquote>
-						<blockquote class="left-container">
-						استاد راهنما
-						<br/>
-						دکتر صفابخش
-						</blockquote>
-					</div>
-					<aside class="footer">
-						مردادماه ۱۳۹۵
-					</aside>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
 
-				</section>
+		<!--FIRST PAGE-->
+		<section data-transition="fade" data-background="#001111">
+			<div class="row">
+				<img id="my_main_logo"  data-src="./Imgs/aut_logo_1.png" class="col-lg-5">
+			</div>
+			<h2>
+				تولید خودکار شرح بر تصاویر
+			</h2>
 
-				<section data-transition="fade" data-background="#003333" data-state="chapter_intro">
-						<h2>
-							فهرست مطالب
-						</h2>
+			<div class="extra-container">
+				<blockquote class="right-container">
+					ارائه دهنده
+					<br/>
+					احمد اسدی
+				</blockquote>
+				<blockquote class="left-container">
+					استاد راهنما
+					<br/>
+					دکتر صفابخش
+				</blockquote>
+			</div>
+			<aside class="footer">
+				مردادماه ۱۳۹۵
+			</aside>
 
-						<ul>
-							<li class="fragment fade-up">
-								اولین جرقه‌های پیدایش، تعریف و کاربردهای مساله
-							</li>
-							<li class="fragment fade-up">
-								ایده‌های اولیه و چالش‌ها
-							</li>
-							<li class="fragment fade-up">
-								چالش درک صحنه و روش‌های پیشنهادی
-							</li>
-							<li class="fragment fade-up">
-								چالش تولید جمله و روش‌های پیشنهادی
-							</li>
-							<li class="fragment fade-up">
-								جمع‌بندی و نتیجه‌گیری
-							</li>
-						</ul>
-				</section>
+		</section>
 
-				<section data-background="#005555"  data-state="chapter_definition">
-					<section>
-						<h3>
-							تولید خودکار شرح بر تصاویر
-						</h3>
+		<section data-transition="fade" data-background="#003333" data-state="chapter_intro">
+			<h2>
+				فهرست مطالب
+			</h2>
 
-						<ul>
-							<li>
-								توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام
-							</li>
-							<li>
-								توصیف و دسته‌بندی دقیق و صحیح اجسام
-							</li>
-							<li>
-								جملات تولید شده به لحاظ دستور زبان، معنا و املایی صحیح باشد
-							</li>
-							<li>
-								جملات توصیف شده با تصویر مورد نظر سازگار باشند
-							</li>
-						</ul>
+			<ul>
+				<li class="fragment fade-up">
+					اولین جرقه‌های پیدایش، تعریف و کاربردهای مساله
+				</li>
+				<li class="fragment fade-up">
+					ایده‌های اولیه و چالش‌ها
+				</li>
+				<li class="fragment fade-up">
+					چالش درک صحنه و روش‌های پیشنهادی
+				</li>
+				<li class="fragment fade-up">
+					چالش تولید جمله و روش‌های پیشنهادی
+				</li>
+				<li class="fragment fade-up">
+					جمع‌بندی و نتیجه‌گیری
+				</li>
+			</ul>
+		</section>
 
-					</section>
-					<section>
-						<h3>
-							کاربردها
-						</h3>
+		<section data-background="#005555"  data-state="chapter_definition">
+			<section>
+				<h3>
+					تولید خودکار شرح بر تصاویر
+				</h3>
 
-						<ul>
-							<li>
-								دسته‌بندی خودکار تصاویر آرشیوی
-							</li>
-							<li>
-								جستجوی تصویری
-							</li>
-							<li>
-								جملات توصیف شده با تصویر مورد نظر سازگار باشند
-							</li>
-						</ul>
+				<ul>
+					<li>
+						توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام
+					</li>
+					<li>
+						توصیف و دسته‌بندی دقیق و صحیح اجسام
+					</li>
+					<li>
+						جملات تولید شده به لحاظ دستور زبان، معنا و املایی صحیح باشد
+					</li>
+					<li>
+						جملات توصیف شده با تصویر مورد نظر سازگار باشند
+					</li>
+				</ul>
 
-					</section>
-				</section>
+			</section>
+			<section>
+				<h3>
+					کاربردها
+				</h3>
 
-				<section data-background="#004455"  data-state="chapter_Overview">
-					<section>
-						<h3>
-							ایده‌های اولیه
-						</h3>
+				<ul>
+					<li>
+						دسته‌بندی خودکار تصاویر آرشیوی
+					</li>
+					<li>
+						جستجوی تصویری
+					</li>
+					<li>
+						جملات توصیف شده با تصویر مورد نظر سازگار باشند
+					</li>
+				</ul>
 
-						<ul>
-							<li>
-								اقتباس از پژوهش‌های مرتبط با ترجمه ماشینی
-							</li>
-							<ol>
-								<li>
-									نگاشت تصویر به فضای معنایی
-								</li>
-								<li>
-									نگاشت فضای معنایی به فضای جملات
-								</li>
-							</ol>
-						</ul>
-					</section>
+			</section>
+		</section>
 
-					<section>
-						<h3>
-							چالش‌های پیش‌رو
-						</h3>
+		<section data-background="#004455"  data-state="chapter_Overview">
+			<section>
+				<h3>
+					ایده‌های اولیه
+				</h3>
 
-						<div class="extra-container">
-							<blockquote class="right-container">
-								درک صحنه
-							</blockquote>
-							<blockquote class="left-container">
-								تولید جمله
-							</blockquote>
+				<ul>
+					<li>
+						اقتباس از پژوهش‌های مرتبط با ترجمه ماشینی
+					</li>
+					<ol>
+						<li>
+							نگاشت تصویر به فضای معنایی
+						</li>
+						<li>
+							نگاشت فضای معنایی به فضای جملات
+						</li>
+					</ol>
+				</ul>
+			</section>
 
-						</div>
+			<section>
+				<h3>
+					چالش‌های پیش‌رو
+				</h3>
 
-					</section>
-					<section>
-						    <h3>
-        							        چالش درک صحنه
-						    </h3>
-						    <p>
-		    					توصیف صحنه باید بیان‌گر موارد زیر باشد
-						    </p>
-						    <ul>
-						    	<li>
-			    					کلاس صحنه
-					    		</li>
-				    			<li>
-				    				کلاس هرکدام از اجسام
-			    				</li>
-		    					<li>
-					    			رابطه مکانی بین اجسام
-	    						</li>
-    							<li>
-						    		    توصیف رخ‌داد به تصویر کشیده شده
-							    </li>
-						    </ul>
-					</section>
-					<section>
-						<h3>
-							چالش تولید جمله
-						</h3>
-						<p>
-							جملات تولید شده باید شرایط زیر را داشته باشند
-						</p>
-						<ul>
-							<li>
-								 صحت معنایی، دستور زبانی و املایی
-							</li>
-							<li>
-								استفاده از قالب‌های مختلف جمله
-							</li>
-							<li>
-								سازگاری با تصویر مورد نظر
-							</li>
-						</ul>
-					</section>
-				</section>
+				<div class="extra-container">
+					<blockquote class="right-container">
+						درک صحنه
+					</blockquote>
+					<blockquote class="left-container">
+						تولید جمله
+					</blockquote>
 
-				<section data-background="#224466">
-					<section data-state="chapter_scene">
-						<h3>
-							درک صحنه
-						</h3>
+				</div>
 
-						<blockquote>
-							استخراج اطلاعات بصری نهفته در تصویر و بازنمایی مناسب اطلاعات به‌دست آمده
-						</blockquote>
+			</section>
+			<section>
+				<h3>
+					چالش درک صحنه
+				</h3>
+				<p>
+					توصیف صحنه باید بیان‌گر موارد زیر باشد
+				</p>
+				<ul>
+					<li>
+						کلاس صحنه
+					</li>
+					<li>
+						کلاس هرکدام از اجسام
+					</li>
+					<li>
+						رابطه مکانی بین اجسام
+					</li>
+					<li>
+						توصیف رخ‌داد به تصویر کشیده شده
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					چالش تولید جمله
+				</h3>
+				<p>
+					جملات تولید شده باید شرایط زیر را داشته باشند
+				</p>
+				<ul>
+					<li>
+						صحت معنایی، دستور زبانی و املایی
+					</li>
+					<li>
+						استفاده از قالب‌های مختلف جمله
+					</li>
+					<li>
+						سازگاری با تصویر مورد نظر
+					</li>
+				</ul>
+			</section>
+		</section>
 
-						<div class="fragment zoom-in">
-						<p>
+		<section data-background="#224466">
+			<section data-state="chapter_scene">
+				<h3>
+					درک صحنه
+				</h3>
+
+				<blockquote>
+					استخراج اطلاعات بصری نهفته در تصویر و بازنمایی مناسب اطلاعات به‌دست آمده
+				</blockquote>
+
+				<div class="fragment zoom-in">
+					<p>
 						نکاتی که هم‌چنان مبهم باقی می‌مانند
-						</p>
+					</p>
 
-						<ul>
-							<li class="fragment">
-								چه اطلاعاتی باید از تصویر استخراج شوند
-							</li>
-							<li class="fragment">
-								بازنمایی مناسب اطلاعات به چه معنیست
-							</li>
-						</ul>
+					<ul>
+						<li class="fragment">
+							چه اطلاعاتی باید از تصویر استخراج شوند
+						</li>
+						<li class="fragment">
+							بازنمایی مناسب اطلاعات به چه معنیست
+						</li>
+					</ul>
 
-						<p class="fragment zoom-in highlight-green">
-							بسته به پژوهش تعریف می‌شوند
-						</p>
-						</div>
-					</section>
+					<p class="fragment zoom-in highlight-green">
+						بسته به پژوهش تعریف می‌شوند
+					</p>
+				</div>
+			</section>
 
-					<section>
-						<div id="notGame">
-							<h3>
-								تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان
-							</h3>
+			<section>
+				<div id="notGame">
+					<h3>
+						تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان
+					</h3>
 
-							<ul>
-								<li>
-									نمایش دنباله تصاویر در ۲۰۰ میلی‌ثانیه
-								</li>
-								<li>
-									این مدت برای توصیف کافیست اما برای به‌خاطرسپاری کم است.
-								</li>
-								<li>
-									انجام آزمایش مشابه با افرادی که در مورد تصاویر پیش‌زمینه ندارند.
-								</li>
-							</ul>
-							<div class="container">
-								<button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">
-									چالش مغز انسان
-								</button>
-							</div>
+					<ul>
+						<li>
+							نمایش دنباله تصاویر در ۲۰۰ میلی‌ثانیه
+						</li>
+						<li>
+							این مدت برای توصیف کافیست اما برای به‌خاطرسپاری کم است.
+						</li>
+						<li>
+							انجام آزمایش مشابه با افرادی که در مورد تصاویر پیش‌زمینه ندارند.
+						</li>
+					</ul>
+					<div class="container">
+						<button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">
+							چالش مغز انسان
+						</button>
+					</div>
 
-						</div>
+				</div>
 
-						<div id="gameSec">
+				<div id="gameSec">
 
-						</div>
-					</section>
-					<section>
-						<h3>
-							روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
-						</h3>
+				</div>
+			</section>
+			<section>
+				<h3>
+					روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
+				</h3>
 
-						<blockquote>
-							با استفاده از دانش‌های آمار و احتمالات، نظریه گراف و با توجه به مجموعه‌ داده‌های موجود، سعی در ارائه توزیع احتمالاتی و تخمین بهترین پارامترهای ممکن دارند.
-						</blockquote>
+				<blockquote>
+					با استفاده از دانش‌های آمار و احتمالات، نظریه گراف و با توجه به مجموعه‌ داده‌های موجود، سعی در ارائه توزیع احتمالاتی و تخمین بهترین پارامترهای ممکن دارند.
+				</blockquote>
 
-						<p>
-							مدل‌های استاندارد مورد استفاده
-						</p>
+				<p>
+					مدل‌های استاندارد مورد استفاده
+				</p>
 
-						<div class="extra-container">
-							<blockquote class="right-container fragment highlight-current-green">
-								میدان تصادفی مارکف
-							</blockquote>
-							<blockquote class="left-container fragment highlight-current-green">
-								میدان تصادفی شرطی
-							</blockquote>
-							<blockquote class="center-container fragment highlight-current-green">
-								سایر مدل‌ها
-							</blockquote>
-						</div>
-					</section>
+				<div class="extra-container">
+					<blockquote class="right-container fragment highlight-current-green">
+						میدان تصادفی مارکف
+					</blockquote>
+					<blockquote class="left-container fragment highlight-current-green">
+						میدان تصادفی شرطی
+					</blockquote>
+					<blockquote class="center-container fragment highlight-current-green">
+						سایر مدل‌ها
+					</blockquote>
+				</div>
+			</section>
 
-						<section>
-							<h3>
+			<section>
+				<h3>
 									<span class="cite">
 										[3]
 									</span>
-								میدان تصادفی مارکف
-							</h3>
+					میدان تصادفی مارکف
+				</h3>
 
-							<ul>
-								<li class="fragment">
-									تعریف سه‌تایی
-									«
-									<span class="fragment highlight-blue">
+				<ul>
+					<li class="fragment">
+						تعریف سه‌تایی
+						«
+						<span class="fragment highlight-blue">
 										جسم
 									</span>
-									،
-									<span class="fragment highlight-green">
+						،
+						<span class="fragment highlight-green">
 										رخ‌داد
 									</span>
-									،
-									<span class="fragment highlight-red">
+						،
+						<span class="fragment highlight-red">
 										صحنه
 									</span>
-									 »
-									به ازای هر تصویر
-								</li>
-								<li class="fragment">
-									مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده
-								</li>
-							</ul>
-							<figure class="fragment">
-								<img src="Imgs/scenepgm1.png" style="width: 75%"/>
+						»
+						به ازای هر تصویر
+					</li>
+					<li class="fragment">
+						مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده
+					</li>
+				</ul>
+				<figure class="fragment">
+					<img src="Imgs/scenepgm1.png" style="width: 75%"/>
 
-								<figcaption class="figure_caption">
+					<figcaption class="figure_caption">
 									<span class="cite">
 										[3]
 									</span>
 
-									شکل ۱. مدل گرافی احتمالاتی روش اول
-								</figcaption>
-							</figure>
-						</section>
+						شکل ۱. مدل گرافی احتمالاتی روش اول
+					</figcaption>
+				</figure>
+			</section>
 
-						<section>
-							<h3>
-								میدان تصادفی مارکف
-							</h3>
-							<ul>
-							<li class="fragment">
-								فاکتورهای گره
-								<div class="extra-container">
-									<blockquote class="right-container">
-										آشکار‌کننده‌های فلزنسوالب
-									</blockquote>
-									<blockquote class="left-container">
-										دسته‌بندی‌کننده دیوالا
-									</blockquote>
-									<blockquote class="center-container">
-										دسته‌بندی کننده مبتنی برگیست
-									</blockquote>
-								</div>
-							</li>
-							<li class="fragment">
-								فاکتور یال
-								<blockquote class="extra-container center-container" style="width: 45%">
-									میزان ارتباط گره‌ها با یک‌دیگر
-								</blockquote>
-							</li>
-							<li class="fragment">
-								استفاده از ماشین بردار پشتیبان برای دسته‌بندی بردارهای ویژگی استخراج شده
-							</li>
-							</ul>
-						</section>
-
-						<section>
-							<h3>
-								میدان تصادفی مارکف
-							</h3>
-							<blockquote>
-								نتایج
+			<section>
+				<h3>
+					میدان تصادفی مارکف
+				</h3>
+				<ul>
+					<li class="fragment">
+						فاکتورهای گره
+						<div class="extra-container">
+							<blockquote class="right-container">
+								آشکار‌کننده‌های فلزنسوالب
 							</blockquote>
-							<br/>
-							<figure>
-								<figcaption class="figure_caption">
+							<blockquote class="left-container">
+								دسته‌بندی‌کننده دیوالا
+							</blockquote>
+							<blockquote class="center-container">
+								دسته‌بندی کننده مبتنی برگیست
+							</blockquote>
+						</div>
+					</li>
+					<li class="fragment">
+						فاکتور یال
+						<blockquote class="extra-container center-container" style="width: 45%">
+							میزان ارتباط گره‌ها با یک‌دیگر
+						</blockquote>
+					</li>
+					<li class="fragment">
+						استفاده از ماشین بردار پشتیبان برای دسته‌بندی بردارهای ویژگی استخراج شده
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>
+					میدان تصادفی مارکف
+				</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
+				<br/>
+				<figure>
+					<figcaption class="figure_caption">
 									<span class="cite">
 										[3]
 									</span>
-									جدول ۱. نتایج میدان تصادفی مارکف
-								</figcaption>
-							<table class="table table-responsive">
-								<thead>
-								<tr>
-									<td>نام روش</td>
-									<td>روش ۱</td>
-									<td>روش۲</td>
-									<td>روش۳</td>
-									<td>روش۴</td>
-									<td>روش۵</td>
-									<td>روش۶</td>
-								</tr>
-								</thead>
-								<tr>
-									<td></td>
-									<td>0.44</td>
-									<td class="fragment highlight-red">۰.۵۲</td>
-									<td>۰.۳۸</td>
-									<td>۰.۴۵</td>
-									<td>۰.۴۷</td>
-									<td>۰.۵۱</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>0.24</td>
-									<td>0.27</td>
-									<td>0.16</td>
-									<td>0.58</td>
-									<td class="fragment highlight-red">0.76</td>
-									<td>0.74</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td class="fragment highlight-red">0.59</td>
-									<td>0.58</td>
-									<td>0.36</td>
-									<td>0.53</td>
-									<td>0.55</td>
-									<td>0.57</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>0.27</td>
-									<td class="fragment highlight-red">0.52</td>
-									<td>0.50</td>
-									<td>0.37</td>
-									<td>0.42</td>
-									<td>0.47</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>0.28</td>
-									<td class="fragment highlight-red">0.48</td>
-									<td>0.28</td>
-									<td>0.44</td>
-									<td>0.46</td>
-									<td class="fragment highlight-red">0.48</td>
-								</tr>
-							</table>
-							</figure>
-						</section>
+						جدول ۱. نتایج میدان تصادفی مارکف
+					</figcaption>
+					<table class="table table-responsive">
+						<thead>
+						<tr>
+							<td>نام روش</td>
+							<td>روش ۱</td>
+							<td>روش۲</td>
+							<td>روش۳</td>
+							<td>روش۴</td>
+							<td>روش۵</td>
+							<td>روش۶</td>
+						</tr>
+						</thead>
+						<tr>
+							<td></td>
+							<td>0.44</td>
+							<td class="fragment highlight-red">۰.۵۲</td>
+							<td>۰.۳۸</td>
+							<td>۰.۴۵</td>
+							<td>۰.۴۷</td>
+							<td>۰.۵۱</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0.24</td>
+							<td>0.27</td>
+							<td>0.16</td>
+							<td>0.58</td>
+							<td class="fragment highlight-red">0.76</td>
+							<td>0.74</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="fragment highlight-red">0.59</td>
+							<td>0.58</td>
+							<td>0.36</td>
+							<td>0.53</td>
+							<td>0.55</td>
+							<td>0.57</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0.27</td>
+							<td class="fragment highlight-red">0.52</td>
+							<td>0.50</td>
+							<td>0.37</td>
+							<td>0.42</td>
+							<td>0.47</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0.28</td>
+							<td class="fragment highlight-red">0.48</td>
+							<td>0.28</td>
+							<td>0.44</td>
+							<td>0.46</td>
+							<td class="fragment highlight-red">0.48</td>
+						</tr>
+					</table>
+				</figure>
+			</section>
 
-						<section>
-							<h3>
+			<section>
+				<h3>
 								<span class="cite">
 									[4]
 								</span>
-								میدان تصادفی شرطی
-							</h3>
-							<blockquote>
-								استنتاج توزیع شرطی متغیر تصادفی مطلوب
-							</blockquote>
+					میدان تصادفی شرطی
+				</h3>
+				<blockquote>
+					استنتاج توزیع شرطی متغیر تصادفی مطلوب
+				</blockquote>
 
-							<figure class="fragment">
-								<img src="Imgs/scenepgm2.png" style="width: 70%;">
-								<figcaption class="figure_caption">
+				<figure class="fragment">
+					<img src="Imgs/scenepgm2.png" style="width: 70%;">
+					<figcaption class="figure_caption">
 									<span class="cite">
 										[4]
 									</span>
-									شکل ۲. روش میدان تصادفی شرطی
-								</figcaption>
-							</figure>
-						</section>
+						شکل ۲. روش میدان تصادفی شرطی
+					</figcaption>
+				</figure>
+			</section>
 
-						<section>
-							<h3>
-								میدان تصادفی شرطی
-							</h3>
-							
-							<ul>
-								<li class="fragment highlight-current-green">
-									متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر
-								</li>
-								<li class="fragment highlight-current-green">
-									متغیرهای تصادفی باینری بیان‌کننده صحت تشخیص
-								</li>
-								<li class="fragment highlight-current-green">
-									استفاده از توابع پتانسیل مختلف
-									<div class="extra-container" >
-										<blockquote class="right-container fragment fade-up highlight-current-blue">
-											قطعه‌بندی یگانی
-											<!--<p>-->
-												<!--به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.-->
-											<!--</p>-->
-										</blockquote>
-										<blockquote class="left-container fragment fade-up highlight-current-blue">
-											انطباق متغیرها
-											<!--<p>-->
-												<!--یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.-->
-											<!--</p>-->
-										</blockquote>
-										<blockquote class="center-container fragment fade-up highlight-current-blue" style="font-size: 35px;">
-											انطباق تصویر و اجسام
-											<!--<p>-->
-												<!--روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.-->
-											<!--</p>-->
-										</blockquote>
-									</div>
-								</li>
+			<section>
+				<h3>
+					میدان تصادفی شرطی
+				</h3>
 
-							</ul>
-						</section>
+				<ul>
+					<li class="fragment highlight-current-green">
+						متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر
+					</li>
+					<li class="fragment highlight-current-green">
+						متغیرهای تصادفی باینری بیان‌کننده صحت تشخیص
+					</li>
+					<li class="fragment highlight-current-green">
+						استفاده از توابع پتانسیل مختلف
+						<div class="extra-container" >
+							<blockquote class="right-container fragment fade-up highlight-current-blue">
+								قطعه‌بندی یگانی
+								<!--<p>-->
+								<!--به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.-->
+								<!--</p>-->
+							</blockquote>
+							<blockquote class="left-container fragment fade-up highlight-current-blue">
+								انطباق متغیرها
+								<!--<p>-->
+								<!--یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.-->
+								<!--</p>-->
+							</blockquote>
+							<blockquote class="center-container fragment fade-up highlight-current-blue" style="font-size: 35px;">
+								انطباق تصویر و اجسام
+								<!--<p>-->
+								<!--روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.-->
+								<!--</p>-->
+							</blockquote>
+						</div>
+					</li>
 
-					<section>
-						<h3>
-							میدان تصادفی شرطی
-						</h3>
-						<blockquote>
-							نتایج
-						</blockquote>
-						<br>
-						<figure>
-							<figcaption class="figure_caption">
+				</ul>
+			</section>
+
+			<section>
+				<h3>
+					میدان تصادفی شرطی
+				</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
+				<br>
+				<figure>
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[4]
 								</span>
-								جدول ۲. نتایج میدان تصادفی شرطی
-							</figcaption>
-							<table class="table table-responsive">
-								<thead>
-								<tr>
-									<td>پشت</td>
-									<td>هوا</td>
-									<td>دوچرخه</td>
-									<td>پرنده</td>
-									<td>قایق</td>
-									<td>اتوبوس</td>
-									<td>ماشین</td>
-									<td>گربه</td>
-									<td>صندلی</td>
-									<td>گاو</td>
-								</tr>
-								</thead>
-								<tr>
-									<td>76.9</td>
-									<td>31.3</td>
-									<td>29.7</td>
-									<td>37.3</td>
-									<td>27.7</td>
-									<td>29.5</td>
-									<td>52.1</td>
-									<td>40.0</td>
-									<td>38.0</td>
-									<td>6.6</td>
-								</tr>
-							</table>
-							<table class="table table-responsive">
-								<thead>
-								<tr>
-									<td>میز</td>
-									<td>سگ</td>
-									<td>اسب</td>
-									<td>موتور</td>
-									<td>انسان</td>
-									<td>گیاه</td>
-									<td>گوسفند</td>
-									<td>کاناپه</td>
-									<td>قطار</td>
-									<td>مانیتور</td>
-								</tr>
-								</thead>
-								<tr>
-									<td>25.2</td>
-									<td>33.2</td>
-									<td>38.2</td>
-									<td>44.3</td>
-									<td>42.5</td>
-									<td>15.2</td>
-									<td>32.0</td>
-									<td>22.2</td>
-									<td>40.7</td>
-									<td>48.4</td>
-								</tr>
-							</table>
-						</figure>
+						جدول ۲. نتایج میدان تصادفی شرطی
+					</figcaption>
+					<table class="table table-responsive">
+						<thead>
+						<tr>
+							<td>پشت</td>
+							<td>هوا</td>
+							<td>دوچرخه</td>
+							<td>پرنده</td>
+							<td>قایق</td>
+							<td>اتوبوس</td>
+							<td>ماشین</td>
+							<td>گربه</td>
+							<td>صندلی</td>
+							<td>گاو</td>
+						</tr>
+						</thead>
+						<tr>
+							<td>76.9</td>
+							<td>31.3</td>
+							<td>29.7</td>
+							<td>37.3</td>
+							<td>27.7</td>
+							<td>29.5</td>
+							<td>52.1</td>
+							<td>40.0</td>
+							<td>38.0</td>
+							<td>6.6</td>
+						</tr>
+					</table>
+					<table class="table table-responsive">
+						<thead>
+						<tr>
+							<td>میز</td>
+							<td>سگ</td>
+							<td>اسب</td>
+							<td>موتور</td>
+							<td>انسان</td>
+							<td>گیاه</td>
+							<td>گوسفند</td>
+							<td>کاناپه</td>
+							<td>قطار</td>
+							<td>مانیتور</td>
+						</tr>
+						</thead>
+						<tr>
+							<td>25.2</td>
+							<td>33.2</td>
+							<td>38.2</td>
+							<td>44.3</td>
+							<td>42.5</td>
+							<td>15.2</td>
+							<td>32.0</td>
+							<td>22.2</td>
+							<td>40.7</td>
+							<td>48.4</td>
+						</tr>
+					</table>
+				</figure>
 
-						<blockquote class="fragment fade-up">
-							میانگین دقت:
-							 <span class="fragment highlight-green">
+				<blockquote class="fragment fade-up">
+					میانگین دقت:
+					<span class="fragment highlight-green">
 								 36.4
 							 </span>
-						</blockquote>
-					</section>
+				</blockquote>
+			</section>
 
 
-					<section style="width: 100%;">
-							<h3>
+			<section style="width: 100%;">
+				<h3>
 								<span class="cite">
 									[5]
 								</span>
-								مدل مولد
-							</h3>
+					مدل مولد
+				</h3>
 
-							<blockquote class="extra-container">
-								یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند
-							<blockquote class="left-container">
-								<img src="Imgs/scenepgm3.png" style="width: 100%; height: 335px;">
-								<figcaption class="figure_caption">
+				<blockquote class="extra-container">
+					یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند
+					<blockquote class="left-container">
+						<img src="Imgs/scenepgm3.png" style="width: 100%; height: 335px;">
+						<figcaption class="figure_caption">
 								<span class="cite">
 									[5]
 								</span>
-									شکل ۳. مدل مولد ارائه شده در پژوهش
-								</figcaption>
-							</blockquote>
+							شکل ۳. مدل مولد ارائه شده در پژوهش
+						</figcaption>
+					</blockquote>
 
-							<blockquote class="right-container" style="font-size:20px;">
-								<p class="fragment highlight-current-green">
-									یک متغیر تصادفی، بیان‌گر حضور یا عدم حضور هر یک از دسته‌های صحنه
-								</p>
-								<p class="fragment highlight-current-green">
-									یک متغیر تصادفی، بیان‌گر رخ‌داد به تصویر کشیده شده
-								</p>
-								<p class="fragment highlight-current-green">
-									یک جفت متغیر برای حضور یا عدم حضور دسته‌های اجسام و شکل کلی هر دسته
-								</p>
-								<p class="fragment highlight-current-green">
-									گره‌های تیره نماینده متغیرهایی که در تصاویر آموزشی دیده می‌شوند
-								</p>
-								<p class="fragment highlight-current-green">
-									گره‌های روشن‌تر فقط در فرآیند آموزش دیده می‌شوند  و بقیه متغیرهای مخفی هستند
-								</p>
-								<!--<p>-->
-									<!--گره‌هایی که تیره نیستند، نماینده متغیرهای مخفی هستند-->
-								<!--</p>-->
-							</blockquote>
-							</blockquote>
-						</section>
+					<blockquote class="right-container" style="font-size:20px;">
+						<p class="fragment highlight-current-green">
+							یک متغیر تصادفی، بیان‌گر حضور یا عدم حضور هر یک از دسته‌های صحنه
+						</p>
+						<p class="fragment highlight-current-green">
+							یک متغیر تصادفی، بیان‌گر رخ‌داد به تصویر کشیده شده
+						</p>
+						<p class="fragment highlight-current-green">
+							یک جفت متغیر برای حضور یا عدم حضور دسته‌های اجسام و شکل کلی هر دسته
+						</p>
+						<p class="fragment highlight-current-green">
+							گره‌های تیره نماینده متغیرهایی که در تصاویر آموزشی دیده می‌شوند
+						</p>
+						<p class="fragment highlight-current-green">
+							گره‌های روشن‌تر فقط در فرآیند آموزش دیده می‌شوند  و بقیه متغیرهای مخفی هستند
+						</p>
+						<!--<p>-->
+						<!--گره‌هایی که تیره نیستند، نماینده متغیرهای مخفی هستند-->
+						<!--</p>-->
+					</blockquote>
+				</blockquote>
+			</section>
 
-					<section>
-						<h3>
-مدل مولد
-						</h3>
-						<h6 style="font-size: 35px;">
-							«
-							ادامه
-							»
-						</h6>
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<h6 style="font-size: 35px;">
+					«
+					ادامه
+					»
+				</h6>
 
-						<blockquote>
-						<ol>
-							فرآیند اختصاص دسته صحنه به تصاویر
-							<li class="fragment fade-up">
-								اختصاص یک دسته اولیه مطابق با توزیع
-								<span class="math-inline">
+				<blockquote>
+					<ol>
+						فرآیند اختصاص دسته صحنه به تصاویر
+						<li class="fragment fade-up">
+							اختصاص یک دسته اولیه مطابق با توزیع
+							<span class="math-inline">
 								$P(S | E, \psi)$
 								</span>
-							</li>
-							<li class="fragment fade-up">
-								تولید پارامتر
-								<span class="math-inline">
+						</li>
+						<li class="fragment fade-up">
+							تولید پارامتر
+							<span class="math-inline">
 								$\omega$
 								</span>
-								مطابق با توزیع
-								<span class="math-inline">
+							مطابق با توزیع
+							<span class="math-inline">
 									$P( \omega | S , \rho) $
 								</span>
-							</li>
-							<li class="fragment fade-up">
-								برای تولید هر یک از
-								<span class="math-inline">
+						</li>
+						<li class="fragment fade-up">
+							برای تولید هر یک از
+							<span class="math-inline">
 								$M$
 								</span>
-								ناحیه تصویر:
-								<ol>
-									<li class="fragment fade-up">
-										تولید عنوان مربوط به هر بخش با توزیع
-										<span class="math-inline">
+							ناحیه تصویر:
+							<ol>
+								<li class="fragment fade-up">
+									تولید عنوان مربوط به هر بخش با توزیع
+									<span class="math-inline">
 											$t \propto Mult(\omega)$
 										</span>
-									</li>
-									<li class="fragment fade-up">
-										تولید متغیر تصادفی
-										<span class="math-inline">
+								</li>
+								<li class="fragment fade-up">
+									تولید متغیر تصادفی
+									<span class="math-inline">
 										$X$
 										</span>
-										با توزیع
-										<span class="math-inline">
+									با توزیع
+									<span class="math-inline">
 											$P( X | t , \omega) $
 										</span>  
-									</li>
-								</ol>
-							</li>
-						</ol>
-						</blockquote>
-
-					</section>
-
-					<section>
-						<h3>
-							مدل مولد
-						</h3>
-						<h6 style="font-size: 35px;">
-							«
-							ادامه
-							»
-						</h6>
-
-						<ul>
-							<li class="fragment highlight-current-blue">اختصاص تصویر اجسام به تصویر ورودی با فرآیند مشابه</li>
-							<li class="fragment highlight-current-blue"> هر تصویر می‌تواند بیش از یک جسم داشته باشد</li>
-							<li class="fragment highlight-current-blue">تعداد کل اجسام موجود در تصویر با
-								<span class="math-inline">
-								$K$
-								</span>
-								نمایش داده‌ می‌شود</li>
-							<li class="fragment highlight-current-blue">تعداد کل دسته‌های اجسام موجود با
-								<span class="math-inline">
-								$O$
-								</span>
-								نمایش داده می‌شود</li>
-						</ul>
-
-					</section>
-
-
-
-					<section>
-						<h3>
-							مدل مولد
-						</h3>
-						<h6 style="font-size: 35px;">
-							«
-							ادامه
-							»
-						</h6>
-
-						<blockquote>
-							<ol>
-								فرآیند اختصاص تصویر اجسام به تصاویر
-								<h6 style="font-size:30px;">
-									«
-									به ازای هریک از
-									<span class="math-inline">
-									$K$
-									</span>
-									جسم موجود در تصویر
-									»
-								</h6>
-								<li class="fragment fade-up">
-									اختصاص یک دسته اولیه با توزیع
-									<span class="math-inline">
-										$P(O | E , \pi)$
-									</span>
-								</li>
-								<li class="fragment fade-up">
-									با داشتن
-									<span class="math-inline">
-									$O$
-									</span>
-									می‌توان تمامی
-									<span class="math-inline">
-									$A$
-									</span>
-									و
-									<span class="math-inline">
-									$G$
-									</span>
-									ها را تولید کرد:
-									<ol>
-										<li class="fragment fade-up">
-											تولید عنوان مربوط به هر بخش با توزیع
-											<span class="math-inline">
-												$z \propto Mult(\lambda | O)$
-											</span>
-										</li>
-										<li class="fragment fade-up">
-											تولید نواحی مطلوب
-											<span class="math-inline">
-											$A$
-											</span>
-											و
-											<span class="math-inline">
-											$G$
-											</span>
-											با توزیع
-											<span class="math-inline">
-												$P(A, G| z, \theta)$
-											</span>  
-										</li>
-									</ol>
 								</li>
 							</ol>
-						</blockquote>
+						</li>
+					</ol>
+				</blockquote>
 
-					</section>
+			</section>
 
-					<section>
-						<h3>
-							مدل مولد
-						</h3>
-						<h6 style="font-size: 35px;">
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<h6 style="font-size: 35px;">
+					«
+					ادامه
+					»
+				</h6>
+
+				<ul>
+					<li class="fragment highlight-current-blue">اختصاص تصویر اجسام به تصویر ورودی با فرآیند مشابه</li>
+					<li class="fragment highlight-current-blue"> هر تصویر می‌تواند بیش از یک جسم داشته باشد</li>
+					<li class="fragment highlight-current-blue">تعداد کل اجسام موجود در تصویر با
+						<span class="math-inline">
+								$K$
+								</span>
+						نمایش داده‌ می‌شود</li>
+					<li class="fragment highlight-current-blue">تعداد کل دسته‌های اجسام موجود با
+						<span class="math-inline">
+								$O$
+								</span>
+						نمایش داده می‌شود</li>
+				</ul>
+
+			</section>
+
+
+
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<h6 style="font-size: 35px;">
+					«
+					ادامه
+					»
+				</h6>
+
+				<blockquote>
+					<ol>
+						فرآیند اختصاص تصویر اجسام به تصاویر
+						<h6 style="font-size:30px;">
 							«
-							ادامه
+							به ازای هریک از
+							<span class="math-inline">
+									$K$
+									</span>
+							جسم موجود در تصویر
 							»
 						</h6>
+						<li class="fragment fade-up">
+							اختصاص یک دسته اولیه با توزیع
+							<span class="math-inline">
+										$P(O | E , \pi)$
+									</span>
+						</li>
+						<li class="fragment fade-up">
+							با داشتن
+							<span class="math-inline">
+									$O$
+									</span>
+							می‌توان تمامی
+							<span class="math-inline">
+									$A$
+									</span>
+							و
+							<span class="math-inline">
+									$G$
+									</span>
+							ها را تولید کرد:
+							<ol>
+								<li class="fragment fade-up">
+									تولید عنوان مربوط به هر بخش با توزیع
+									<span class="math-inline">
+												$z \propto Mult(\lambda | O)$
+											</span>
+								</li>
+								<li class="fragment fade-up">
+									تولید نواحی مطلوب
+									<span class="math-inline">
+											$A$
+											</span>
+									و
+									<span class="math-inline">
+											$G$
+											</span>
+									با توزیع
+									<span class="math-inline">
+												$P(A, G| z, \theta)$
+											</span>  
+								</li>
+							</ol>
+						</li>
+					</ol>
+				</blockquote>
 
-						<blockquote>
-							توزیع احتمالی توام کل سیستم
-						</blockquote>
+			</section>
 
-						<blockquote class="math-block fragment">
-							\begin{equation}
-							\begin{split}
-							P(E,S,O,X,A,G,&t,z,\omega |\rho ,\phi ,\lambda ,\psi ,\pi, \theta)\\
-							&= P(E)\cdot P(S|E,\psi)\cdot P(\omega|S,\rho) \\
-							&\cdot \Pi_{m=1}^M P(X_m|t_m,\theta)\cdot P(t_m|\omega) \\
-							&\cdot \Pi_{k=1}^K P(O_k|E,\pi)\\
-							&\cdot \Pi_{n=1}^N P(A_n,G_n|z_n,\phi)\cdot P(z_n|\lambda,O_k)
-							\end{split}
-							\end{equation}
-						</blockquote>
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<h6 style="font-size: 35px;">
+					«
+					ادامه
+					»
+				</h6>
 
-					</section>
+				<blockquote>
+					توزیع احتمالی توام کل سیستم
+				</blockquote>
 
-					<section>
-						<h3>
-							مدل مولد
-						</h3>
-						<h6 style="font-size: 35px;">
-							«
-							ادامه
-							»
-						</h6>
+				<blockquote class="math-block fragment">
+					\begin{equation}
+					\begin{split}
+					P(E,S,O,X,A,G,&t,z,\omega |\rho ,\phi ,\lambda ,\psi ,\pi, \theta)\\
+					&= P(E)\cdot P(S|E,\psi)\cdot P(\omega|S,\rho) \\
+					&\cdot \Pi_{m=1}^M P(X_m|t_m,\theta)\cdot P(t_m|\omega) \\
+					&\cdot \Pi_{k=1}^K P(O_k|E,\pi)\\
+					&\cdot \Pi_{n=1}^N P(A_n,G_n|z_n,\phi)\cdot P(z_n|\lambda,O_k)
+					\end{split}
+					\end{equation}
+				</blockquote>
 
-						<p>
-							یک تخمین‌گر بیشینه احتمال بر مبنای توزیع احتمالی توام ارائه شده است
-						</p>
+			</section>
 
-						<blockquote class="math-block">
-							$
-							P(I|E) \propto \Sigma_j P(I|O_j) P(O_j|E) P(I|S) P(S|E)
-							$
-						</blockquote>
-						
-						<ul>
-							<li>
-								برای تخمین مقدار بهینه پارامترهای
-								<span class="math-inline">
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<h6 style="font-size: 35px;">
+					«
+					ادامه
+					»
+				</h6>
+
+				<p>
+					یک تخمین‌گر بیشینه احتمال بر مبنای توزیع احتمالی توام ارائه شده است
+				</p>
+
+				<blockquote class="math-block">
+					$
+					P(I|E) \propto \Sigma_j P(I|O_j) P(O_j|E) P(I|S) P(S|E)
+					$
+				</blockquote>
+
+				<ul>
+					<li>
+						برای تخمین مقدار بهینه پارامترهای
+						<span class="math-inline">
 								$\psi$
 								</span>
-								،
-								<span class="math-inline">
+						،
+						<span class="math-inline">
 								$\rho$
 								</span>
-								و
-								<span class="math-inline">
+						و
+						<span class="math-inline">
 								$\theta$
 								</span>
-								از روش
-								«
-								<span class="fragment highlight-green">
+						از روش
+						«
+						<span class="fragment highlight-green">
 								انتقال پیام متغیر
 								</span>
-								»
-								استفاده شده است
-							</li>
-							<li>
-								برای تخمین مقدار بهینه پارامترهای
-								<span class="math-inline">
+						»
+						استفاده شده است
+					</li>
+					<li>
+						برای تخمین مقدار بهینه پارامترهای
+						<span class="math-inline">
 								$\pi$
 								</span>
-								،
-								<span class="math-inline">
+						،
+						<span class="math-inline">
 								$\beta$
 								</span>
-								و
-								<span class="math-inline">
+						و
+						<span class="math-inline">
 								$\lambda$
 								</span>
-								از روش
-								«
-								<span class="fragment highlight-green">
+						از روش
+						«
+						<span class="fragment highlight-green">
 								نمونه‌برداری گیبس
 								</span>
-								»
-								استفاده شده است
-							</li>
-						</ul>
+						»
+						استفاده شده است
+					</li>
+				</ul>
 
-					</section>
+			</section>
 
-					<section>
-						<h3>
-							مدل مولد
-						</h3>
-						<blockquote>
-							نتایج
-						</blockquote>
-						<figure>
-							<img src="Imgs/scenepgm4.png" style="width: 50%;">
-							<figcaption class="figure_caption">
+			<section>
+				<h3>
+					مدل مولد
+				</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
+				<figure>
+					<img src="Imgs/scenepgm4.png" style="width: 50%;">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[5]
 								</span>
-								شکل ۴. ماتریس‌ درهم‌ریختگی مدل
-							</figcaption>
-						</figure>
-					</section>
+						شکل ۴. ماتریس‌ درهم‌ریختگی مدل
+					</figcaption>
+				</figure>
+			</section>
 
 
 
-					<section>
-						<h3>
-							روش‌های مبتنی بر شبکه‌های عصبی
-						</h3>
-						<blockquote>
-							در این دسته از روش‌ها، تصاویر ورودی، با استفاده از شبکه‌های عصبی عمیق به فضای ویژگی‌ها نگاشت می‌شوند
-						</blockquote>
-						<p class="fragment zoom-in">
-							در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم
-						</p>
-					</section>
+			<section>
+				<h3>
+					روش‌های مبتنی بر شبکه‌های عصبی
+				</h3>
+				<blockquote>
+					در این دسته از روش‌ها، تصاویر ورودی، با استفاده از شبکه‌های عصبی عمیق به فضای ویژگی‌ها نگاشت می‌شوند
+				</blockquote>
+				<p class="fragment zoom-in">
+					در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم
+				</p>
+			</section>
 
-						<section>
-							<h3>
+			<section>
+				<h3>
 								<span class="cite">
 									[6]
 								</span>
-								اختصاص معنا به قسمت‌های مختلف تصویر
-							</h3>
-							<ul>
-								<li class="fragment fade-right">نواحی مختلف تصویر که شامل تصویر یک جسم هستند استخراج می‌شود</li>
-								<li class="fragment fade-right">به هر یک از نواحی استخراج شده، یک برچسب اختصاص داده می‌شود</li>
-								<li class="fragment fade-right">نواحی استخراج شده به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند</li>
-							</ul>
-						</section>
+					اختصاص معنا به قسمت‌های مختلف تصویر
+				</h3>
+				<ul>
+					<li class="fragment fade-right">نواحی مختلف تصویر که شامل تصویر یک جسم هستند استخراج می‌شود</li>
+					<li class="fragment fade-right">به هر یک از نواحی استخراج شده، یک برچسب اختصاص داده می‌شود</li>
+					<li class="fragment fade-right">نواحی استخراج شده به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند</li>
+				</ul>
+			</section>
 
-					<section>
-						<h3>
-							اختصاص معنا به قسمت‌های مختلف تصویر
-						</h3>
-						<div class="extra-container">
-							<blockquote class="right-container fragment highlight-current-green">
-								ناحیه‌بندی تصویر
-							</blockquote>
-							<blockquote class="left-container fragment highlight-current-green">
-								استخراج ویژگی برای هر ناحیه
-							</blockquote>
-							<blockquote class="center-container fragment highlight-current-green">
-								دسته‌بندی
-							</blockquote>
-						</div>
-						
-						<figure>
-							<img src="Imgs/sceneann1.png">
-							<figcaption class="figure_caption">
+			<section>
+				<h3>
+					اختصاص معنا به قسمت‌های مختلف تصویر
+				</h3>
+				<div class="extra-container">
+					<blockquote class="right-container fragment highlight-current-green">
+						ناحیه‌بندی تصویر
+					</blockquote>
+					<blockquote class="left-container fragment highlight-current-green">
+						استخراج ویژگی برای هر ناحیه
+					</blockquote>
+					<blockquote class="center-container fragment highlight-current-green">
+						دسته‌بندی
+					</blockquote>
+				</div>
+
+				<figure>
+					<img src="Imgs/sceneann1.png">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[6]
 								</span>
-								شکل ۵. مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
-							</figcaption>
-						</figure>
+						شکل ۵. مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+					</figcaption>
+				</figure>
 
-					</section>
-					<section>
-						<h3>
-							اختصاص معنا به قسمت‌های مختلف تصویر
-						</h3>
+			</section>
+			<section>
+				<h3>
+					اختصاص معنا به قسمت‌های مختلف تصویر
+				</h3>
+				<p>
+					طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی
+				</p>
+				<ol>
+					<li>
+						ناحیه‌بندی اولیه تصویر به نواحی بسیار کوچک
+					</li>
+					<li>
+						توسعه نواحی از طریق ترکیب نواحی مشابه
+					</li>
+				</ol>
+				<div class="extra-container">
+					<blockquote class="right-container">
 						<p>
-							طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی
+							چالش‌ها
 						</p>
-						<ol>
-							<li>
-								ناحیه‌بندی اولیه تصویر به نواحی بسیار کوچک
-							</li>
-							<li>
-								توسعه نواحی از طریق ترکیب نواحی مشابه
-							</li>
-						</ol>
-						<div class="extra-container">
-							<blockquote class="right-container">
-								<p>
-									چالش‌ها
-								</p>
-								<ul>
-									<li class="fragment highlight-current-red" data-fragment-index="1">استخراج نواحی با ابعاد مختلف</li>
-									<li class="fragment highlight-current-red" data-fragment-index="3">ارائه نواحی مناسب در شرایط مختلف</li>
-								</ul>
-							</blockquote>
-							<blockquote class="left-container">
-								<p>
-									راه‌حل‌ها
-								</p>
-								<ul>
-									<li class="fragment highlight-current-green" data-fragment-index="2">ناحیه‌بندی سلسله‌مراتبی</li>
-									<li class="fragment highlight-current-green" data-fragment-index="4">استفاده از ویژگی‌های مختلف برای مشابهت نواحی</li>
-								</ul>
-							</blockquote>
-						</div>
-					</section>
-					
-					
-					<section>
-						<h3>
-							اختصاص معنا به قسمت‌های مختلف تصویر
-						</h3>
-	‍‍					<p class="fragment">
-						استفاده از یک شبکه عصبی کانولوشنی که برای هر ناحیه یک بردار ویژگی استخراج کند
+						<ul>
+							<li class="fragment highlight-current-red" data-fragment-index="1">استخراج نواحی با ابعاد مختلف</li>
+							<li class="fragment highlight-current-red" data-fragment-index="3">ارائه نواحی مناسب در شرایط مختلف</li>
+						</ul>
+					</blockquote>
+					<blockquote class="left-container">
+						<p>
+							راه‌حل‌ها
 						</p>
+						<ul>
+							<li class="fragment highlight-current-green" data-fragment-index="2">ناحیه‌بندی سلسله‌مراتبی</li>
+							<li class="fragment highlight-current-green" data-fragment-index="4">استفاده از ویژگی‌های مختلف برای مشابهت نواحی</li>
+						</ul>
+					</blockquote>
+				</div>
+			</section>
 
-						<blockquote class="fragment">
-							شبکه عصبی کانولوشنی
-							<span class="fragment highlight-green">
+
+			<section>
+				<h3>
+					اختصاص معنا به قسمت‌های مختلف تصویر
+				</h3>
+				‍‍					<p class="fragment">
+				استفاده از یک شبکه عصبی کانولوشنی که برای هر ناحیه یک بردار ویژگی استخراج کند
+			</p>
+
+				<blockquote class="fragment">
+					شبکه عصبی کانولوشنی
+					<span class="fragment highlight-green">
 							کریشفسکی
 							</span>
-						</blockquote>
+				</blockquote>
 
-						<ul class="fragment">
-							<li>
-								شبکه از پیش آموزش ‌دیده
-							</li>
-							<li>
-								د ر چالش ImgaNet کارکرد خوبی داشته است
-							</li>
-						</ul>
+				<ul class="fragment">
+					<li>
+						شبکه از پیش آموزش ‌دیده
+					</li>
+					<li>
+						د ر چالش ImgaNet کارکرد خوبی داشته است
+					</li>
+				</ul>
 
-						<blockquote class="fragment">
-							دسته‌بندی با استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته انجام می‌شود
-						</blockquote>
-					</section>
+				<blockquote class="fragment">
+					دسته‌بندی با استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته انجام می‌شود
+				</blockquote>
+			</section>
 
 
-					<section>
-						<h3>
-							اختصاص معنا به قسمت‌های مختلف
-						</h3>
-						<blockquote>
-							نتایج
-						</blockquote>
-						<figure>
-							<img src="Imgs/sceneann2.png">
-							<figcaption class="figure_caption">
+			<section>
+				<h3>
+					اختصاص معنا به قسمت‌های مختلف
+				</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
+				<figure>
+					<img src="Imgs/sceneann2.png">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[6]
 								</span>
-								شکل ۶. نواحی استخراج شده توسط روش شبکه عصبی کانولوشنی ناحیه‌ای
-							</figcaption>
-						</figure>
-					</section>
+						شکل ۶. نواحی استخراج شده توسط روش شبکه عصبی کانولوشنی ناحیه‌ای
+					</figcaption>
+				</figure>
+			</section>
 
-					<section>
-						<h3>
-							اختصاص معنا به قسمت‌های مختلف
-						</h3>
-						<blockquote>
-							نتایج
-						</blockquote>
-						
-						<figure>
-							<figcaption class="figure_caption">
+			<section>
+				<h3>
+					اختصاص معنا به قسمت‌های مختلف
+				</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
+
+				<figure>
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[6]
 								</span>
-								جدول ۴. نتایج به‌دست‌آمده از تخصیص برچسب به اجسام در مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
-							</figcaption>
-							<table class="table table-responsive">
-								<thead>
-								<tr>
-									<td>هواپیما</td>
-									<td>دوچرخه</td>
-									<td>پرنده</td>
-									<td>قایق</td>
-									<td>بطری</td>
-									<td>اتوبوس</td>
-									<td>ماشین</td>
-									<td>گربه</td>
-									<td>صندلی</td>
-									<td>گاو</td>
-								</tr>
-								</thead>
-								<tr>
-									<td>71.8</td>
-									<td>65.8</td>
-									<td>53.0</td>
-									<td>36.8</td>
-									<td>35.9</td>
-									<td>59.7</td>
-									<td>60.0</td>
-									<td>69.9</td>
-									<td>27.9</td>
-									<td>50.6</td>
-								</tr>
-							</table>
-							<table class="table table-responsive">
-								<thead>
-								<tr>
-									<td>میز</td>
-									<td>سگ</td>
-									<td>اسب</td>
-									<td>موتور</td>
-									<td>انسان</td>
-									<td>گیاه</td>
-									<td>گوسفند</td>
-									<td>کاناپه</td>
-									<td>قطار</td>
-									<td>مانیتور</td>
-								</tr>
-								</thead>
-								<tr>
-									<td>41.4</td>
-									<td>70.0</td>
-									<td>62.0</td>
-									<td>69.0</td>
-									<td>58.1</td>
-									<td>29.5</td>
-									<td>59.4</td>
-									<td>39.3</td>
-									<td>61.2</td>
-									<td>52.4</td>
-								</tr>
-							</table>
-						</figure>
+						جدول ۴. نتایج به‌دست‌آمده از تخصیص برچسب به اجسام در مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+					</figcaption>
+					<table class="table table-responsive">
+						<thead>
+						<tr>
+							<td>هواپیما</td>
+							<td>دوچرخه</td>
+							<td>پرنده</td>
+							<td>قایق</td>
+							<td>بطری</td>
+							<td>اتوبوس</td>
+							<td>ماشین</td>
+							<td>گربه</td>
+							<td>صندلی</td>
+							<td>گاو</td>
+						</tr>
+						</thead>
+						<tr>
+							<td>71.8</td>
+							<td>65.8</td>
+							<td>53.0</td>
+							<td>36.8</td>
+							<td>35.9</td>
+							<td>59.7</td>
+							<td>60.0</td>
+							<td>69.9</td>
+							<td>27.9</td>
+							<td>50.6</td>
+						</tr>
+					</table>
+					<table class="table table-responsive">
+						<thead>
+						<tr>
+							<td>میز</td>
+							<td>سگ</td>
+							<td>اسب</td>
+							<td>موتور</td>
+							<td>انسان</td>
+							<td>گیاه</td>
+							<td>گوسفند</td>
+							<td>کاناپه</td>
+							<td>قطار</td>
+							<td>مانیتور</td>
+						</tr>
+						</thead>
+						<tr>
+							<td>41.4</td>
+							<td>70.0</td>
+							<td>62.0</td>
+							<td>69.0</td>
+							<td>58.1</td>
+							<td>29.5</td>
+							<td>59.4</td>
+							<td>39.3</td>
+							<td>61.2</td>
+							<td>52.4</td>
+						</tr>
+					</table>
+				</figure>
 
-						<blockquote>
-							میانگین دقت:
-							<span class="fragment highlight-green">
+				<blockquote>
+					میانگین دقت:
+					<span class="fragment highlight-green">
 								53.7
 							</span>
 
-						</blockquote>
-					</section>
-					
-					<section>
-							<h3>
+				</blockquote>
+			</section>
+
+			<section>
+				<h3>
 								<span class="cite">
 									[7]
 								</span>
-								نگاشت دوطرفه تصاویر و جملات
-							</h3>
-						
-						<ul style="width:80%;">
-							<li>ارائه نگاشت دوطرفه عمیق برای بازیابی تصاویر و جملات</li>
-							<li>ارائه یک تابع هدف و تخمین پارامترها با روش‌های بهینه‌سازی</li>
-						</ul>
-						
-						<figure>
-							<img src="Imgs/sceneann3.png" style="width: 80%;">
-							<figcaption class="figure_caption">
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
+
+				<ul style="width:80%;">
+					<li>ارائه نگاشت دوطرفه عمیق برای بازیابی تصاویر و جملات</li>
+					<li>ارائه یک تابع هدف و تخمین پارامترها با روش‌های بهینه‌سازی</li>
+				</ul>
+
+				<figure>
+					<img src="Imgs/sceneann3.png" style="width: 80%;">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[7]
 								</span>
-								شکل ۷. نمای کلی از مدل نگاشت دوطرفه تصاویر و جملات
-							</figcaption>
-						</figure>
-					</section>
+						شکل ۷. نمای کلی از مدل نگاشت دوطرفه تصاویر و جملات
+					</figcaption>
+				</figure>
+			</section>
 
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
 
-						<ul>
-							<li>
-								استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
+				<ul>
+					<li>
+						استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
 
-								<div class="extra-container">
-									<blockquote class="right-container">
-										انتخاب 20 ناحیه از تصویر
-									</blockquote>
-									<blockquote class="left-container">
-										۴۰۹۶ ویژگی برای هر ناحیه
-									</blockquote>
-								</div>
-							</li>
-						</ul>
-
-						<figure>
-							<img src="Imgs/sceneann4.png" style="width: 80%;">
-							<figcaption class="figure_caption">
-								<span class="cite">
-									[7]
-								</span>
-								شکل ۸. محاسبه شباهت نواحی تصاویر با عبارات مختلف از جمله
-							</figcaption>
-						</figure>
-					</section>
-
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
-
-						<ul>
-							<li>
-								نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر
-								<blockquote class="math-block">
-									$
-									\nu = W_m[RCNN_{\theta_c}(I_b)] + b_m
-									$
-								</blockquote>
-							</li>
-						</ul>
-
-						<blockquote class="extra-container">
-							استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف
-
+						<div class="extra-container">
 							<blockquote class="right-container">
-							هم‌ترازسازی سراسری
+								انتخاب 20 ناحیه از تصویر
 							</blockquote>
-
 							<blockquote class="left-container">
-							هم‌ترازسازی ناحیه‌ای
+								۴۰۹۶ ویژگی برای هر ناحیه
 							</blockquote>
-						</blockquote>
+						</div>
+					</li>
+				</ul>
 
-					</section>
-
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
-
-						<p>
-							هم‌ترازسازی سراسری
-						</p>
-
-						<blockquote class="fragment">
-								شباهت بین یک تصویر و یک جمله بیشینه شود اگر و تنها اگر شباهت تصویر و جمله در واقعیت نیز بیشینه باشد
-						</blockquote>
-
-						<ul>
-							<li class="fragment fade-up">
-								تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
-								<blockquote class="math-block">
-									$
-									S_{kl} = \frac{1}{|g_k| (|g_l| + n)} \Sigma_{i \in g_k}\Sigma_{j\in g_l}max(0,\nu_i^T\cdot s_j)
-									$
-								</blockquote>
-							</li>
-							<li class="fragment fade-up">
-								رابطه کلی تابع هدف هم‌ترازسازی سراسری
-								<blockquote class="math-block">
-									\begin{equation}
-									\begin{split}
-									C_G(\Theta) = \Sigma_k(
-									&\Sigma_l max(0, S_{kl} - S{kk} + \Delta) \\
-									&+
-									\Sigma_l max(0, S_{lk} - S{kk} + \Delta)
-									)
-									\end{split}
-									\end{equation}
-								</blockquote>
-							</li>
-						</ul>
-
-					</section>
-
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
-
-						<p>
-							هم‌ترازسازی ناحیه‌ای
-						</p>
-
-						<blockquote class="fragment" style="font-size: 30px;">
-						اگر یک جمله با یک تصویر شباهت زیادی پیدا کرد، حداقل یک ناحیه در تصویر باشد که با یک عبارت از جمله شباهت زیادی داشته باشد و بقیه نواحی با آن عبارت شباهت کمی داشته باشند
-						</blockquote>
-
-						<p class="fragment">
-							شرایط رد فرض بالا
-						</p>
-
-						<ol class="fragment">
-							<li class="fragment highlight-red">
-								ناحیه متشابه با عبارت، استخراج نشده باشد
-							</li>
-							<li class="fragment highlight-red">
-								عبارت موجود به هیچ بخشی از ویژگی‌های بصری تصویر اشاره نکند
-							</li>
-							<li class="fragment highlight-red">
-								عبارت توصیف کننده در هیچ یک از تصاویر دیگر تکرار نشده باشد
-							</li>
-						</ol>
-						
-					</section>
-
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
-
-						<ul>
-							<li class="fragment highlight-current-green">
-								تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
-								<blockquote class="math-block">
-									$
-									C_0(\Theta) = \Sigma_i \Sigma_j max(0 , 1 - y_{ij} \nu_i^T \cdot s_j)
-									$
-								</blockquote>
-							</li>
-							<li class="fragment highlight-current-green" >
-								رابطه کلی تابع هدف هم‌ترازسازی سراسری
-								<blockquote class="math-block">
-									\begin{equation}
-									\begin{split}
-									&C_F(\Theta) = min_{y_{ij}} C_0(\Theta)
-									\\
-									&s.t. \Sigma_{i \in p_j} \frac{y_{ij} + 1}{2} \geq 1 \land
-									y_{ij} = -1, \forall i,j ;
-									\\
-									&m_\nu(i) \neq m_s(j) \land y_{ij} \in \{+1, -1\}
-									\end{split}
-									\end{equation}
-								</blockquote>
-							</li>
-						</ul>
-
-					</section>
-
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
-
-						<figure>
-							<img src="Imgs/sceneann5.png">
-							<figcaption class="figure_caption">
+				<figure>
+					<img src="Imgs/sceneann4.png" style="width: 80%;">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[7]
 								</span>
-								شکل ۹. محاسبه شباهت جملات و تصاویر
-							</figcaption>
-						</figure>
-					</section>
+						شکل ۸. محاسبه شباهت نواحی تصاویر با عبارات مختلف از جمله
+					</figcaption>
+				</figure>
+			</section>
 
-					<section>
-						<h3>
-							ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
-						</h3>
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
 
-						<blockquote>
-							نتایج
+				<ul>
+					<li>
+						نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر
+						<blockquote class="math-block">
+							$
+							\nu = W_m[RCNN_{\theta_c}(I_b)] + b_m
+							$
 						</blockquote>
+					</li>
+				</ul>
 
-						<figure>
-							<img src="Imgs/sceneann6.png">
-							<figcaption class="figure_caption">
+				<blockquote class="extra-container">
+					استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف
+
+					<blockquote class="right-container">
+						هم‌ترازسازی سراسری
+					</blockquote>
+
+					<blockquote class="left-container">
+						هم‌ترازسازی ناحیه‌ای
+					</blockquote>
+				</blockquote>
+
+			</section>
+
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
+
+				<p>
+					هم‌ترازسازی سراسری
+				</p>
+
+				<blockquote class="fragment">
+					شباهت بین یک تصویر و یک جمله بیشینه شود اگر و تنها اگر شباهت تصویر و جمله در واقعیت نیز بیشینه باشد
+				</blockquote>
+
+				<ul>
+					<li class="fragment fade-up">
+						تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
+						<blockquote class="math-block">
+							$
+							S_{kl} = \frac{1}{|g_k| (|g_l| + n)} \Sigma_{i \in g_k}\Sigma_{j\in g_l}max(0,\nu_i^T\cdot s_j)
+							$
+						</blockquote>
+					</li>
+					<li class="fragment fade-up">
+						رابطه کلی تابع هدف هم‌ترازسازی سراسری
+						<blockquote class="math-block">
+							\begin{equation}
+							\begin{split}
+							C_G(\Theta) = \Sigma_k(
+							&\Sigma_l max(0, S_{kl} - S{kk} + \Delta) \\
+							&+
+							\Sigma_l max(0, S_{lk} - S{kk} + \Delta)
+							)
+							\end{split}
+							\end{equation}
+						</blockquote>
+					</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
+
+				<p>
+					هم‌ترازسازی ناحیه‌ای
+				</p>
+
+				<blockquote class="fragment" style="font-size: 30px;">
+					اگر یک جمله با یک تصویر شباهت زیادی پیدا کرد، حداقل یک ناحیه در تصویر باشد که با یک عبارت از جمله شباهت زیادی داشته باشد و بقیه نواحی با آن عبارت شباهت کمی داشته باشند
+				</blockquote>
+
+				<p class="fragment">
+					شرایط رد فرض بالا
+				</p>
+
+				<ol class="fragment">
+					<li class="fragment highlight-red">
+						ناحیه متشابه با عبارت، استخراج نشده باشد
+					</li>
+					<li class="fragment highlight-red">
+						عبارت موجود به هیچ بخشی از ویژگی‌های بصری تصویر اشاره نکند
+					</li>
+					<li class="fragment highlight-red">
+						عبارت توصیف کننده در هیچ یک از تصاویر دیگر تکرار نشده باشد
+					</li>
+				</ol>
+
+			</section>
+
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
+
+				<ul>
+					<li class="fragment highlight-current-green">
+						تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله
+						<blockquote class="math-block">
+							$
+							C_0(\Theta) = \Sigma_i \Sigma_j max(0 , 1 - y_{ij} \nu_i^T \cdot s_j)
+							$
+						</blockquote>
+					</li>
+					<li class="fragment highlight-current-green" >
+						رابطه کلی تابع هدف هم‌ترازسازی سراسری
+						<blockquote class="math-block">
+							\begin{equation}
+							\begin{split}
+							&C_F(\Theta) = min_{y_{ij}} C_0(\Theta)
+							\\
+							&s.t. \Sigma_{i \in p_j} \frac{y_{ij} + 1}{2} \geq 1 \land
+							y_{ij} = -1, \forall i,j ;
+							\\
+							&m_\nu(i) \neq m_s(j) \land y_{ij} \in \{+1, -1\}
+							\end{split}
+							\end{equation}
+						</blockquote>
+					</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
+
+				<figure>
+					<img src="Imgs/sceneann5.png">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[7]
 								</span>
-								شکل 10. نتایج تولید جمله برای تصاویر ورودی
-							</figcaption>
-						</figure>
+						شکل ۹. محاسبه شباهت جملات و تصاویر
+					</figcaption>
+				</figure>
+			</section>
 
-					</section>
+			<section>
+				<h3>
+					ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر
+				</h3>
 
-					<section>
-						<h3>
-							نگاشت دوطرفه تصاویر و جملات
-						</h3>
+				<blockquote>
+					نتایج
+				</blockquote>
 
-						<blockquote>
-							نتایج
-						</blockquote>
-
-						<figure>
-							<img src="Imgs/sceneann7.png" style="width: 80%;">
-							<figcaption class="figure_caption">
+				<figure>
+					<img src="Imgs/sceneann6.png">
+					<figcaption class="figure_caption">
 								<span class="cite">
 									[7]
 								</span>
-								شکل 11. نتایج جستجوی تصاویر مطابق با عبارت ورودی
-							</figcaption>
-						</figure>
+						شکل 10. نتایج تولید جمله برای تصاویر ورودی
+					</figcaption>
+				</figure>
 
-					</section>
+			</section>
 
-					<!--<section>-->
-						<!--<h3>-->
-							<!--ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر-->
-						<!--</h3>-->
+			<section>
+				<h3>
+					نگاشت دوطرفه تصاویر و جملات
+				</h3>
 
-						<!--<blockquote>-->
-							<!--نتایج-->
-						<!--</blockquote>-->
+				<blockquote>
+					نتایج
+				</blockquote>
 
-						<!--<figure>-->
-							<!--<figcaption>-->
-								<!--جدول 5. نتایج مدل ......-->
-							<!--</figcaption>-->
-							<!--<table>-->
-								<!--<thead>-->
-									<!--<tr>-->
-										<!--<td>-->
-											<!--مدل-->
-										<!--</td>-->
-										<!--<td>-->
-											<!--دقت-->
-										<!--</td>-->
-									<!--</tr>-->
-								<!--</thead>-->
-							<!--</table>-->
-						<!--</figure>-->
+				<figure>
+					<img src="Imgs/sceneann7.png" style="width: 80%;">
+					<figcaption class="figure_caption">
+								<span class="cite">
+									[7]
+								</span>
+						شکل 11. نتایج جستجوی تصاویر مطابق با عبارت ورودی
+					</figcaption>
+				</figure>
 
-					<!--</section>-->
+			</section>
+
+			<!--<section>-->
+			<!--<h3>-->
+			<!--ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر-->
+			<!--</h3>-->
+
+			<!--<blockquote>-->
+			<!--نتایج-->
+			<!--</blockquote>-->
+
+			<!--<figure>-->
+			<!--<figcaption>-->
+			<!--جدول 5. نتایج مدل ......-->
+			<!--</figcaption>-->
+			<!--<table>-->
+			<!--<thead>-->
+			<!--<tr>-->
+			<!--<td>-->
+			<!--مدل-->
+			<!--</td>-->
+			<!--<td>-->
+			<!--دقت-->
+			<!--</td>-->
+			<!--</tr>-->
+			<!--</thead>-->
+			<!--</table>-->
+			<!--</figure>-->
+
+			<!--</section>-->
 
 
-				</section>
+		</section>
 
 
-				<section data-background="#004455"  data-state="chapter_sentence">
-					<section>
-						<h3>
-							تولید جمله
-						</h3>
-						<p>
-							چهار روش کلی برای این بخش ارائه شده است
-						</p>
-						<blockquote>
-							<ol>
-								<li>استفاده از شبیه‌ترین جمله موجود در مجموعه‌داده</li>
-								<li>استفاده از شبیه‌ترین عبارات موجود در مجموعه داده و ساخت جمله با کنارهم قرار دادن
-									آن‌ها
-								</li>
-								<li>استفاده از قالب‌‌‌های آماده و جایگزینی برخی از کلمات با بهترین انتخاب‌های ممکن</li>
-								<li>استفاده از شبکه‌های عصبی بازگشتی برای ساخت جملات جدید</li>
-							</ol>
-						</blockquote>
-					</section>
-					<section>
-						<h3>
-							استفاده از شبیه‌ترین جمله موجود
-						</h3>
-						<ul>
-							<li>پیاده‌سازی ساده‌ای دارد</li>
-							<li>ممکن است بهترین جمله، توصیف‌گر خوبی نباشد</li>
-							<li>نیاز به وجود تعداد زیادی جمله از پیش نوشته شده دارد</li>
-							<li>سرعت پایینی دارد</li>
-						</ul>
-					</section>
-					<section>
-						<h3>
-							استفاده از بهترین عبارات موجود
-						</h3>
-						<ul>
-							<li>شکستن جمله به عبارات معنادار</li>
-							<li>تعداد عبارات موجود بسیار زیاد است</li>
-							<li>کنار هم قرار دادن عبارات برای ساخت جمله ممکن است جمله صحیحی ایجاد نکند</li>
-							<li>توصیف‌های بهتری نسبت به روش قبلی ارائه می‌دهند</li>
-							<li>سرعت پایینی دارد</li>
-						</ul>
-					</section>
-					<section>
-						<h3>
-							استفاده از قالب‌های آماده
-						</h3>
-						<ul>
-							<li>یک قالب خبری مورد استفاده قرار می‌گیرد.</li>
-							<li>جملات تولید شده همگی یک شکل هستند و مورد پسند خواننده قرار نمی‌گیرند.</li>
-							<li>سرعت بالایی دارد.</li>
-							<li>توصیف‌های خوبی ارائه می‌دهد.</li>
-						</ul>
-					</section>
-					<section>
-						<h3>
+		<section data-background="#004455"  data-state="chapter_sentence">
+			<section>
+				<h3>
+					تولید جمله
+				</h3>
+				<p>
+					چهار روش کلی برای این بخش ارائه شده است
+				</p>
+				<blockquote>
+					<ol>
+						<li>استفاده از شبیه‌ترین جمله موجود در مجموعه‌داده</li>
+						<li>استفاده از شبیه‌ترین عبارات موجود در مجموعه داده و ساخت جمله با کنارهم قرار دادن
+							آن‌ها
+						</li>
+						<li>استفاده از قالب‌‌‌های آماده و جایگزینی برخی از کلمات با بهترین انتخاب‌های ممکن</li>
+						<li>استفاده از شبکه‌های عصبی بازگشتی برای ساخت جملات جدید</li>
+					</ol>
+				</blockquote>
+			</section>
+			<section>
+				<h3>
+					استفاده از شبیه‌ترین جمله موجود
+				</h3>
+				<ul>
+					<li>پیاده‌سازی ساده‌ای دارد</li>
+					<li>ممکن است بهترین جمله، توصیف‌گر خوبی نباشد</li>
+					<li>نیاز به وجود تعداد زیادی جمله از پیش نوشته شده دارد</li>
+					<li>سرعت پایینی دارد</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					استفاده از بهترین عبارات موجود
+				</h3>
+				<ul>
+					<li>شکستن جمله به عبارات معنادار</li>
+					<li>تعداد عبارات موجود بسیار زیاد است</li>
+					<li>کنار هم قرار دادن عبارات برای ساخت جمله ممکن است جمله صحیحی ایجاد نکند</li>
+					<li>توصیف‌های بهتری نسبت به روش قبلی ارائه می‌دهند</li>
+					<li>سرعت پایینی دارد</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					استفاده از قالب‌های آماده
+				</h3>
+				<ul>
+					<li>یک قالب خبری مورد استفاده قرار می‌گیرد.</li>
+					<li>جملات تولید شده همگی یک شکل هستند و مورد پسند خواننده قرار نمی‌گیرند.</li>
+					<li>سرعت بالایی دارد.</li>
+					<li>توصیف‌های خوبی ارائه می‌دهد.</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
 							<span class="cite">
 									[8]
 							</span>
-							استفاده از شبکه‌های عصبی بازگشتی
-						</h3>
-						<ul>
-							<li>کلمه بعدی را با در نظر گرفتن کلمات قبلی تشخیص می‌دهند.</li>
-							<li>جمله تولید شده ممکن است کامل نباشد.</li>
-							<li>جملات جدیدی تولید می‌کند</li>
-							<li>سرعت بالایی دارد</li>
+					استفاده از شبکه‌های عصبی بازگشتی
+				</h3>
+				<ul>
+					<li>کلمه بعدی را با در نظر گرفتن کلمات قبلی تشخیص می‌دهند.</li>
+					<li>جمله تولید شده ممکن است کامل نباشد.</li>
+					<li>جملات جدیدی تولید می‌کند</li>
+					<li>سرعت بالایی دارد</li>
+				</ul>
+			</section>
+		</section>
+
+
+		<section>
+			<section data-background="#003333" data-state="chapter_conclusion">
+				<h3>
+					جمع‌بندی
+				</h3>
+
+
+				<!--start-->
+				<div id="ninja-slider">
+					<div class="slider-inner">
+						<ul style="width: 100%; height: 100%;">
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc1.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc2.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc3.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc4.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc5.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc6.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc7.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc8.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc9.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc10.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc11.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc12.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc13.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc14.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc15.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc16.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc17.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc18.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc19.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
+							<li>
+								<a class="ns-img" href="Imgs/Slider/conc20.png"></a>
+								<!--<div class="caption cap1 cap2">@colerise</div>-->
+							</li>
 						</ul>
-					</section>
-				</section>
-
-
-				<section>
-					<section data-background="#003333" data-state="chapter_conclusion">
-						<h3>
-							جمع‌بندی
-						</h3>
-
-
-						<!--start-->
-						<div id="ninja-slider">
-							<div class="slider-inner">
-								<ul style="width: 100%; height: 100%;">
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc1.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc2.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc3.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc4.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc5.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc6.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc7.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc8.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc9.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc10.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc11.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc12.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc13.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc14.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc15.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc16.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc17.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc18.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc19.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-									<li>
-										<a class="ns-img" href="Imgs/Slider/conc20.png"></a>
-										<!--<div class="caption cap1 cap2">@colerise</div>-->
-									</li>
-								</ul>
-							</div>
-						</div>
-					<!--end-->
+					</div>
+				</div>
+				<!--end-->
 
 
 
-					</section>
-					<section data-background="#001111" data-state="chapter_refs">
-						<h3>
-							منابع و مراجع
-						</h3>
+			</section>
+			<section data-background="#001111" data-state="chapter_refs">
+				<h3>
+					منابع و مراجع
+				</h3>
 
-						<div class="ref fragment highlight-current-blue" data-fragment-index="1">
-							[1]
-							Potter, Mary C. Short-term conceptual memory for pictures. Journal of experimental
-							psychology: human learning and memory, 2(5):509, 1976.
-						</div>
-						<div class="ref fragment highlight-current-blue" data-fragment-index="1">
-							[2]
-							Potter, Mary C, Staub, Adrian, Rado, Janina, and O’Connor, Daniel H. Recognition
-							memory for briefly presented pictures: the time course of rapid forgetting. Journal of
-							Experimental Psychology: Human Perception and Performance, 28(5):1163, 2002.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[3]
-							Farhadi, Ali, Hejrati, Mohsen, Sadeghi, Mohammad Amin, Young, Peter, Rashtchian,
-							Cyrus, Hockenmaier, Julia, and Forsyth, David. Every picture tells a story: Generating
-							sentences from images. in Computer Vision–ECCV 2010, pp. 15–29. Springer, 2010.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[4]
-							Fidler, Sanja, Sharma, Abhishek, and Urtasun, Raquel. A sentence is worth a thou-
-							sand pixels. in Proceedings of the IEEE Conference on Computer Vision and Pattern
-							Recognition, pp. 1995–2002, 2013.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[5]
-							Li, Li-Jia and Fei-Fei, Li. What, where and who? classifying events by scene and
-							object recognition. in Computer Vision, 2007. ICCV 2007. IEEE 11th International
-							Conference on, pp. 1–8. IEEE, 2007.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[6]
-							Girshick, Ross, Donahue, Jeff, Darrell, Trevor, and Malik, Jitendra. Rich feature hierar-
-							chies for accurate object detection and semantic segmentation. in The IEEE Conference
-							on Computer Vision and Pattern Recognition (CVPR), June 2014.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[7]
-							Karpathy, Andrej, Joulin, Armand, and Li, Fei Fei F. Deep fragment embeddings for
-							bidirectional image sentence mapping. in Advances in neural information processing
-							systems, pp. 1889–1897, 2014.
-						</div>
-						<div class="ref fragment highlight-current-blue">
-							[8]
-							Sutskever, Ilya, James Martens, and Geoffrey E. Hinton. "Generating text with recurrent neural networks." Proceedings of the 28th International Conference on Machine Learning (ICML-11). 2011.
-						</div>
-					</section>
-				</section>
-			</div>
+				<div class="ref fragment highlight-current-blue" data-fragment-index="1">
+					[1]
+					Potter, Mary C. Short-term conceptual memory for pictures. Journal of experimental
+					psychology: human learning and memory, 2(5):509, 1976.
+				</div>
+				<div class="ref fragment highlight-current-blue" data-fragment-index="1">
+					[2]
+					Potter, Mary C, Staub, Adrian, Rado, Janina, and O’Connor, Daniel H. Recognition
+					memory for briefly presented pictures: the time course of rapid forgetting. Journal of
+					Experimental Psychology: Human Perception and Performance, 28(5):1163, 2002.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[3]
+					Farhadi, Ali, Hejrati, Mohsen, Sadeghi, Mohammad Amin, Young, Peter, Rashtchian,
+					Cyrus, Hockenmaier, Julia, and Forsyth, David. Every picture tells a story: Generating
+					sentences from images. in Computer Vision–ECCV 2010, pp. 15–29. Springer, 2010.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[4]
+					Fidler, Sanja, Sharma, Abhishek, and Urtasun, Raquel. A sentence is worth a thou-
+					sand pixels. in Proceedings of the IEEE Conference on Computer Vision and Pattern
+					Recognition, pp. 1995–2002, 2013.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[5]
+					Li, Li-Jia and Fei-Fei, Li. What, where and who? classifying events by scene and
+					object recognition. in Computer Vision, 2007. ICCV 2007. IEEE 11th International
+					Conference on, pp. 1–8. IEEE, 2007.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[6]
+					Girshick, Ross, Donahue, Jeff, Darrell, Trevor, and Malik, Jitendra. Rich feature hierar-
+					chies for accurate object detection and semantic segmentation. in The IEEE Conference
+					on Computer Vision and Pattern Recognition (CVPR), June 2014.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[7]
+					Karpathy, Andrej, Joulin, Armand, and Li, Fei Fei F. Deep fragment embeddings for
+					bidirectional image sentence mapping. in Advances in neural information processing
+					systems, pp. 1889–1897, 2014.
+				</div>
+				<div class="ref fragment highlight-current-blue">
+					[8]
+					Sutskever, Ilya, James Martens, and Geoffrey E. Hinton. "Generating text with recurrent neural networks." Proceedings of the 28th International Conference on Machine Learning (ICML-11). 2011.
+				</div>
+			</section>
+		</section>
+	</div>
 
 
-        </div>
-		</div>
+</div>
+</div>
 
-		<!--<div id="current_slide_cursor_container">-->
-			<!--<input type="button" id="current_slide" value="صفحه نخست">-->
-		<!--</div>-->
+<!--<div id="current_slide_cursor_container">-->
+<!--<input type="button" id="current_slide" value="صفحه نخست">-->
+<!--</div>-->
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{src: 'plugin/math/math.js',async: true},
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		history: true,
+		// More info https://github.com/hakimel/reveal.js#dependencies
+		dependencies: [
+			{src: 'plugin/math/math.js',async: true},
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
 
-			Reveal.addEventListener( 'ready', function( event ) {
-				// event.currentSlide, event.indexh, event.indexv
-				// Shows the slide number using default formatting
-				Reveal.configure({ slideNumber: true });
+	Reveal.addEventListener( 'ready', function( event ) {
+		// event.currentSlide, event.indexh, event.indexv
+		// Shows the slide number using default formatting
+		Reveal.configure({ slideNumber: true });
 
 // Slide number formatting can be configured using these variables:
 //  "h.v":  horizontal . vertical slide number (default)
 //  "h/v":  horizontal / vertical slide number
 //    "c":  flattened slide number
 //  "c/t":  flattened slide number / total slides
-				Reveal.configure({ slideNumber: 'c/t' });
+		Reveal.configure({ slideNumber: 'c/t' });
 
-				Reveal.configure({backgroundTransition: "zoom"});
+		Reveal.configure({backgroundTransition: "zoom"});
 
 
 //				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
@@ -1678,54 +1680,54 @@
 //				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
 //				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
 //				Reveal.addEventListener('eventchanged', nextSlide(event),false)
-			} );
+	} );
 
-			var currentSlide ;
-			var currentSlideBtn ;
-			function startSlideStates() {
-				// Current slide cursor
-				var wrapper = document.querySelector( '.reveal' );
-				currentSlide = createSingletonNode(wrapper, 'div', 'current_slide',
-						'<button class="current_slide_btn" ></button>');
-				currentSlideBtn = currentSlide.querySelector('button')
+	var currentSlide ;
+	var currentSlideBtn ;
+	function startSlideStates() {
+		// Current slide cursor
+		var wrapper = document.querySelector( '.reveal' );
+		currentSlide = createSingletonNode(wrapper, 'div', 'current_slide',
+				'<button class="current_slide_btn" ></button>');
+		currentSlideBtn = currentSlide.querySelector('button')
 
+	}
+
+	function nextSlide(event) {
+		console.log(event.currentSlide);
+	}
+
+	function changeSlideState(state) {
+		currentSlideBtn.innerHTML = state ;
+	}
+
+	function createSingletonNode( container, tagname, classname, innerHTML ) {
+
+		// Find all nodes matching the description
+		var nodes = container.querySelectorAll( '.' + classname );
+
+		// Check all matches to find one which is a direct child of
+		// the specified container
+		for( var i = 0; i < nodes.length; i++ ) {
+			var testNode = nodes[i];
+			if( testNode.parentNode === container ) {
+				return testNode;
 			}
+		}
 
-			function nextSlide(event) {
-				console.log(event.currentSlide);
-			}
+		// If no node was found, create it now
+		var node = document.createElement( tagname );
+		node.classList.add( classname );
+		if( typeof innerHTML === 'string' ) {
+			node.innerHTML = innerHTML;
+		}
+		container.appendChild( node );
 
-			function changeSlideState(state) {
-				currentSlideBtn.innerHTML = state ;
-			}
+		return node;
 
-			function createSingletonNode( container, tagname, classname, innerHTML ) {
-
-				// Find all nodes matching the description
-				var nodes = container.querySelectorAll( '.' + classname );
-
-				// Check all matches to find one which is a direct child of
-				// the specified container
-				for( var i = 0; i < nodes.length; i++ ) {
-					var testNode = nodes[i];
-					if( testNode.parentNode === container ) {
-						return testNode;
-					}
-				}
-
-				// If no node was found, create it now
-				var node = document.createElement( tagname );
-				node.classList.add( classname );
-				if( typeof innerHTML === 'string' ) {
-					node.innerHTML = innerHTML;
-				}
-				container.appendChild( node );
-
-				return node;
-
-			}
+	}
 
 
-		</script>
-	</body>
+</script>
+</body>
 </html>

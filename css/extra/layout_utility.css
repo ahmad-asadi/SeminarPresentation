@@ -36,14 +36,14 @@
 .footer{
     position: fixed;
     vertical-align: bottom;
-    bottom: 0%;
+    bottom: 0;
     top: 100%;
     right: 44%;
 }
 
 .reveal .figure_caption{
     font-size: 15px;
-    font-family: "B Zar";
+    font-family: "B Zar", serif;
     margin-top: -1em;
     margin-bottom: 1em;
 }
@@ -69,7 +69,7 @@
 }
 
 .reveal .ref{
-    font-family: Georgia;
+    font-family: Georgia, serif;
     font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
@@ -91,6 +91,7 @@
     border: none;
     background: none;
     display: block;
+    left: 35%;
 }
 
 #gameBtn{
