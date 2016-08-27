@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a07c63c1-0b16-4e26-b6ea-436b7fa40c43" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Imgs/Slider/conc20.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc1.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc10.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc11.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc12.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc2.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc3.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc4.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc5.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc6.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc7.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc8.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imgs/Slider/conc9.png" afterPath="$PROJECT_DIR$/Imgs/Slider/conc9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="reveal.js.iws" />
@@ -26,8 +46,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1154" column="20" selection-start-line="1154" selection-start-column="20" selection-end-line="1154" selection-end-column="20" />
+            <state relative-caret-position="75">
+              <caret line="1754" column="0" selection-start-line="1754" selection-start-column="0" selection-end-line="1786" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#section#4;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#section#7;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -323,12 +343,12 @@
       <workItem from="1471079451984" duration="44662000" />
       <workItem from="1471783894564" duration="1285000" />
       <workItem from="1471842519195" duration="4757000" />
-      <workItem from="1472121635590" duration="12236000" />
+      <workItem from="1472121635590" duration="13985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109882000" />
+    <option name="totallyTimeSpent" value="111631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1154" column="20" selection-start-line="1154" selection-start-column="20" selection-end-line="1154" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="1754" column="0" selection-start-line="1754" selection-start-column="0" selection-end-line="1786" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#section#4;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#section#7;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
