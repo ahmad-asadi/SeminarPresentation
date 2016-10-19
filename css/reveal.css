@@ -147,28 +147,28 @@ body {
   visibility: visible; }
 
 .reveal .slides section .fragment.highlight-red.visible {
-    color: #ff2c2d; }
+    color: #5566ff; }
 
 .reveal .slides section .fragment.highlight-orange.visible {
-    color: #e75d20; }
+    color: #dd9920; }
 
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e; }
 
 .reveal .slides section .fragment.highlight-blue.visible {
-  color: #3a87ff; }
+  color: #dd6655; }
 
 .reveal .slides section .fragment.highlight-current-red.current-fragment {
-  color: #ff2c2d; }
+  color: #5566ff; }
 
 .reveal .slides section .fragment.highlight-current-orange.current-fragment {
-    color: #e75d20; }
+    color: #dd9920; }
 
 .reveal .slides section .fragment.highlight-current-green.current-fragment {
   color: #17ff2e; }
 
 .reveal .slides section .fragment.highlight-current-blue.current-fragment {
-  color: #1b91ff; }
+  color: #dd6655; }
 
 /*********************************************
  * DEFAULT ELEMENT STYLES
@@ -306,7 +306,10 @@ body {
   line-height: 1;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 5px; }
+  padding: 5px;
+    left:5%;
+    width:5%;
+}
 
 .reveal .slide-number-delimiter {
   margin: 0 3px; }
