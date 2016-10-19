@@ -18,6 +18,9 @@
 <!-- Theme used for syntax highlighting of code -->
 <link rel="stylesheet" href="lib/css/zenburn.css">
 
+<!-- to support bread crumbs -->
+<link rel="stylesheet" href="plugin/reveal.js-breadcrumb/breadcrumb.css">
+
 <!-- Printing and PDF exports -->
 <script>
 	var link = document.createElement( 'link' );
@@ -2867,11 +2870,12 @@
 		history: true,
 		// More info https://github.com/hakimel/reveal.js#dependencies
 		dependencies: [
-			{src: 'plugin/math/math.js',async: true},
+			{ src: 'plugin/math/math.js',async: true},
 			{ src: 'plugin/markdown/marked.js' },
 			{ src: 'plugin/markdown/markdown.js' },
 			{ src: 'plugin/notes/notes.js', async: true },
-			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/reveal.js-breadcrumb/breadcrumb.js', async: true }, // the last comma is supported actually! ;)
 		]
 	});
 
