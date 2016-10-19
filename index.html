@@ -1,2869 +1,2496 @@
 <!doctype html>
 <html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<title>reveal.js</title>
-
-<link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="css/Bootstrap/css/bootstrap-theme.css">
-<link rel="stylesheet" href="css/extra/snippet.css">
-<link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/night.css">
-<link rel="stylesheet" href="css/extra/layout_utility.css">
-
-<script  src="js/jquery.js"></script>
-<script src="js/game.js"></script>
-
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="lib/css/zenburn.css">
-
-<!-- to support bread crumbs -->
-<link rel="stylesheet" href="plugin/reveal.js-breadcrumb/breadcrumb.css">
-
-<!-- Printing and PDF exports -->
-<script>
-	var link = document.createElement( 'link' );
-	link.rel = 'stylesheet';
-	link.type = 'text/css';
-	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-	document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
-<script src="js/reveal.js"></script>
-
-
-<!--Conclusion Slider-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="css/Slider/ninja-slider.css" rel="stylesheet" type="text/css" />
-<link href="css/Slider/ninja-slider-scene.css" rel="stylesheet" type="text/css" />
-<link href="css/Slider/ninja-slider-sentence.css" rel="stylesheet" type="text/css" />
-<script src="js/Slider/ninja-slider.js" type="text/javascript"></script>
-<script src="js/Slider/ninja-slider-scene.js" type="text/javascript"></script>
-<script src="js/Slider/ninja-slider-sentence.js" type="text/javascript"></script>
-
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>reveal.js</title>
+	<link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/Bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/extra/snippet.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+	<link rel="stylesheet" href="css/extra/layout_utility.css">
+	<script  src="js/jquery.js"></script>
+	<script src="js/game.js"></script>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- to support bread crumbs -->
+	<link rel="stylesheet" href="plugin/reveal.js-breadcrumb/breadcrumb.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	<script src="js/reveal.js"></script>
+	<!--Conclusion Slider-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/Slider/ninja-slider.css" rel="stylesheet" type="text/css" />
+	<link href="css/Slider/ninja-slider-scene.css" rel="stylesheet" type="text/css" />
+	<link href="css/Slider/ninja-slider-sentence.css" rel="stylesheet" type="text/css" />
+	<script src="js/Slider/ninja-slider.js" type="text/javascript"></script>
+	<script src="js/Slider/ninja-slider-scene.js" type="text/javascript"></script>
+	<script src="js/Slider/ninja-slider-sentence.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="reveal">
-	<div class="slides">
-
-		<!--FIRST PAGE-->
-		<section data-transition="fade" data-background="#001111">
-			<div class="row">
-				<img id="my_main_logo"  data-src="./Imgs/aut_logo_1.png" class="col-lg-5">
-			</div>
-			<h2>
-				تولید خودکار شرح بر تصاویر
-			</h2>
-
-			<div class="extra-container">
-				<blockquote class="right-container">
-					ارائه دهنده
-					<br/>
-					احمد اسدی
-				</blockquote>
-				<blockquote class="left-container">
-					استاد راهنما
-					<br/>
-					دکتر صفابخش
-				</blockquote>
-			</div>
-			<aside class="footer">
-				مهرماه ۱۳۹۵
-			</aside>
-
-		</section>
-
-		<section data-transition="fade" data-background="#003333" data-state="chapter_intro">
-			<h2>
-				فهرست مطالب
-			</h2>
-
-			<ul>
-				<li class="fragment fade-up">
-					اولین جرقه‌های پیدایش و ارائه تعریف دقیق مساله
-				</li>
-				<li class="fragment fade-up">
-					ایده‌های اولیه و چالش‌ها
-				</li>
-				<li class="fragment fade-up">
-					چالش درک صحنه و روش‌های پیشنهادی
-				</li>
-                <li class="fragment fade-up">
-                    چالش تولید جمله و روش‌های پیشنهادی
-                </li>
-                <li class="fragment fade-up">
-ارائه یک مدل کامل شامل حل هر دو چالش
-                </li>
-				<li class="fragment fade-up">
-					جمع‌بندی و نگاهی به آینده
-				</li>
-			</ul>
-		</section>
-
-		<section data-background="#003333"  data-state="chapter_definition">
-			<section>
-				<h3>
-					تولید خودکار شرح بر تصاویر
-				</h3>
-                <blockquote>
-                    توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام
-
-                </blockquote>
-				<ul style="width: 50%;">
-					<li class="fragment" data-fragment-index="1">
-						توصیف
-<span class="fragment highlight-green" data-fragment-index="1">
-                        دقیق
-    </span>
-                        و دسته‌بندی
-                        <span class="fragment highlight-green" data-fragment-index="1">
-                        صحیح
-    </span>
-                        اجسام
-					</li>
-					<li class="fragment" data-fragment-index="2">
-						صحت جملات به لحاظ
-                        <span class="fragment highlight-green" data-fragment-index="2">
-                        دستور زبان
-    </span>
-                        ،
-<span class="fragment highlight-green" data-fragment-index="2">
-                        معنا
-    </span>
-                        و
-<span class="fragment highlight-green" data-fragment-index="2">
-                        املا
-    </span>
-
-					</li>
-					<li class="fragment" data-fragment-index="3">
-                        <span class="fragment highlight-green" data-fragment-index="3">
-                        سازگاری
-                        </span>
-جملات تولید شده با تصاویر
-					</li>
-				</ul>
-
-			</section>
-			<!--<section>-->
-				<!--<h3>-->
-					<!--کاربردها-->
-				<!--</h3>-->
-
-				<!--<ul>-->
-					<!--<li>-->
-						<!--دسته‌بندی خودکار تصاویر آرشیوی-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--جستجوی تصویری-->
-					<!--</li>-->
-				<!--</ul>-->
-
-			<!--</section>-->
-			<section>
-				<h3>
-					ایده‌ی اولیه
-				</h3>
-
-                <blockquote class="fragment" data-fragment-index="1">
-                    اقتباس از پژوهش‌های مرتبط با
-            <span class="fragment highlight-green" data-fragment-index="1">
-                    ترجمه ماشینی
-                </span>
-                </blockquote>
-				<ul>
-					<ol>
-						<li class="fragment zoom-in" data-fragment-index="2">
-							نگاشت تصویر به فضای معنایی
-						</li>
-						<li class="fragment zoom-in" data-fragment-index="3">
-							نگاشت فضای معنایی به فضای جملات
-						</li>
-					</ol>
-				</ul>
-			</section>
-
-			<section>
-				<h3>
-					چالش‌های پیش‌رو
-				</h3>
-
-				<div class="extra-container">
-					<blockquote class="right-container fragment" data-fragment-index="1">
-                        <span class="fragment highlight-green" data-fragment-index="1">
-						درک صحنه
-                            </span>
-					</blockquote>
-					<blockquote class="left-container fragment" data-fragment-index="2">
-                        <span class="fragment highlight-green" data-fragment-index="2">
-						تولید جمله
-                            </span>
-					</blockquote>
-
+	<div class="reveal">
+		<div class="slides">
+			<!--FIRST PAGE-->
+			<section data-transition="fade" data-background="#001111">
+				<div class="row">
+					<img id="my_main_logo"  data-src="./Imgs/aut_logo_1.png" class="col-lg-5">
 				</div>
-
+				<h2>
+				تولید خودکار شرح بر تصاویر
+				</h2>
+				<div class="extra-container">
+					<blockquote class="right-container">
+						ارائه دهنده
+						<br/>
+						احمد اسدی
+					</blockquote>
+					<blockquote class="left-container">
+						استاد راهنما
+						<br/>
+						دکتر صفابخش
+					</blockquote>
+				</div>
+				<aside class="footer">
+					مهرماه ۱۳۹۵
+				</aside>
 			</section>
-
-			<!--<section>-->
+			<section data-transition="fade" data-background="#003333" data-state="chapter_intro">
+				<h2>
+				فهرست مطالب
+				</h2>
+				<ul>
+					<li class="fragment fade-up">
+						اولین جرقه‌های پیدایش و ارائه تعریف دقیق مساله
+					</li>
+					<li class="fragment fade-up">
+						ایده‌های اولیه و چالش‌ها
+					</li>
+					<li class="fragment fade-up">
+						چالش درک صحنه و روش‌های پیشنهادی
+					</li>
+					<li class="fragment fade-up">
+						چالش تولید جمله و روش‌های پیشنهادی
+					</li>
+					<li class="fragment fade-up">
+						ارائه یک مدل کامل شامل حل هر دو چالش
+					</li>
+					<li class="fragment fade-up">
+						جمع‌بندی و نگاهی به آینده
+					</li>
+				</ul>
+			</section>
+			<section data-background="#003333"  data-state="chapter_definition">
+				<section>
+					<h3>
+					تولید خودکار شرح بر تصاویر
+					</h3>
+					<blockquote>
+						توصیف صحنه و اجسام موجود در آن به همراه روابط موجود میان اجسام
+					</blockquote>
+					<ul style="width: 50%;">
+						<li class="fragment" data-fragment-index="1">
+							توصیف
+							<span class="fragment highlight-green" data-fragment-index="1">
+								دقیق
+							</span>
+							و دسته‌بندی
+							<span class="fragment highlight-green" data-fragment-index="1">
+								صحیح
+							</span>
+							اجسام
+						</li>
+						<li class="fragment" data-fragment-index="2">
+							صحت جملات به لحاظ
+							<span class="fragment highlight-green" data-fragment-index="2">
+								دستور زبان
+							</span>
+							،
+							<span class="fragment highlight-green" data-fragment-index="2">
+								معنا
+							</span>
+							و
+							<span class="fragment highlight-green" data-fragment-index="2">
+								املا
+							</span>
+						</li>
+						<li class="fragment" data-fragment-index="3">
+							<span class="fragment highlight-green" data-fragment-index="3">
+								سازگاری
+							</span>
+							جملات تولید شده با تصاویر
+						</li>
+					</ul>
+				</section>
+				<!--<section>-->
 				<!--<h3>-->
-					<!--چالش درک صحنه-->
+				<!--کاربردها-->
 				<!--</h3>-->
-				<!--<p>-->
-					<!--توصیف صحنه باید بیان‌گر موارد زیر باشد-->
-				<!--</p>-->
 				<!--<ul>-->
-					<!--<li>-->
-						<!--کلاس صحنه-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--کلاس هرکدام از اجسام-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--رابطه مکانی بین اجسام-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--توصیف رخ‌داد به تصویر کشیده شده-->
-					<!--</li>-->
+				<!--<li>-->
+				<!--دسته‌بندی خودکار تصاویر آرشیوی-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--جستجوی تصویری-->
+				<!--</li>-->
 				<!--</ul>-->
-			<!--</section>-->
-			<!--<section>-->
-				<!--<h3>-->
-					<!--چالش تولید جمله-->
-				<!--</h3>-->
-				<!--<p>-->
-					<!--جملات تولید شده باید شرایط زیر را داشته باشند-->
-				<!--</p>-->
-				<!--<ul>-->
-					<!--<li>-->
-						<!--صحت معنایی، دستور زبانی و املایی-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--استفاده از قالب‌های مختلف جمله-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--سازگاری با تصویر مورد نظر-->
-					<!--</li>-->
-				<!--</ul>-->
-			<!--</section>-->
-		</section>
-
-		<section data-background="#005555"  data-state="chapter_Overview">
-			<section data-state="chapter_scene">
-				<h3>
-					درک صحنه
-				</h3>
-
-				<blockquote class="fragment zoom-in" data-fragment-index="1">
-					بررسی سیر پژوهش‌های انجام شده از دهه
-					<span class="fragment highlight-green" data-fragment-index="1">
-					1980
+				<!--</section>-->
+				<section>
+					<h3>
+					ایده‌ی اولیه
+					</h3>
+					<blockquote class="fragment" data-fragment-index="1">
+						اقتباس از پژوهش‌های مرتبط با
+						<span class="fragment highlight-green" data-fragment-index="1">
+							ترجمه ماشینی
 						</span>
-					تا کنون
-				</blockquote>
-
-				<div class="fragment zoom-in" data-fragment-index="1">
-					<p>
-						سه دسته‌کلی از روش‌های مورد استفاده
-					</p>
-
+					</blockquote>
+					<ul>
+						<ol>
+							<li class="fragment zoom-in" data-fragment-index="2">
+								نگاشت تصویر به فضای معنایی
+							</li>
+							<li class="fragment zoom-in" data-fragment-index="3">
+								نگاشت فضای معنایی به فضای جملات
+							</li>
+						</ol>
+					</ul>
+				</section>
+				<section>
+					<h3>
+					چالش‌های پیش‌رو
+					</h3>
 					<div class="extra-container">
-						<blockquote class="right-container fragment" data-fragment-index="2">
-							<span class="fragment highlight-orange" data-fragment-index="2">
-دسته‌بندی ویژگی‌های تصویر
+						<blockquote class="right-container fragment" data-fragment-index="1">
+							<span class="fragment highlight-green" data-fragment-index="1">
+								درک صحنه
 							</span>
 						</blockquote>
-						<blockquote class="left-container fragment" data-fragment-index="3">
-							<span class="fragment highlight-orange" data-fragment-index="3">
-							مدل‌های گرافی احتمالاتی
-							</span>
-						</blockquote>
-						<blockquote class="center-container fragment" data-fragment-index="4">
-							<span class="fragment highlight-orange" data-fragment-index="4">
-							شبکه‌های عصبی عمیق
+						<blockquote class="left-container fragment" data-fragment-index="2">
+							<span class="fragment highlight-green" data-fragment-index="2">
+								تولید جمله
 							</span>
 						</blockquote>
 					</div>
-
-					<!--<p class="fragment zoom-in" data-fragment-index="4">-->
+				</section>
+				<!--<section>-->
+				<!--<h3>-->
+				<!--چالش درک صحنه-->
+				<!--</h3>-->
+				<!--<p>-->
+				<!--توصیف صحنه باید بیان‌گر موارد زیر باشد-->
+				<!--</p>-->
+				<!--<ul>-->
+				<!--<li>-->
+				<!--کلاس صحنه-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--کلاس هرکدام از اجسام-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--رابطه مکانی بین اجسام-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--توصیف رخ‌داد به تصویر کشیده شده-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--</section>-->
+				<!--<section>-->
+				<!--<h3>-->
+				<!--چالش تولید جمله-->
+				<!--</h3>-->
+				<!--<p>-->
+				<!--جملات تولید شده باید شرایط زیر را داشته باشند-->
+				<!--</p>-->
+				<!--<ul>-->
+				<!--<li>-->
+				<!--صحت معنایی، دستور زبانی و املایی-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--استفاده از قالب‌های مختلف جمله-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--سازگاری با تصویر مورد نظر-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--</section>-->
+			</section>
+			<section data-background="#005555"  data-state="chapter_Overview">
+				<section data-state="chapter_scene">
+					<h3>درک صحنه</h3>
+					<blockquote class="fragment zoom-in" data-fragment-index="1">
+						بررسی سیر پژوهش‌های انجام شده از دهه
+						<span class="fragment highlight-green" data-fragment-index="1">
+							1980
+						</span>
+						تا کنون
+					</blockquote>
+					<div class="fragment zoom-in" data-fragment-index="1">
+						<p>
+							سه دسته‌کلی از روش‌های مورد استفاده
+						</p>
+						<div class="extra-container">
+							<blockquote class="right-container fragment" data-fragment-index="2">
+								<span class="fragment highlight-orange" data-fragment-index="2">
+									دسته‌بندی ویژگی‌های تصویر
+								</span>
+							</blockquote>
+							<blockquote class="left-container fragment" data-fragment-index="3">
+								<span class="fragment highlight-orange" data-fragment-index="3">
+									مدل‌های گرافی احتمالاتی
+								</span>
+							</blockquote>
+							<blockquote class="center-container fragment" data-fragment-index="4">
+								<span class="fragment highlight-orange" data-fragment-index="4">
+									شبکه‌های عصبی عمیق
+								</span>
+							</blockquote>
+						</div>
+						<!--<p class="fragment zoom-in" data-fragment-index="4">-->
 						<!--<span class="fragment highlight-green" data-fragment-index="4">-->
 						<!--بسته به پژوهش تعریف می‌شوند-->
 						<!--</span>-->
-					<!--</p>-->
-				</div>
-			</section>
-
-			<!--<section>-->
-				<!--<div id="notGame">-->
-					<!--<h3>-->
-						<!--تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان-->
-					<!--</h3>-->
-
-					<!--<div class="fragment fade-out" data-fragment-index="3">-->
-					<!--<ul style="width: 40%;">-->
-						<!--<li>-->
-							<!--نمایش دنباله تصاویر به افراد-->
-						<!--</li>-->
-					<!--</ul>-->
-
-					<!--<blockquote class="container fragment highlight-current-green" data-fragment-index="1">-->
-						<!--گروه اول-->
-						<!--<blockquote class="right-container">-->
-							<!--بدون اطلاع از موضوع تصاویر-->
-						<!--</blockquote>-->
-						<!--<blockquote class="left-container">-->
-							<!--مدت زمان 100 میلی ثانیه-->
-						<!--</blockquote>-->
-					<!--</blockquote>-->
-					<!--<blockquote class="container fragment highlight-current-green" data-fragment-index="2">-->
-						<!--گروه دوم-->
-						<!--<blockquote class="right-container">-->
-							<!--با اطلاع از موضوع تصاویر-->
-						<!--</blockquote>-->
-						<!--<blockquote class="left-container">-->
-							<!--مدت زمان 500 میلی ثانیه-->
-						<!--</blockquote>-->
-					<!--</blockquote>-->
-					<!--</div>-->
-
-					<!--<blockquote class="fragment current-visible zoom-in" data-fragment-index="3" style="position:fixed;top: 30%;left: 15%">-->
-						<!--<p class="fragment highlight-green" data-fragment-index="3">-->
-						<!--مغز انسان، درصد قابل توجهی از اطلاعات مورد نیاز را در اولین لحظات مشاهده تصویر، استخراج می‌کند-->
 						<!--</p>-->
-					<!--</blockquote>-->
-
-					<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
-					<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
-					<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
-						<!--&lt;!&ndash;<button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">&ndash;&gt;-->
-							<!--&lt;!&ndash;چالش مغز انسان&ndash;&gt;-->
-						<!--&lt;!&ndash;</button>&ndash;&gt;-->
-					<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-				<!--</div>-->
-
-				<!--<div id="gameSec">-->
-
-				<!--</div>-->
-			<!--</section>-->
-
-			<section>
-				<h3>
-					روش‌های اولیه
-				</h3>
-				<blockquote>
-					بررسی رنگ و بافت تصویر و استفاده از نظریه‌هایی مانند نظریه گراف
-				</blockquote>
-				<ul>
-					<li class="fragment fade-up" data-fragment-index="1">
-						ارائه یک مدل
-
-						<span class="fragment highlight-orange" data-fragment-index="2">
-						مبتنی بر دانش
-						</span>
-
-						بر اساس
-
-						<span class="fragment highlight-orange" data-fragment-index="2">
-						رنگ پیکسل‌ها
-						</span>
-
-						برای
-
-						<span class="fragment highlight-green" data-fragment-index="3">
-						تشخیص صحنه
-						</span>
-
-						توسط
-
-						<span class="fragment highlight-blue" data-fragment-index="4">
-						اوتا و همکارانش
-						</span>
-
-						در سال
-
-						<span class="fragment highlight-blue" data-fragment-index="5">
-						1983
-						</span>
-
-						<span class="cite">
-							[1]
-						</span>
-					</li>
-					<li class="fragment fade-up" data-fragment-index="6">
-						ارائه روشی مبتنی بر استفاده از
-
-						<span class="fragment highlight-orange" data-fragment-index="7">
-						کلیشه‌های ناحیه‌ای مرکب
-						</span>
-
-						و
-
-						<span class="fragment highlight-orange" data-fragment-index="7">
-						نظریه گراف
-						</span>
-						برای
-
-						<span class="fragment highlight-green" data-fragment-index="8">
-						دسته‌بندی تصاویر
-						</span>
-
-
-						توسط
-
-						<span class="fragment highlight-blue" data-fragment-index="9">
-						اسمیت و همکارانش
-						</span>
-
-						در سال
-
-						<span class="fragment highlight-blue" data-fragment-index="10">
-						1999
-						</span>
-
-						<span class="cite">
-							[2]
-						</span>
-					</li>
-				</ul>
-			</section>
-
-			<!--<section>-->
+					</div>
+				</section>
+				<!--<section>-->
+				<!--<div id="notGame">-->
 				<!--<h3>-->
-					<!--روش‌های مبتنی بر مدل‌های گرافی احتمالاتی-->
+				<!--تلاش برای شناخت فرآیند درک صحنه توسط مغز انسان-->
 				<!--</h3>-->
-
-				<!--<blockquote>-->
-					<!--با استفاده از دانش‌های آمار و احتمالات، نظریه گراف و با توجه به مجموعه‌ داده‌های موجود، سعی در ارائه توزیع احتمالاتی و تخمین بهترین پارامترهای ممکن دارند.-->
+				<!--<div class="fragment fade-out" data-fragment-index="3">-->
+				<!--<ul style="width: 40%;">-->
+				<!--<li>-->
+				<!--نمایش دنباله تصاویر به افراد-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--<blockquote class="container fragment highlight-current-green" data-fragment-index="1">-->
+				<!--گروه اول-->
+				<!--<blockquote class="right-container">-->
+				<!--بدون اطلاع از موضوع تصاویر-->
 				<!--</blockquote>-->
-
-				<!--<p>-->
-					<!--مدل‌های استاندارد مورد استفاده-->
-				<!--</p>-->
-
-				<!--<div class="extra-container">-->
-					<!--<blockquote class="right-container fragment highlight-current-green">-->
-						<!--میدان تصادفی مارکف-->
-					<!--</blockquote>-->
-					<!--<blockquote class="left-container fragment highlight-current-green">-->
-						<!--میدان تصادفی شرطی-->
-					<!--</blockquote>-->
-					<!--<blockquote class="center-container fragment highlight-current-green">-->
-						<!--مدل مولد-->
-					<!--</blockquote>-->
+				<!--<blockquote class="left-container">-->
+				<!--مدت زمان 100 میلی ثانیه-->
+				<!--</blockquote>-->
+				<!--</blockquote>-->
+				<!--<blockquote class="container fragment highlight-current-green" data-fragment-index="2">-->
+				<!--گروه دوم-->
+				<!--<blockquote class="right-container">-->
+				<!--با اطلاع از موضوع تصاویر-->
+				<!--</blockquote>-->
+				<!--<blockquote class="left-container">-->
+				<!--مدت زمان 500 میلی ثانیه-->
+				<!--</blockquote>-->
+				<!--</blockquote>-->
 				<!--</div>-->
-			<!--</section>-->
-
-			<section>
-				<h3>
-					روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
-				</h3>
-
-				<div class="extra-container">
-
-					<blockquote class="right-container" style="width: 70%; right: 5%;">
-						<ol style="width: 80%;">
-							<li class="fragment zoom-in" data-fragment-index="1">
-
-								<span>توسط لی و همکارانش</span>
-								<span class="cite">
-								[3]
-								</span>
-
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال ۲۰۰۵</span></li>
-							<li class="fragment zoom-in" data-fragment-index="3"><span
-									class="fragment zoom-in" data-fragment-index="3">مدل سلسله‌مراتبی بیزی</span></li>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی صحنه</span>
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">روش بدون نظارت</span>
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="6"><span >استفاده در تشخیص 13 دسته صحنه</span></li>
-							<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">دقت: 76٪</span></li>
-						</ol>
-
+				<!--<blockquote class="fragment current-visible zoom-in" data-fragment-index="3" style="position:fixed;top: 30%;left: 15%">-->
+				<!--<p class="fragment highlight-green" data-fragment-index="3">-->
+				<!--مغز انسان، درصد قابل توجهی از اطلاعات مورد نیاز را در اولین لحظات مشاهده تصویر، استخراج می‌کند-->
+				<!--</p>-->
+				<!--</blockquote>-->
+				<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+				<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+				<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+				<!--&lt;!&ndash;<button id="gameBtn" class="col-lg-2 btn btn-warning" onclick="gameBtn()">&ndash;&gt;-->
+				<!--&lt;!&ndash;چالش مغز انسان&ndash;&gt;-->
+				<!--&lt;!&ndash;</button>&ndash;&gt;-->
+				<!--&lt;!&ndash;</div>&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div id="gameSec">-->
+				<!--</div>-->
+				<!--</section>-->
+				<section>
+					<h3>
+					روش‌های اولیه
+					</h3>
+					<blockquote>
+						بررسی رنگ و بافت تصویر و استفاده از نظریه‌هایی مانند نظریه گراف
 					</blockquote>
-
-					<figure class="left-container">
-						<img src="Imgs/bayes1.png" style="height: 400px"/>
-
-						<figcaption class="figure_caption">
+					<ul>
+						<li class="fragment fade-up" data-fragment-index="1">
+							ارائه یک مدل
+							<span class="fragment highlight-orange" data-fragment-index="2">
+								مبتنی بر دانش
+							</span>
+							بر اساس
+							<span class="fragment highlight-orange" data-fragment-index="2">
+								رنگ پیکسل‌ها
+							</span>
+							برای
+							<span class="fragment highlight-green" data-fragment-index="3">
+								تشخیص صحنه
+							</span>
+							توسط
+							<span class="fragment highlight-blue" data-fragment-index="4">
+								اوتا و همکارانش
+							</span>
+							در سال
+							<span class="fragment highlight-blue" data-fragment-index="5">
+								1983
+							</span>
+							<span class="cite">
+								[1]
+							</span>
+						</li>
+						<li class="fragment fade-up" data-fragment-index="6">
+							ارائه روشی مبتنی بر استفاده از
+							<span class="fragment highlight-orange" data-fragment-index="7">
+								کلیشه‌های ناحیه‌ای مرکب
+							</span>
+							و
+							<span class="fragment highlight-orange" data-fragment-index="7">
+								نظریه گراف
+							</span>
+							برای
+							<span class="fragment highlight-green" data-fragment-index="8">
+								دسته‌بندی تصاویر
+							</span>
+							توسط
+							<span class="fragment highlight-blue" data-fragment-index="9">
+								اسمیت و همکارانش
+							</span>
+							در سال
+							<span class="fragment highlight-blue" data-fragment-index="10">
+								1999
+							</span>
+							<span class="cite">
+								[2]
+							</span>
+						</li>
+					</ul>
+				</section>
+				<!--<section>-->
+				<!--<h3>-->
+				<!--روش‌های مبتنی بر مدل‌های گرافی احتمالاتی-->
+				<!--</h3>-->
+				<!--<blockquote>-->
+				<!--با استفاده از دانش‌های آمار و احتمالات، نظریه گراف و با توجه به مجموعه‌ داده‌های موجود، سعی در ارائه توزیع احتمالاتی و تخمین بهترین پارامترهای ممکن دارند.-->
+				<!--</blockquote>-->
+				<!--<p>-->
+				<!--مدل‌های استاندارد مورد استفاده-->
+				<!--</p>-->
+				<!--<div class="extra-container">-->
+				<!--<blockquote class="right-container fragment highlight-current-green">-->
+				<!--میدان تصادفی مارکف-->
+				<!--</blockquote>-->
+				<!--<blockquote class="left-container fragment highlight-current-green">-->
+				<!--میدان تصادفی شرطی-->
+				<!--</blockquote>-->
+				<!--<blockquote class="center-container fragment highlight-current-green">-->
+				<!--مدل مولد-->
+				<!--</blockquote>-->
+				<!--</div>-->
+				<!--</section>-->
+				<section>
+					<h3>روش‌های مبتنی بر مدل‌های گرافی احتمالاتی</h3>
+					<div class="extra-container">
+						<blockquote class="right-container" style="width: 70%; right: 5%;">
+							<ol style="width: 80%;">
+								<li class="fragment zoom-in" data-fragment-index="1">
+									<span>توسط لی و همکارانش</span>
 									<span class="cite">
 										[3]
 									</span>
-
-							شکل ۱. مدل سلسله‌مراتبی بیزی ارائه شده در
-						</figcaption>
-					</figure>
-
-				</div>
+								</li>
+								<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال ۲۰۰۵</span></li>
+								<li class="fragment zoom-in" data-fragment-index="3"><span class="fragment zoom-in" data-fragment-index="3">مدل سلسله‌مراتبی بیزی</span></li>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی صحنه</span></li>
+								<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">روش بدون نظارت</span></li>
+								<li class="fragment zoom-in" data-fragment-index="6"><span >استفاده در تشخیص 13 دسته صحنه</span></li>
+								<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">دقت: 76٪</span></li>
+							</ol>
+						</blockquote>
+						<figure class="left-container">
+							<img src="Imgs/bayes1.png" style="height: 400px"/>
+							<figcaption class="figure_caption"><span class="cite">[3]</span>شکل ۱. مدل سلسله‌مراتبی بیزی ارائه شده در</figcaption>
+						</figure>
+					</div>
 				</section>
-			<section>
-				<h3>
+				<section>
+					<h3>
 					روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
-				</h3>
-
-				<div class="extra-container">
-
-					<blockquote class="right-container" style="width: 70%; right: 5%;">
-						<ol style="width: 80%;">
-							<li class="fragment zoom-in" data-fragment-index="1">
-
-								<span>توسط لی و همکارانش</span>
-								<span class="cite">
-								[4]
-								</span>
-
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2007</span></li>
-							<li class="fragment zoom-in" data-fragment-index="3"><span
-									class="fragment zoom-in" data-fragment-index="3">مدل مولد</span></li>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی صحنه</span>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تشخیص اجسام </span>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4"> تشخیص شکل کلی اجسام</span>
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی رخ‌داد موجود</span></li>
-							<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-orange" data-fragment-index="5">روش بانظارت</span></li>
-						</ol>
-
-					</blockquote>
-
-					<figure class="left-container">
-						<img src="Imgs/scenepgm3.png" style="height: 400px"/>
-
-						<figcaption class="figure_caption">
+					</h3>
+					<div class="extra-container">
+						<blockquote class="right-container" style="width: 70%; right: 5%;">
+							<ol style="width: 80%;">
+								<li class="fragment zoom-in" data-fragment-index="1">
+									<span>توسط لی و همکارانش</span>
 									<span class="cite">
 										[4]
 									</span>
-
+								</li>
+								<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2007</span></li>
+								<li class="fragment zoom-in" data-fragment-index="3"><span
+								class="fragment zoom-in" data-fragment-index="3">مدل مولد</span></li>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی صحنه</span>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تشخیص اجسام </span>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4"> تشخیص شکل کلی اجسام</span>
+								</li>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">دسته‌بندی رخ‌داد موجود</span></li>
+								<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-orange" data-fragment-index="5">روش بانظارت</span></li>
+							</ol>
+						</blockquote>
+						<figure class="left-container">
+							<img src="Imgs/scenepgm3.png" style="height: 400px"/>
+							<figcaption class="figure_caption">
+							<span class="cite">
+								[4]
+							</span>
 							شکل 2. مدل مولد ارائه شده در
-						</figcaption>
-					</figure>
-
-				</div>
-
-
-			</section>
-
-			<section>
-				<h3>
+							</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section>
+					<h3>
 					روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
-				</h3>
-
-				<div class="extra-container">
-
-					<blockquote class="left-container">
-						<ol style="width: 80%;">
-							<li class="fragment zoom-in" data-fragment-index="1">
-
-								<span>فرهادی و همکارانش</span>
-								<span class="cite">
-								[5]
-								</span>
-
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2010</span></li>
-							<li class="fragment zoom-in" data-fragment-index="3"><span
-									class="fragment zoom-in" data-fragment-index="3">مدل میدان تصادفی مارکف</span></li>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تولید شرح بر تصاویر </span>
-							<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">شباهت تصاویر و جملات </span>
-							<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">مدل دو طرفه </span>
-
-							<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-orange" data-fragment-index="7">روش بانظارت</span></li>
-							<li class="fragment zoom-in" data-fragment-index="8"><span>تشخیص 20 دسته جسم</span></li>
-							<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-orange" data-fragment-index="9">دقت: 36.4٪</span></li>
-						</ol>
-
-					</blockquote>
-
-					<figure class="right-container">
-						<img src="Imgs/scenepgm1.png" style="width: 500px; height: 400px;"/>
-
-						<figcaption class="figure_caption">
+					</h3>
+					<div class="extra-container">
+						<blockquote class="left-container">
+							<ol style="width: 80%;">
+								<li class="fragment zoom-in" data-fragment-index="1">
+									<span>فرهادی و همکارانش</span>
 									<span class="cite">
 										[5]
 									</span>
-
+								</li>
+								<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2010</span></li>
+								<li class="fragment zoom-in" data-fragment-index="3"><span
+								class="fragment zoom-in" data-fragment-index="3">مدل میدان تصادفی مارکف</span></li>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تولید شرح بر تصاویر </span>
+								<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">شباهت تصاویر و جملات </span>
+								<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">مدل دو طرفه </span>
+								<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-orange" data-fragment-index="7">روش بانظارت</span></li>
+								<li class="fragment zoom-in" data-fragment-index="8"><span>تشخیص 20 دسته جسم</span></li>
+								<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-orange" data-fragment-index="9">دقت: 36.4٪</span></li>
+							</ol>
+						</blockquote>
+						<figure class="right-container">
+							<img src="Imgs/scenepgm1.png" style="width: 500px; height: 400px;"/>
+							<figcaption class="figure_caption">
+							<span class="cite">
+								[5]
+							</span>
 							شکل 3. مدل میدان تصادفی مارکف ارائه شده در
-						</figcaption>
-					</figure>
-
-				</div>
-
-
-			</section>
-
-
-			<section>
-				<h3>
+							</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section>
+					<h3>
 					روش‌های مبتنی بر مدل‌های گرافی احتمالاتی
-				</h3>
-
-				<div class="extra-container">
-
-					<blockquote class="left-container">
-						<ol style="width: 80%;">
-							<li class="fragment zoom-in" data-fragment-index="1">
-
-								<span>فیدلر و همکارانش</span>
-								<span class="cite">
-								[6]
-								</span>
-
-							</li>
-							<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2013</span></li>
-							<li class="fragment zoom-in" data-fragment-index="3"><span
-									class="fragment zoom-in" data-fragment-index="3">میدان تصادفی شرطی</span></li>
-							<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تولید شرح کلی بر تصاویر </span>
-							<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تصاویر بدون محدودیت</span>
-							<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-orange" data-fragment-index="6">تصاویر به همراه جملات توصیفی</span>
-
-							<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">تشخیص اجسام موجود</span></li>
-							<li class="fragment zoom-in" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">دسته‌بندی صحنه: 76٪</span></li>
-							<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-green" data-fragment-index="9">دقت تجزیه معنایی: 37٪</span></li>
-						</ol>
-
-					</blockquote>
-
-					<figure class="right-container">
-						<img src="Imgs/scenepgm2.png" style="width: 500px; height: 400px;"/>
-
-						<figcaption class="figure_caption">
+					</h3>
+					<div class="extra-container">
+						<blockquote class="left-container">
+							<ol style="width: 80%;">
+								<li class="fragment zoom-in" data-fragment-index="1">
+									<span>فیدلر و همکارانش</span>
 									<span class="cite">
 										[6]
 									</span>
-
+								</li>
+								<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2013</span></li>
+								<li class="fragment zoom-in" data-fragment-index="3"><span
+								class="fragment zoom-in" data-fragment-index="3">میدان تصادفی شرطی</span></li>
+								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">تولید شرح کلی بر تصاویر </span>
+								<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تصاویر بدون محدودیت</span>
+								<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-orange" data-fragment-index="6">تصاویر به همراه جملات توصیفی</span>
+								<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">تشخیص اجسام موجود</span></li>
+								<li class="fragment zoom-in" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">دسته‌بندی صحنه: 76٪</span></li>
+								<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-green" data-fragment-index="9">دقت تجزیه معنایی: 37٪</span></li>
+							</ol>
+						</blockquote>
+						<figure class="right-container">
+							<img src="Imgs/scenepgm2.png" style="width: 500px; height: 400px;"/>
+							<figcaption class="figure_caption">
+							<span class="cite">
+								[6]
+							</span>
 							شکل 4. مدل میدان تصادفی شرطی سلسله مراتبی ارائه شده در
-						</figcaption>
-					</figure>
-
-				</div>
-
-
-			</section>
-
-
-
-			<!--<section>-->
+							</figcaption>
+						</figure>
+					</div>
+				</section>
+				<!--<section>-->
 				<!--<h3>-->
-					<!--روش‌های مبتنی بر مدل‌های گرافی احتمالاتی-->
+				<!--روش‌های مبتنی بر مدل‌های گرافی احتمالاتی-->
 				<!--</h3>-->
 				<!--<ul>-->
-					<!--<li class="fragment fade-up" data-fragment-index="1">-->
-					<!--</li>-->
-					<!--<li class="fragment fade-up" data-fragment-index="6">-->
-						<!--‌لی و همکارانش در سال-->
-						<!--<span class="fragment highlight-green" data-fragment-index="6">-->
-						<!--2007-->
-						<!--</span>-->
-						<!--، یک-->
-						<!--<span class="fragment highlight-orange" data-fragment-index="7">-->
-<!--مدل مولد-->
-						<!--</span>-->
-						<!--برای-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
-<!--تشخیص صحنه-->
-						<!--</span>-->
-						<!--،-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
-<!--اجسام موجود-->
-						<!--</span>-->
-						<!--در آن به همراه-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
-<!--شکل کلی-->
-						<!--</span>-->
-						<!--آن‌ها ارائه دادند-->
-						<!--<span class="cite">-->
-							<!--[4]-->
-						<!--</span>-->
-
-					<!--</li>-->
-					<!--<li class="fragment fade-up" data-fragment-index="9">-->
-						 <!--فرهادی و همکارانش در سال-->
-						<!--<span class="fragment highlight-green" data-fragment-index="10">-->
-						<!--2010-->
-						<!--</span>-->
-						<!--، یک مدل مبتنی بر-->
-						<!--<span class="fragment highlight-orange" data-fragment-index="11">-->
-							<!--میدان تصادفی مارکف-->
-						<!--</span>-->
-						<!--برای-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="12">-->
-						<!--دسته‌بندی صحنه-->
-						<!--</span>-->
-						<!--و-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="12">-->
-						<!--تولید شرح برای تصاویر-->
-						<!--</span>-->
-						<!--، ارائه دادند-->
-						<!--<span class="cite">-->
-							<!--[5]-->
-						<!--</span>-->
-
-					<!--</li>-->
-					<!--<li class="fragment fade-up" data-fragment-index="13">-->
-						<!--فیدلر و همکارانش در سال-->
-						<!--<span class="fragment highlight-green" data-fragment-index="14">-->
-						<!--2013-->
-						<!--</span>-->
-						<!--، یک مدل مبتنی بر-->
-						<!--<span class="fragment highlight-orange" data-fragment-index="15">-->
-							<!--میدان تصادفی شرطی-->
-						<!--</span>-->
-						<!--برای-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
-						<!--تشخیص صحنه-->
-						<!--</span>-->
-						<!--،-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
-							<!--اجسام درون صحنه-->
-						<!--</span>-->
-						<!--و-->
-						<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
-							<!--تولید جمله برای تصاویر-->
-						<!--</span>-->
-						<!--، ارائه دادند-->
-						<!--<span class="cite">-->
-							<!--[6]-->
-						<!--</span>-->
-					<!--</li>-->
-
+				<!--<li class="fragment fade-up" data-fragment-index="1">-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up" data-fragment-index="6">-->
+				<!--‌لی و همکارانش در سال-->
+				<!--<span class="fragment highlight-green" data-fragment-index="6">-->
+				<!--2007-->
+				<!--</span>-->
+				<!--، یک-->
+				<!--<span class="fragment highlight-orange" data-fragment-index="7">-->
+				<!--مدل مولد-->
+				<!--</span>-->
+				<!--برای-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
+				<!--تشخیص صحنه-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
+				<!--اجسام موجود-->
+				<!--</span>-->
+				<!--در آن به همراه-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="8">-->
+				<!--شکل کلی-->
+				<!--</span>-->
+				<!--آن‌ها ارائه دادند-->
+				<!--<span class="cite">-->
+				<!--[4]-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up" data-fragment-index="9">-->
+				<!--فرهادی و همکارانش در سال-->
+				<!--<span class="fragment highlight-green" data-fragment-index="10">-->
+				<!--2010-->
+				<!--</span>-->
+				<!--، یک مدل مبتنی بر-->
+				<!--<span class="fragment highlight-orange" data-fragment-index="11">-->
+				<!--میدان تصادفی مارکف-->
+				<!--</span>-->
+				<!--برای-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="12">-->
+				<!--دسته‌بندی صحنه-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="12">-->
+				<!--تولید شرح برای تصاویر-->
+				<!--</span>-->
+				<!--، ارائه دادند-->
+				<!--<span class="cite">-->
+				<!--[5]-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up" data-fragment-index="13">-->
+				<!--فیدلر و همکارانش در سال-->
+				<!--<span class="fragment highlight-green" data-fragment-index="14">-->
+				<!--2013-->
+				<!--</span>-->
+				<!--، یک مدل مبتنی بر-->
+				<!--<span class="fragment highlight-orange" data-fragment-index="15">-->
+				<!--میدان تصادفی شرطی-->
+				<!--</span>-->
+				<!--برای-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
+				<!--تشخیص صحنه-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
+				<!--اجسام درون صحنه-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="fragment highlight-blue" data-fragment-index="16">-->
+				<!--تولید جمله برای تصاویر-->
+				<!--</span>-->
+				<!--، ارائه دادند-->
+				<!--<span class="cite">-->
+				<!--[6]-->
+				<!--</span>-->
+				<!--</li>-->
 				<!--</ul>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-									<!--<span class="cite">-->
-										<!--[3]-->
-									<!--</span>-->
-					<!--میدان تصادفی مارکف-->
+				<!--<span class="cite">-->
+				<!--[3]-->
+				<!--</span>-->
+				<!--میدان تصادفی مارکف-->
 				<!--</h3>-->
-
 				<!--<ul>-->
-					<!--<li class="fragment">-->
-						<!--تعریف سه‌تایی-->
-						<!--«-->
-						<!--<span class="fragment highlight-blue">-->
-										<!--جسم-->
-									<!--</span>-->
-						<!--،-->
-						<!--<span class="fragment highlight-green">-->
-										<!--رخ‌داد-->
-									<!--</span>-->
-						<!--،-->
-						<!--<span class="fragment highlight-orange">-->
-										<!--صحنه-->
-									<!--</span>-->
-						<!--»-->
-						<!--به ازای هر تصویر-->
-					<!--</li>-->
-					<!--<li class="fragment">-->
-						<!--مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده-->
-					<!--</li>-->
+				<!--<li class="fragment">-->
+				<!--تعریف سه‌تایی-->
+				<!--«-->
+				<!--<span class="fragment highlight-blue">-->
+				<!--جسم-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="fragment highlight-green">-->
+				<!--رخ‌داد-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="fragment highlight-orange">-->
+				<!--صحنه-->
+				<!--</span>-->
+				<!--»-->
+				<!--به ازای هر تصویر-->
+				<!--</li>-->
+				<!--<li class="fragment">-->
+				<!--مدل میدان تصادفی مارکف شامل ۳ گره، هرکدام برای یکی از ابعاد ارائه شده-->
+				<!--</li>-->
 				<!--</ul>-->
 				<!--<figure class="fragment">-->
-					<!--<img src="Imgs/scenepgm1.png" style="width: 75%"/>-->
-
-					<!--<figcaption class="figure_caption">-->
-									<!--<span class="cite">-->
-										<!--[3]-->
-									<!--</span>-->
-
-						<!--شکل ۱. مدل گرافی احتمالاتی روش اول-->
-					<!--</figcaption>-->
+				<!--<img src="Imgs/scenepgm1.png" style="width: 75%"/>-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[3]-->
+				<!--</span>-->
+				<!--شکل ۱. مدل گرافی احتمالاتی روش اول-->
+				<!--</figcaption>-->
 				<!--</figure>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--میدان تصادفی مارکف-->
+				<!--میدان تصادفی مارکف-->
 				<!--</h3>-->
 				<!--<ul>-->
-					<!--<li class="fragment">-->
-						<!--فاکتورهای گره-->
-						<!--<div class="extra-container">-->
-							<!--<blockquote class="right-container">-->
-								<!--آشکار‌کننده‌های فلزنسوالب-->
-							<!--</blockquote>-->
-							<!--<blockquote class="left-container">-->
-								<!--دسته‌بندی‌کننده دیوالا-->
-							<!--</blockquote>-->
-							<!--<blockquote class="center-container">-->
-								<!--دسته‌بندی کننده مبتنی برگیست-->
-							<!--</blockquote>-->
-						<!--</div>-->
-					<!--</li>-->
-					<!--<li class="fragment">-->
-						<!--فاکتور یال-->
-						<!--<blockquote class="extra-container center-container" style="width: 45%">-->
-							<!--میزان ارتباط گره‌ها با یک‌دیگر-->
-						<!--</blockquote>-->
-					<!--</li>-->
-					<!--<li class="fragment">-->
-						<!--استفاده از ماشین بردار پشتیبان برای دسته‌بندی بردارهای ویژگی استخراج شده-->
-					<!--</li>-->
+				<!--<li class="fragment">-->
+				<!--فاکتورهای گره-->
+				<!--<div class="extra-container">-->
+				<!--<blockquote class="right-container">-->
+				<!--آشکار‌کننده‌های فلزنسوالب-->
+				<!--</blockquote>-->
+				<!--<blockquote class="left-container">-->
+				<!--دسته‌بندی‌کننده دیوالا-->
+				<!--</blockquote>-->
+				<!--<blockquote class="center-container">-->
+				<!--دسته‌بندی کننده مبتنی برگیست-->
+				<!--</blockquote>-->
+				<!--</div>-->
+				<!--</li>-->
+				<!--<li class="fragment">-->
+				<!--فاکتور یال-->
+				<!--<blockquote class="extra-container center-container" style="width: 45%">-->
+				<!--میزان ارتباط گره‌ها با یک‌دیگر-->
+				<!--</blockquote>-->
+				<!--</li>-->
+				<!--<li class="fragment">-->
+				<!--استفاده از ماشین بردار پشتیبان برای دسته‌بندی بردارهای ویژگی استخراج شده-->
+				<!--</li>-->
 				<!--</ul>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--میدان تصادفی مارکف-->
+				<!--میدان تصادفی مارکف-->
 				<!--</h3>-->
 				<!--<blockquote>-->
-					<!--نتایج-->
+				<!--نتایج-->
 				<!--</blockquote>-->
 				<!--<br/>-->
 				<!--<figure>-->
-					<!--<figcaption class="figure_caption">-->
-									<!--<span class="cite">-->
-										<!--[3]-->
-									<!--</span>-->
-						<!--جدول ۱. نتایج میدان تصادفی مارکف-->
-					<!--</figcaption>-->
-					<!--<table class="table table-responsive">-->
-						<!--<thead>-->
-						<!--<tr>-->
-							<!--&lt;!&ndash;<td>نام روش</td>&ndash;&gt;-->
-							<!--<td>پتانسیل جسم</td>-->
-							<!--<td>بدون یال</td>-->
-							<!--<td>وزن ثابت، استنتاج افزایشی</td>-->
-							<!--<td>یادگیری ساختار، استنتاج افزایشی</td>-->
-							<!--<td>وزن ثابت استنتاج ضربی</td>-->
-							<!--<td>یادگیری ساختار، استنتاج ضربی</td>-->
-						<!--</tr>-->
-						<!--</thead>-->
-						<!--<tr>-->
-							<!--&lt;!&ndash;<td>&ndash;&gt;-->
-								<!--&lt;!&ndash;معیار&ndash;&gt;-->
-								<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
-									<!--&lt;!&ndash;$F$&ndash;&gt;-->
-								<!--&lt;!&ndash;</span>&ndash;&gt;-->
-								<!--&lt;!&ndash;در کل&ndash;&gt;-->
-							<!--&lt;!&ndash;</td>&ndash;&gt;-->
-							<!--<td>0.44</td>-->
-							<!--<td class="fragment highlight-orange">۰.۵۲</td>-->
-							<!--<td>۰.۳۸</td>-->
-							<!--<td>۰.۴۵</td>-->
-							<!--<td>۰.۴۷</td>-->
-							<!--<td>۰.۵۱</td>-->
-						<!--</tr>-->
-						<!--&lt;!&ndash;<tr>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td></td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td>0.24</td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td>0.27</td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td>0.16</td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td>0.58</td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td class="fragment highlight-orange">0.76</td>&ndash;&gt;-->
-							<!--&lt;!&ndash;<td>0.74</td>&ndash;&gt;-->
-						<!--&lt;!&ndash;</tr>&ndash;&gt;-->
-						<!--<tr>-->
-							<!--&lt;!&ndash;<td>&ndash;&gt;-->
-								<!--&lt;!&ndash;معیار&ndash;&gt;-->
-								<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
-									<!--&lt;!&ndash;$F$&ndash;&gt;-->
-								<!--&lt;!&ndash;</span>&ndash;&gt;-->
-<!--&lt;!&ndash;برای اجسام&ndash;&gt;-->
-							<!--&lt;!&ndash;</td>&ndash;&gt;-->
-							<!--<td class="fragment highlight-orange">0.59</td>-->
-							<!--<td>0.58</td>-->
-							<!--<td>0.36</td>-->
-							<!--<td>0.53</td>-->
-							<!--<td>0.55</td>-->
-							<!--<td>0.57</td>-->
-						<!--</tr>-->
-						<!--<tr>-->
-							<!--&lt;!&ndash;<td>&ndash;&gt;-->
-								<!--&lt;!&ndash;معیار&ndash;&gt;-->
-								<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
-									<!--&lt;!&ndash;$F$&ndash;&gt;-->
-								<!--&lt;!&ndash;</span>&ndash;&gt;-->
-								<!--&lt;!&ndash;برای رخ‌دادها&ndash;&gt;-->
-							<!--&lt;!&ndash;</td>&ndash;&gt;-->
-							<!--<td>0.27</td>-->
-							<!--<td class="fragment highlight-orange">0.52</td>-->
-							<!--<td>0.50</td>-->
-							<!--<td>0.37</td>-->
-							<!--<td>0.42</td>-->
-							<!--<td>0.47</td>-->
-						<!--</tr>-->
-						<!--<tr>-->
-							<!--&lt;!&ndash;<td>&ndash;&gt;-->
-								<!--&lt;!&ndash;معیار&ndash;&gt;-->
-								<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
-									<!--&lt;!&ndash;$F$&ndash;&gt;-->
-								<!--&lt;!&ndash;</span>&ndash;&gt;-->
-								<!--&lt;!&ndash;برای صحنه‌ها&ndash;&gt;-->
-
-							<!--&lt;!&ndash;</td>&ndash;&gt;-->
-							<!--<td>0.28</td>-->
-							<!--<td class="fragment highlight-orange">0.48</td>-->
-							<!--<td>0.28</td>-->
-							<!--<td>0.44</td>-->
-							<!--<td>0.46</td>-->
-							<!--<td class="fragment highlight-orange">0.48</td>-->
-						<!--</tr>-->
-					<!--</table>-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[3]-->
+				<!--</span>-->
+				<!--جدول ۱. نتایج میدان تصادفی مارکف-->
+				<!--</figcaption>-->
+				<!--<table class="table table-responsive">-->
+				<!--<thead>-->
+				<!--<tr>-->
+				<!--&lt;!&ndash;<td>نام روش</td>&ndash;&gt;-->
+				<!--<td>پتانسیل جسم</td>-->
+				<!--<td>بدون یال</td>-->
+				<!--<td>وزن ثابت، استنتاج افزایشی</td>-->
+				<!--<td>یادگیری ساختار، استنتاج افزایشی</td>-->
+				<!--<td>وزن ثابت استنتاج ضربی</td>-->
+				<!--<td>یادگیری ساختار، استنتاج ضربی</td>-->
+				<!--</tr>-->
+				<!--</thead>-->
+				<!--<tr>-->
+				<!--&lt;!&ndash;<td>&ndash;&gt;-->
+				<!--&lt;!&ndash;معیار&ndash;&gt;-->
+				<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
+				<!--&lt;!&ndash;$F$&ndash;&gt;-->
+				<!--&lt;!&ndash;</span>&ndash;&gt;-->
+				<!--&lt;!&ndash;در کل&ndash;&gt;-->
+				<!--&lt;!&ndash;</td>&ndash;&gt;-->
+				<!--<td>0.44</td>-->
+				<!--<td class="fragment highlight-orange">۰.۵۲</td>-->
+				<!--<td>۰.۳۸</td>-->
+				<!--<td>۰.۴۵</td>-->
+				<!--<td>۰.۴۷</td>-->
+				<!--<td>۰.۵۱</td>-->
+				<!--</tr>-->
+				<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td></td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td>0.24</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td>0.27</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td>0.16</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td>0.58</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td class="fragment highlight-orange">0.76</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;<td>0.74</td>&ndash;&gt;-->
+				<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+				<!--<tr>-->
+				<!--&lt;!&ndash;<td>&ndash;&gt;-->
+				<!--&lt;!&ndash;معیار&ndash;&gt;-->
+				<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
+				<!--&lt;!&ndash;$F$&ndash;&gt;-->
+				<!--&lt;!&ndash;</span>&ndash;&gt;-->
+				<!--&lt;!&ndash;برای اجسام&ndash;&gt;-->
+				<!--&lt;!&ndash;</td>&ndash;&gt;-->
+				<!--<td class="fragment highlight-orange">0.59</td>-->
+				<!--<td>0.58</td>-->
+				<!--<td>0.36</td>-->
+				<!--<td>0.53</td>-->
+				<!--<td>0.55</td>-->
+				<!--<td>0.57</td>-->
+				<!--</tr>-->
+				<!--<tr>-->
+				<!--&lt;!&ndash;<td>&ndash;&gt;-->
+				<!--&lt;!&ndash;معیار&ndash;&gt;-->
+				<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
+				<!--&lt;!&ndash;$F$&ndash;&gt;-->
+				<!--&lt;!&ndash;</span>&ndash;&gt;-->
+				<!--&lt;!&ndash;برای رخ‌دادها&ndash;&gt;-->
+				<!--&lt;!&ndash;</td>&ndash;&gt;-->
+				<!--<td>0.27</td>-->
+				<!--<td class="fragment highlight-orange">0.52</td>-->
+				<!--<td>0.50</td>-->
+				<!--<td>0.37</td>-->
+				<!--<td>0.42</td>-->
+				<!--<td>0.47</td>-->
+				<!--</tr>-->
+				<!--<tr>-->
+				<!--&lt;!&ndash;<td>&ndash;&gt;-->
+				<!--&lt;!&ndash;معیار&ndash;&gt;-->
+				<!--&lt;!&ndash;<span class="math-inline">&ndash;&gt;-->
+				<!--&lt;!&ndash;$F$&ndash;&gt;-->
+				<!--&lt;!&ndash;</span>&ndash;&gt;-->
+				<!--&lt;!&ndash;برای صحنه‌ها&ndash;&gt;-->
+				<!--&lt;!&ndash;</td>&ndash;&gt;-->
+				<!--<td>0.28</td>-->
+				<!--<td class="fragment highlight-orange">0.48</td>-->
+				<!--<td>0.28</td>-->
+				<!--<td>0.44</td>-->
+				<!--<td>0.46</td>-->
+				<!--<td class="fragment highlight-orange">0.48</td>-->
+				<!--</tr>-->
+				<!--</table>-->
 				<!--</figure>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-								<!--<span class="cite">-->
-									<!--[4]-->
-								<!--</span>-->
-					<!--میدان تصادفی شرطی-->
+				<!--<span class="cite">-->
+				<!--[4]-->
+				<!--</span>-->
+				<!--میدان تصادفی شرطی-->
 				<!--</h3>-->
 				<!--<blockquote>-->
-					<!--استنتاج توزیع شرطی متغیر تصادفی مطلوب-->
+				<!--استنتاج توزیع شرطی متغیر تصادفی مطلوب-->
 				<!--</blockquote>-->
-
 				<!--<figure class="fragment">-->
-					<!--<img src="Imgs/scenepgm2.png" style="width: 70%;">-->
-					<!--<figcaption class="figure_caption">-->
-									<!--<span class="cite">-->
-										<!--[4]-->
-									<!--</span>-->
-						<!--شکل ۲. روش میدان تصادفی شرطی-->
-					<!--</figcaption>-->
+				<!--<img src="Imgs/scenepgm2.png" style="width: 70%;">-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[4]-->
+				<!--</span>-->
+				<!--شکل ۲. روش میدان تصادفی شرطی-->
+				<!--</figcaption>-->
 				<!--</figure>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--میدان تصادفی شرطی-->
+				<!--میدان تصادفی شرطی-->
 				<!--</h3>-->
-
 				<!--<ul>-->
-					<!--<li class="fragment highlight-current-green">-->
-						<!--متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر-->
-					<!--</li>-->
-					<!--<li class="fragment highlight-current-green">-->
-						<!--متغیرهای تصادفی باینری بیان‌کننده صحت تشخیص-->
-					<!--</li>-->
-					<!--<li class="fragment highlight-current-green">-->
-						<!--استفاده از توابع پتانسیل مختلف-->
-						<!--<div class="extra-container" >-->
-							<!--<blockquote class="right-container fragment fade-up highlight-current-blue">-->
-								<!--قطعه‌بندی یگانی-->
-								<!--&lt;!&ndash;<p>&ndash;&gt;-->
-								<!--&lt;!&ndash;به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.&ndash;&gt;-->
-								<!--&lt;!&ndash;</p>&ndash;&gt;-->
-							<!--</blockquote>-->
-							<!--<blockquote class="left-container fragment fade-up highlight-current-blue">-->
-								<!--انطباق متغیرها-->
-								<!--&lt;!&ndash;<p>&ndash;&gt;-->
-								<!--&lt;!&ndash;یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.&ndash;&gt;-->
-								<!--&lt;!&ndash;</p>&ndash;&gt;-->
-							<!--</blockquote>-->
-							<!--<blockquote class="center-container fragment fade-up highlight-current-blue" style="font-size: 35px;">-->
-								<!--انطباق تصویر و اجسام-->
-								<!--&lt;!&ndash;<p>&ndash;&gt;-->
-								<!--&lt;!&ndash;روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.&ndash;&gt;-->
-								<!--&lt;!&ndash;</p>&ndash;&gt;-->
-							<!--</blockquote>-->
-						<!--</div>-->
-					<!--</li>-->
-
+				<!--<li class="fragment highlight-current-green">-->
+				<!--متغیرهای تصادفی بیان‌کننده برچسب قطعات تصویر-->
+				<!--</li>-->
+				<!--<li class="fragment highlight-current-green">-->
+				<!--متغیرهای تصادفی باینری بیان‌کننده صحت تشخیص-->
+				<!--</li>-->
+				<!--<li class="fragment highlight-current-green">-->
+				<!--استفاده از توابع پتانسیل مختلف-->
+				<!--<div class="extra-container" >-->
+				<!--<blockquote class="right-container fragment fade-up highlight-current-blue">-->
+				<!--قطعه‌بندی یگانی-->
+				<!--&lt;!&ndash;<p>&ndash;&gt;-->
+				<!--&lt;!&ndash;به منظور ایجاد قطعات یکنواخت تعریف شده است و با میان‌گین‌گیری در محدوده قطعه محاسبه می‌شود.&ndash;&gt;-->
+				<!--&lt;!&ndash;</p>&ndash;&gt;-->
+				<!--</blockquote>-->
+				<!--<blockquote class="left-container fragment fade-up highlight-current-blue">-->
+				<!--انطباق متغیرها-->
+				<!--&lt;!&ndash;<p>&ndash;&gt;-->
+				<!--&lt;!&ndash;یک مقدار جریمه به ازای هر عدم تطابق بین متغیرهای سطوح است که برای یکپارچگی متغیرها تعریف شده است.&ndash;&gt;-->
+				<!--&lt;!&ndash;</p>&ndash;&gt;-->
+				<!--</blockquote>-->
+				<!--<blockquote class="center-container fragment fade-up highlight-current-blue" style="font-size: 35px;">-->
+				<!--انطباق تصویر و اجسام-->
+				<!--&lt;!&ndash;<p>&ndash;&gt;-->
+				<!--&lt;!&ndash;روش دی‌پی‌ام ارائه شده توسط فلزنسوالب که میزان انطباق هر یک از دسته‌های اجسام تشخیص داده شده با تصویر را محاسبه می‌کند.&ndash;&gt;-->
+				<!--&lt;!&ndash;</p>&ndash;&gt;-->
+				<!--</blockquote>-->
+				<!--</div>-->
+				<!--</li>-->
 				<!--</ul>-->
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--میدان تصادفی شرطی-->
+				<!--میدان تصادفی شرطی-->
 				<!--</h3>-->
 				<!--<blockquote>-->
-					<!--نتایج-->
+				<!--نتایج-->
 				<!--</blockquote>-->
 				<!--<br>-->
 				<!--<figure>-->
-					<!--<figcaption class="figure_caption">-->
-								<!--<span class="cite">-->
-									<!--[4]-->
-								<!--</span>-->
-						<!--جدول ۲. نتایج میدان تصادفی شرطی-->
-					<!--</figcaption>-->
-					<!--<table class="table table-responsive">-->
-						<!--<thead>-->
-						<!--<tr>-->
-							<!--<td>پشت</td>-->
-							<!--<td>هوا</td>-->
-							<!--<td>دوچرخه</td>-->
-							<!--<td>پرنده</td>-->
-							<!--<td>قایق</td>-->
-							<!--<td>اتوبوس</td>-->
-							<!--<td>ماشین</td>-->
-							<!--<td>گربه</td>-->
-							<!--<td>صندلی</td>-->
-							<!--<td>گاو</td>-->
-						<!--</tr>-->
-						<!--</thead>-->
-						<!--<tr>-->
-							<!--<td>76.9</td>-->
-							<!--<td>31.3</td>-->
-							<!--<td>29.7</td>-->
-							<!--<td>37.3</td>-->
-							<!--<td>27.7</td>-->
-							<!--<td>29.5</td>-->
-							<!--<td>52.1</td>-->
-							<!--<td>40.0</td>-->
-							<!--<td>38.0</td>-->
-							<!--<td>6.6</td>-->
-						<!--</tr>-->
-					<!--</table>-->
-					<!--<table class="table table-responsive">-->
-						<!--<thead>-->
-						<!--<tr>-->
-							<!--<td>میز</td>-->
-							<!--<td>سگ</td>-->
-							<!--<td>اسب</td>-->
-							<!--<td>موتور</td>-->
-							<!--<td>انسان</td>-->
-							<!--<td>گیاه</td>-->
-							<!--<td>گوسفند</td>-->
-							<!--<td>کاناپه</td>-->
-							<!--<td>قطار</td>-->
-							<!--<td>مانیتور</td>-->
-						<!--</tr>-->
-						<!--</thead>-->
-						<!--<tr>-->
-							<!--<td>25.2</td>-->
-							<!--<td>33.2</td>-->
-							<!--<td>38.2</td>-->
-							<!--<td>44.3</td>-->
-							<!--<td>42.5</td>-->
-							<!--<td>15.2</td>-->
-							<!--<td>32.0</td>-->
-							<!--<td>22.2</td>-->
-							<!--<td>40.7</td>-->
-							<!--<td>48.4</td>-->
-						<!--</tr>-->
-					<!--</table>-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[4]-->
+				<!--</span>-->
+				<!--جدول ۲. نتایج میدان تصادفی شرطی-->
+				<!--</figcaption>-->
+				<!--<table class="table table-responsive">-->
+				<!--<thead>-->
+				<!--<tr>-->
+				<!--<td>پشت</td>-->
+				<!--<td>هوا</td>-->
+				<!--<td>دوچرخه</td>-->
+				<!--<td>پرنده</td>-->
+				<!--<td>قایق</td>-->
+				<!--<td>اتوبوس</td>-->
+				<!--<td>ماشین</td>-->
+				<!--<td>گربه</td>-->
+				<!--<td>صندلی</td>-->
+				<!--<td>گاو</td>-->
+				<!--</tr>-->
+				<!--</thead>-->
+				<!--<tr>-->
+				<!--<td>76.9</td>-->
+				<!--<td>31.3</td>-->
+				<!--<td>29.7</td>-->
+				<!--<td>37.3</td>-->
+				<!--<td>27.7</td>-->
+				<!--<td>29.5</td>-->
+				<!--<td>52.1</td>-->
+				<!--<td>40.0</td>-->
+				<!--<td>38.0</td>-->
+				<!--<td>6.6</td>-->
+				<!--</tr>-->
+				<!--</table>-->
+				<!--<table class="table table-responsive">-->
+				<!--<thead>-->
+				<!--<tr>-->
+				<!--<td>میز</td>-->
+				<!--<td>سگ</td>-->
+				<!--<td>اسب</td>-->
+				<!--<td>موتور</td>-->
+				<!--<td>انسان</td>-->
+				<!--<td>گیاه</td>-->
+				<!--<td>گوسفند</td>-->
+				<!--<td>کاناپه</td>-->
+				<!--<td>قطار</td>-->
+				<!--<td>مانیتور</td>-->
+				<!--</tr>-->
+				<!--</thead>-->
+				<!--<tr>-->
+				<!--<td>25.2</td>-->
+				<!--<td>33.2</td>-->
+				<!--<td>38.2</td>-->
+				<!--<td>44.3</td>-->
+				<!--<td>42.5</td>-->
+				<!--<td>15.2</td>-->
+				<!--<td>32.0</td>-->
+				<!--<td>22.2</td>-->
+				<!--<td>40.7</td>-->
+				<!--<td>48.4</td>-->
+				<!--</tr>-->
+				<!--</table>-->
 				<!--</figure>-->
-
 				<!--<blockquote class="fragment fade-up">-->
-					<!--میانگین دقت:-->
-					<!--<span class="fragmeیnt highlight-green">-->
-								 <!--36.4-->
-							 <!--</span>-->
+				<!--میانگین دقت:-->
+				<!--<span class="fragmeیnt highlight-green">-->
+				<!--36.4-->
+				<!--</span>-->
 				<!--</blockquote>-->
-			<!--</section>-->
-
-
-			<!--<section style="width: 100%;">-->
+				<!--</section>-->
+				<!--<section style="width: 100%;">-->
 				<!--<h3>-->
-								<!--<span class="cite">-->
-									<!--[5]-->
-								<!--</span>-->
-					<!--مدل مولد-->
+				<!--<span class="cite">-->
+				<!--[5]-->
+				<!--</span>-->
+				<!--مدل مولد-->
 				<!--</h3>-->
-
 				<!--<blockquote class="extra-container">-->
-					<!--یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند-->
-					<!--<blockquote class="left-container">-->
-						<!--<img src="Imgs/scenepgm3.png" style="width: 100%; height: 335px;">-->
-						<!--<figcaption class="figure_caption">-->
-								<!--<span class="cite">-->
-									<!--[5]-->
-								<!--</span>-->
-							<!--شکل ۳. مدل مولد ارائه شده در پژوهش-->
-						<!--</figcaption>-->
-					<!--</blockquote>-->
-
-					<!--<blockquote class="right-container" style="font-size:20px;">-->
-						<!--<p class="fragment highlight-current-green">-->
-							<!--یک متغیر تصادفی، بیان‌گر حضور یا عدم حضور هر یک از دسته‌های صحنه-->
-						<!--</p>-->
-						<!--<p class="fragment highlight-current-green">-->
-							<!--یک متغیر تصادفی، بیان‌گر رخ‌داد به تصویر کشیده شده-->
-						<!--</p>-->
-						<!--<p class="fragment highlight-current-green">-->
-							<!--یک جفت متغیر برای حضور یا عدم حضور دسته‌های اجسام و شکل کلی هر دسته-->
-						<!--</p>-->
-						<!--<p class="fragment highlight-current-green">-->
-							<!--گره‌های تیره نماینده متغیرهایی که در تصاویر آموزشی دیده می‌شوند-->
-						<!--</p>-->
-						<!--<p class="fragment highlight-current-green">-->
-							<!--گره‌های روشن‌تر فقط در فرآیند آموزش دیده می‌شوند  و بقیه متغیرهای مخفی هستند-->
-						<!--</p>-->
-						<!--&lt;!&ndash;<p>&ndash;&gt;-->
-						<!--&lt;!&ndash;گره‌هایی که تیره نیستند، نماینده متغیرهای مخفی هستند&ndash;&gt;-->
-						<!--&lt;!&ndash;</p>&ndash;&gt;-->
-					<!--</blockquote>-->
+				<!--یک مدل مولد که با اقتباس از نحوه تولید تصاویر، پارامترهای مطلوب را تخمین می‌زند-->
+				<!--<blockquote class="left-container">-->
+				<!--<img src="Imgs/scenepgm3.png" style="width: 100%; height: 335px;">-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[5]-->
+				<!--</span>-->
+				<!--شکل ۳. مدل مولد ارائه شده در پژوهش-->
+				<!--</figcaption>-->
 				<!--</blockquote>-->
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<h6 style="font-size: 35px;">-->
-					<!--«-->
-					<!--ادامه-->
-					<!--»-->
-				<!--</h6>-->
-
-				<!--<blockquote>-->
-					<!--<ol>-->
-						<!--فرآیند اختصاص دسته صحنه به تصاویر-->
-						<!--<li class="fragment fade-up">-->
-							<!--اختصاص یک دسته اولیه مطابق با توزیع-->
-							<!--<span class="math-inline">-->
-								<!--$P(S | E, \psi)$-->
-								<!--</span>-->
-						<!--</li>-->
-						<!--<li class="fragment fade-up">-->
-							<!--تولید پارامتر-->
-							<!--<span class="math-inline">-->
-								<!--$\omega$-->
-								<!--</span>-->
-							<!--مطابق با توزیع-->
-							<!--<span class="math-inline">-->
-									<!--$P( \omega | S , \rho) $-->
-								<!--</span>-->
-						<!--</li>-->
-						<!--<li class="fragment fade-up">-->
-							<!--برای تولید هر یک از-->
-							<!--<span class="math-inline">-->
-								<!--$M$-->
-								<!--</span>-->
-							<!--ناحیه تصویر:-->
-							<!--<ol>-->
-								<!--<li class="fragment fade-up">-->
-									<!--تولید عنوان مربوط به هر بخش با توزیع-->
-									<!--<span class="math-inline">-->
-											<!--$t \propto Mult(\omega)$-->
-										<!--</span>-->
-								<!--</li>-->
-								<!--<li class="fragment fade-up">-->
-									<!--تولید متغیر تصادفی-->
-									<!--<span class="math-inline">-->
-										<!--$X$-->
-										<!--</span>-->
-									<!--با توزیع-->
-									<!--<span class="math-inline">-->
-											<!--$P( X | t , \omega) $-->
-										<!--</span>  -->
-								<!--</li>-->
-							<!--</ol>-->
-						<!--</li>-->
-					<!--</ol>-->
-				<!--</blockquote>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<h6 style="font-size: 35px;">-->
-					<!--«-->
-					<!--ادامه-->
-					<!--»-->
-				<!--</h6>-->
-
-				<!--<ul>-->
-					<!--<li class="fragment highlight-current-blue">اختصاص تصویر اجسام به تصویر ورودی با فرآیند مشابه</li>-->
-					<!--<li class="fragment highlight-current-blue"> هر تصویر می‌تواند بیش از یک جسم داشته باشد</li>-->
-					<!--<li class="fragment highlight-current-blue">تعداد کل اجسام موجود در تصویر با-->
-						<!--<span class="math-inline">-->
-								<!--$K$-->
-								<!--</span>-->
-						<!--نمایش داده‌ می‌شود</li>-->
-					<!--<li class="fragment highlight-current-blue">تعداد کل دسته‌های اجسام موجود با-->
-						<!--<span class="math-inline">-->
-								<!--$O$-->
-								<!--</span>-->
-						<!--نمایش داده می‌شود</li>-->
-				<!--</ul>-->
-
-			<!--</section>-->
-
-
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<h6 style="font-size: 35px;">-->
-					<!--«-->
-					<!--ادامه-->
-					<!--»-->
-				<!--</h6>-->
-
-				<!--<blockquote>-->
-					<!--<ol>-->
-						<!--فرآیند اختصاص تصویر اجسام به تصاویر-->
-						<!--<h6 style="font-size:30px;">-->
-							<!--«-->
-							<!--به ازای هریک از-->
-							<!--<span class="math-inline">-->
-									<!--$K$-->
-									<!--</span>-->
-							<!--جسم موجود در تصویر-->
-							<!--»-->
-						<!--</h6>-->
-						<!--<li class="fragment fade-up">-->
-							<!--اختصاص یک دسته اولیه با توزیع-->
-							<!--<span class="math-inline">-->
-										<!--$P(O | E , \pi)$-->
-									<!--</span>-->
-						<!--</li>-->
-						<!--<li class="fragment fade-up">-->
-							<!--با داشتن-->
-							<!--<span class="math-inline">-->
-									<!--$O$-->
-									<!--</span>-->
-							<!--می‌توان تمامی-->
-							<!--<span class="math-inline">-->
-									<!--$A$-->
-									<!--</span>-->
-							<!--و-->
-							<!--<span class="math-inline">-->
-									<!--$G$-->
-									<!--</span>-->
-							<!--ها را تولید کرد:-->
-							<!--<ol>-->
-								<!--<li class="fragment fade-up">-->
-									<!--تولید عنوان مربوط به هر بخش با توزیع-->
-									<!--<span class="math-inline">-->
-												<!--$z \propto Mult(\lambda | O)$-->
-											<!--</span>-->
-								<!--</li>-->
-								<!--<li class="fragment fade-up">-->
-									<!--تولید نواحی مطلوب-->
-									<!--<span class="math-inline">-->
-											<!--$A$-->
-											<!--</span>-->
-									<!--و-->
-									<!--<span class="math-inline">-->
-											<!--$G$-->
-											<!--</span>-->
-									<!--با توزیع-->
-									<!--<span class="math-inline">-->
-												<!--$P(A, G| z, \theta)$-->
-											<!--</span>  -->
-								<!--</li>-->
-							<!--</ol>-->
-						<!--</li>-->
-					<!--</ol>-->
-				<!--</blockquote>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<h6 style="font-size: 35px;">-->
-					<!--«-->
-					<!--ادامه-->
-					<!--»-->
-				<!--</h6>-->
-
-				<!--<blockquote>-->
-					<!--توزیع احتمالی توام کل سیستم-->
-				<!--</blockquote>-->
-
-				<!--<blockquote class="math-block fragment">-->
-					<!--\begin{equation}-->
-					<!--\begin{split}-->
-					<!--P(E,S,O,X,A,G,&t,z,\omega |\rho ,\phi ,\lambda ,\psi ,\pi, \theta)\\-->
-					<!--&= P(E)\cdot P(S|E,\psi)\cdot P(\omega|S,\rho) \\-->
-					<!--&\cdot \Pi_{m=1}^M P(X_m|t_m,\theta)\cdot P(t_m|\omega) \\-->
-					<!--&\cdot \Pi_{k=1}^K P(O_k|E,\pi)\\-->
-					<!--&\cdot \Pi_{n=1}^N P(A_n,G_n|z_n,\phi)\cdot P(z_n|\lambda,O_k)-->
-					<!--\end{split}-->
-					<!--\end{equation}-->
-				<!--</blockquote>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<h6 style="font-size: 35px;">-->
-					<!--«-->
-					<!--ادامه-->
-					<!--»-->
-				<!--</h6>-->
-
-				<!--<p>-->
-					<!--یک تخمین‌گر بیشینه احتمال بر مبنای توزیع احتمالی توام ارائه شده است-->
+				<!--<blockquote class="right-container" style="font-size:20px;">-->
+				<!--<p class="fragment highlight-current-green">-->
+				<!--یک متغیر تصادفی، بیان‌گر حضور یا عدم حضور هر یک از دسته‌های صحنه-->
 				<!--</p>-->
-
-				<!--<blockquote class="math-block">-->
-					<!--$-->
-					<!--P(I|E) \propto \Sigma_j P(I|O_j) P(O_j|E) P(I|S) P(S|E)-->
-					<!--$-->
-				<!--</blockquote>-->
-
-				<!--<ul>-->
-					<!--<li>-->
-						<!--برای تخمین مقدار بهینه پارامترهای-->
-						<!--<span class="math-inline">-->
-								<!--$\psi$-->
-								<!--</span>-->
-						<!--،-->
-						<!--<span class="math-inline">-->
-								<!--$\rho$-->
-								<!--</span>-->
-						<!--و-->
-						<!--<span class="math-inline">-->
-								<!--$\theta$-->
-								<!--</span>-->
-						<!--از روش-->
-						<!--«-->
-						<!--<span class="fragment highlight-green">-->
-								<!--انتقال پیام متغیر-->
-								<!--</span>-->
-						<!--»-->
-						<!--استفاده شده است-->
-					<!--</li>-->
-					<!--<li>-->
-						<!--برای تخمین مقدار بهینه پارامترهای-->
-						<!--<span class="math-inline">-->
-								<!--$\pi$-->
-								<!--</span>-->
-						<!--،-->
-						<!--<span class="math-inline">-->
-								<!--$\beta$-->
-								<!--</span>-->
-						<!--و-->
-						<!--<span class="math-inline">-->
-								<!--$\lambda$-->
-								<!--</span>-->
-						<!--از روش-->
-						<!--«-->
-						<!--<span class="fragment highlight-green">-->
-								<!--نمونه‌برداری گیبس-->
-								<!--</span>-->
-						<!--»-->
-						<!--استفاده شده است-->
-					<!--</li>-->
-				<!--</ul>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مولد-->
-				<!--</h3>-->
-				<!--<blockquote>-->
-					<!--نتایج-->
-				<!--</blockquote>-->
-				<!--<figure>-->
-					<!--<img src="Imgs/scenepgm4.png" style="width: 50%;">-->
-					<!--<figcaption class="figure_caption">-->
-								<!--<span class="cite">-->
-									<!--[5]-->
-								<!--</span>-->
-						<!--شکل ۴. ماتریس‌ درهم‌ریختگی مدل-->
-					<!--</figcaption>-->
-				<!--</figure>-->
-			<!--</section>-->
-			</section>
-
-			<section data-background="#004455">
-
-			<section>
-				<h3>
-					روش‌های مبتنی بر شبکه‌های عصبی عمیق
-				</h3>
-				<blockquote>
-					نگاشت تصاویر ورودی با استفاده از شبکه‌های عصبی عمیق به فضای معنایی
-				</blockquote>
-				<!--<p class="fragment zoom-in">-->
-					<!--در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم-->
+				<!--<p class="fragment highlight-current-green">-->
+				<!--یک متغیر تصادفی، بیان‌گر رخ‌داد به تصویر کشیده شده-->
 				<!--</p>-->
-			</section>
-
-
-
-				<section>
-					<h3>
-						روش‌های مبتنی بر شبکه‌های عصبی عمیق
-					</h3>
-
-					<div class="extra-container">
-
-						<blockquote class="right-container">
-							<ol style="width: 90%;">
-								<li class="fragment zoom-in" data-fragment-index="1">
-
-									<span>گرشیک و همکارانش</span>
-									<span class="cite">
-								[7]
-								</span>
-
-								</li>
-								<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2014</span></li>
-								<li class="fragment zoom-in" data-fragment-index="3"><span
-										class="fragment zoom-in" data-fragment-index="3">مبتنی بر شبکه کانولوشنی عمیق </span></li>
-								<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">استخراج زیرنواحی شامل اجسام</span>
-								<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">دسته‌بندی زیرنواحی </span>
-								<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">ناحیه‌بندی سلسله‌مراتبی</span>
-								<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">سرعت بالا</span>
-								<li class="fragment zoom-in" data-fragment-index="8"><span class="fragment highlight-orange" data-fragment-index="8">تعداد نواحی از پیش‌تعیین شده</span>
-
-								<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-green" data-fragment-index="9">یکی از پرکاربردترین روش‌ها</span>
-							</ol>
-
-						</blockquote>
-
-						<figure class="left-container">
-							<img src="Imgs/ann0.png"/>
-
-							<figcaption class="figure_caption">
-									<span class="cite">
-										[7]
-									</span>
-
-								شکل 5. صفحه نخست مقاله
-							</figcaption>
-						</figure>
-
-					</div>
-
-
-				</section>
-
-
-
-
+				<!--<p class="fragment highlight-current-green">-->
+				<!--یک جفت متغیر برای حضور یا عدم حضور دسته‌های اجسام و شکل کلی هر دسته-->
+				<!--</p>-->
+				<!--<p class="fragment highlight-current-green">-->
+				<!--گره‌های تیره نماینده متغیرهایی که در تصاویر آموزشی دیده می‌شوند-->
+				<!--</p>-->
+				<!--<p class="fragment highlight-current-green">-->
+				<!--گره‌های روشن‌تر فقط در فرآیند آموزش دیده می‌شوند  و بقیه متغیرهای مخفی هستند-->
+				<!--</p>-->
+				<!--&lt;!&ndash;<p>&ndash;&gt;-->
+				<!--&lt;!&ndash;گره‌هایی که تیره نیستند، نماینده متغیرهای مخفی هستند&ndash;&gt;-->
+				<!--&lt;!&ndash;</p>&ndash;&gt;-->
+				<!--</blockquote>-->
+				<!--</blockquote>-->
+				<!--</section>-->
 				<!--<section>-->
 				<!--<h3>-->
-								<!--<span class="cite">-->
-									<!--[7]-->
-								<!--</span>-->
-					<!--شبکه عصبی کانولوشنی ناحیه‌ای-->
+				<!--مدل مولد-->
 				<!--</h3>-->
-				<!--<ul>-->
-					<!--<li class="fragment fade-right">توسط گرشیک و همکارانش در سال 2014 مطرح شد</li>-->
-					<!--<li class="fragment fade-right">نواحی مختلف تصویر که شامل تصویر یک جسم هستند استخراج می‌شود</li>-->
-					<!--<li class="fragment fade-right">به هر یک از نواحی استخراج شده، یک برچسب اختصاص داده می‌شود</li>-->
-					<!--<li class="fragment fade-right">نواحی استخراج شده به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند</li>-->
-				<!--</ul>-->
-			<!--</section>-->
-
-			<section>
-				<h3>
-					شبکه عصبی کانولوشنی ناحیه‌ای
-				</h3>
-				<p>
-					مراحل اصلی
-				</p>
-				<div class="extra-container">
-					<blockquote class="right-container fragment highlight-current-green">
-						ناحیه‌بندی تصویر
-					</blockquote>
-					<blockquote class="left-container fragment highlight-current-green">
-						استخراج ویژگی برای هر ناحیه
-					</blockquote>
-					<blockquote class="center-container fragment highlight-current-green">
-						دسته‌بندی
-					</blockquote>
-				</div>
-
-				<figure>
-					<img src="Imgs/sceneann1.png">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[7]
-								</span>
-						شکل 6. مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
-					</figcaption>
-				</figure>
-
-			</section>
-			<section>
-				<h3>
-					شبکه عصبی کانولوشنی ناحیه‌ای
-				</h3>
-				<p>
-					طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی
-				</p>
-				<ol>
-					<li>
-						ناحیه‌بندی اولیه تصویر به نواحی بسیار کوچک
-					</li>
-					<li>
-						توسعه نواحی از طریق ترکیب نواحی مشابه
-					</li>
-				</ol>
-				<div class="extra-container">
-					<blockquote class="right-container">
-						<p>
-							چالش‌ها
-						</p>
-						<ul>
-							<li class="fragment highlight-current-orange" data-fragment-index="1">استخراج نواحی با ابعاد مختلف</li>
-							<li class="fragment highlight-current-orange" data-fragment-index="3">ارائه نواحی مناسب در شرایط مختلف</li>
-						</ul>
-					</blockquote>
-					<blockquote class="left-container">
-						<p>
-							راه‌حل‌ها
-						</p>
-						<ul>
-							<li class="fragment highlight-current-green" data-fragment-index="2">ناحیه‌بندی سلسله‌مراتبی</li>
-							<li class="fragment highlight-current-green" data-fragment-index="4">استفاده از ویژگی‌های مختلف برای مشابهت نواحی</li>
-						</ul>
-					</blockquote>
-				</div>
-			</section>
-
-
-			<section>
-				<h3>
-					شبکه عصبی کانولوشنی ناحیه‌ای
-				</h3>
-				‍‍					<p class="fragment">
-				استفاده از یک شبکه عصبی کانولوشنی برای استخراج بردار ویژگی در هر ناحیه
-			</p>
-
-				<blockquote class="fragment">
-					شبکه عصبی کانولوشنی
-					<span class="fragment highlight-green">
-							کریشفسکی
-							</span>
-				</blockquote>
-
-				<ul class="fragment" style="width: 50%;">
-					<li>
-						شبکه از پیش آموزش ‌دیده
-					</li>
-					<li class="fragment">
-کارآیی خوب در چالش
-						<span style="font-family: Georgia; font-size: 30px;">
-							ImageNet
-						</span>
-
-					</li>
-				</ul>
-
-				<blockquote class="fragment">
-					دسته‌بندی با استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته
-				</blockquote>
-			</section>
-
-
-			<section>
-				<h3>
-					شبکه عصبی کانولوشنی ناحیه‌ای
-				</h3>
-				<blockquote>
-					نتایج
-				</blockquote>
-				<figure style="width: 120%; left: -10%; position: relative;">
-					<img src="Imgs/sceneann2.png">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[7]
-								</span>
-						شکل 7. نواحی استخراج شده توسط روش شبکه عصبی کانولوشنی ناحیه‌ای
-					</figcaption>
-				</figure>
-			</section>
-
-			<section>
-				<h3>
-					شبکه عصبی کانولوشنی ناحیه‌ای
-				</h3>
-				<blockquote>
-					نتایج
-				</blockquote>
-
-				<figure>
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[7]
-								</span>
-						جدول ۴. نتایج به‌دست‌آمده از تخصیص برچسب به اجسام در مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
-					</figcaption>
-					<table class="table table-responsive">
-						<thead>
-						<tr>
-							<td>هواپیما</td>
-							<td>دوچرخه</td>
-							<td>پرنده</td>
-							<td>قایق</td>
-							<td>بطری</td>
-							<td>اتوبوس</td>
-							<td>ماشین</td>
-							<td>گربه</td>
-							<td>صندلی</td>
-							<td>گاو</td>
-						</tr>
-						</thead>
-						<tr>
-							<td>71.8</td>
-							<td>65.8</td>
-							<td>53.0</td>
-							<td>36.8</td>
-							<td>35.9</td>
-							<td>59.7</td>
-							<td>60.0</td>
-							<td>69.9</td>
-							<td>27.9</td>
-							<td>50.6</td>
-						</tr>
-					</table>
-					<table class="table table-responsive">
-						<thead>
-						<tr>
-							<td>میز</td>
-							<td>سگ</td>
-							<td>اسب</td>
-							<td>موتور</td>
-							<td>انسان</td>
-							<td>گیاه</td>
-							<td>گوسفند</td>
-							<td>کاناپه</td>
-							<td>قطار</td>
-							<td>مانیتور</td>
-						</tr>
-						</thead>
-						<tr>
-							<td>41.4</td>
-							<td>70.0</td>
-							<td>62.0</td>
-							<td>69.0</td>
-							<td>58.1</td>
-							<td>29.5</td>
-							<td>59.4</td>
-							<td>39.3</td>
-							<td>61.2</td>
-							<td>52.4</td>
-						</tr>
-					</table>
-				</figure>
-
-				<blockquote>
-					میانگین دقت:
-					<span class="fragment highlight-green">
-								53.7
-							</span>
-
-				</blockquote>
-			</section>
-
-			<section>
-				<h3>
-					روش‌‌های مبتنی بر شبکه‌های عصبی عمیق
-				</h3>
-
-				<div class="extra-container">
-				<blockquote class="left-container">
-					<ol >
-						<li class="fragment zoom-in" data-fragment-index="1">
-
-							<span>لی و همکارانش</span>
-							<span class="cite">
-								[8]
-								</span>
-
-						</li>
-						<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2014</span></li>
-						<li class="fragment zoom-in" data-fragment-index="3"><span
-								class="fragment highlight-orange" data-fragment-index="3">مبتنی بر شبکه کانولوشنی عمیق </span></li>
-						<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">نگاشت دوطرفه تصاویر و جملات</span>
-						<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تولید جمله با ورود یک تصویر</span>
-						<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">بازیابی تصاویر مربوط به یک جمله</span>
-						<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">سرعت بالا</span>
-
-					</ol>
-
-				</blockquote>
-
-				<figure class="right-container">
-					<img src="Imgs/ann1.png" style="height: 500px;">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[8]
-								</span>
-						شکل 8. صفحه نخست مقاله ارائه شده در
-					</figcaption>
-				</figure>
-				</div>
-			</section>
-
-			<section>
-				<h3>
-					نگاشت دوطرفه تصاویر و جملات
-				</h3>
-
-				<ul>
-					<li>
-						استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
-
-						<div class="extra-container">
-							<blockquote class="right-container">
-								انتخاب 20 ناحیه از تصویر
-							</blockquote>
-							<blockquote class="left-container">
-								۴۰۹۶ ویژگی برای هر ناحیه
-							</blockquote>
-						</div>
-					</li>
-				</ul>
-
-				<figure>
-					<img src="Imgs/sceneann4.png" style="width: 80%;">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[8]
-								</span>
-						شکل 9. محاسبه شباهت نواحی تصاویر با عبارات مختلف از جمله
-					</figcaption>
-				</figure>
-			</section>
-
-			<section>
-				<h3>
-					نگاشت دوطرفه تصاویر و جملات
-				</h3>
-
-				<ul>
-					<li>
-						نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر
-						<blockquote class="math-block fragment zoom-in">
-							$
-							\nu = W_m[RCNN_{\theta_c}(I_b)] + b_m
-							$
-						</blockquote>
-					</li>
-				</ul>
-
-				<blockquote class="extra-container fragment zoom-in" >
-					استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف
-
-					<blockquote class="right-container">
-						هم‌ترازسازی سراسری
-					</blockquote>
-
-					<blockquote class="left-container">
-						هم‌ترازسازی ناحیه‌ای
-					</blockquote>
-				</blockquote>
-
-			</section>
-
-			<section>
-				<h3>
-					نگاشت دوطرفه تصاویر و جملات
-				</h3>
-
-				<p class="fragment" data-fragment-index="1">
-					هم‌ترازسازی سراسری
-				</p>
-
-				<blockquote class="fragment" data-fragment-index="1">
-					بیشینه‌شدن شباهت تصویر و جمله موجود در مجموعه‌داده نسبت به مابقی تصاویر و جملات
-				</blockquote>
-				<p class="fragment" data-fragment-index="2">
-					هم‌ترازسازی ناحیه‌ای
-				</p>
-
-				<blockquote class="fragment" style="font-size: 30px;" data-fragment-index="2">
-					برجستگی شباهت نواحی تصویر با عبارات خاص از جمله نسبت به عبارات و نواحی دیگر
-				</blockquote>
-				<!--<ul>-->
-					<!--<li class="fragment fade-up">-->
-						<!--تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله-->
-						<!--<blockquote class="math-block">-->
-							<!--$-->
-							<!--S_{kl} = \frac{1}{|g_k| (|g_l| + n)} \Sigma_{i \in g_k}\Sigma_{j\in g_l}max(0,\nu_i^T\cdot s_j)-->
-							<!--$-->
-						<!--</blockquote>-->
-					<!--</li>-->
-					<!--<li class="fragment fade-up">-->
-						<!--رابطه کلی تابع هدف هم‌ترازسازی سراسری-->
-						<!--<blockquote class="math-block">-->
-							<!--\begin{equation}-->
-							<!--\begin{split}-->
-							<!--C_G(\Theta) = \Sigma_k(-->
-							<!--&\Sigma_l max(0, S_{kl} - S{kk} + \Delta) \\-->
-							<!--&+-->
-							<!--\Sigma_l max(0, S_{lk} - S{kk} + \Delta)-->
-							<!--)-->
-							<!--\end{split}-->
-							<!--\end{equation}-->
-						<!--</blockquote>-->
-					<!--</li>-->
-				<!--</ul>-->
-
-			</section>
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--نگاشت دوطرفه تصاویر و جملات-->
-				<!--</h3>-->
-
-				<!--<p>-->
-					<!--هم‌ترازسازی ناحیه‌ای-->
-				<!--</p>-->
-
-				<!--<blockquote class="fragment" style="font-size: 30px;">-->
-					<!--اگر یک جمله با یک تصویر شباهت زیادی پیدا کرد، حداقل یک ناحیه در تصویر باشد که با یک عبارت از جمله شباهت زیادی داشته باشد و بقیه نواحی با آن عبارت شباهت کمی داشته باشند-->
-				<!--</blockquote>-->
-
-				<!--<p class="fragment">-->
-					<!--شرایط رد فرض بالا-->
-				<!--</p>-->
-
-				<!--<ol class="fragment">-->
-					<!--<li class="fragment highlight-orange">-->
-						<!--ناحیه متشابه با عبارت، استخراج نشده باشد-->
-					<!--</li>-->
-					<!--<li class="fragment highlight-orange">-->
-						<!--عبارت موجود به هیچ بخشی از ویژگی‌های بصری تصویر اشاره نکند-->
-					<!--</li>-->
-					<!--<li class="fragment highlight-orange">-->
-						<!--عبارت توصیف کننده در هیچ یک از تصاویر دیگر تکرار نشده باشد-->
-					<!--</li>-->
+				<!--<h6 style="font-size: 35px;">-->
+				<!--«-->
+				<!--ادامه-->
+				<!--»-->
+				<!--</h6>-->
+				<!--<blockquote>-->
+				<!--<ol>-->
+				<!--فرآیند اختصاص دسته صحنه به تصاویر-->
+				<!--<li class="fragment fade-up">-->
+				<!--اختصاص یک دسته اولیه مطابق با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$P(S | E, \psi)$-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up">-->
+				<!--تولید پارامتر-->
+				<!--<span class="math-inline">-->
+				<!--$\omega$-->
+				<!--</span>-->
+				<!--مطابق با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$P( \omega | S , \rho) $-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up">-->
+				<!--برای تولید هر یک از-->
+				<!--<span class="math-inline">-->
+				<!--$M$-->
+				<!--</span>-->
+				<!--ناحیه تصویر:-->
+				<!--<ol>-->
+				<!--<li class="fragment fade-up">-->
+				<!--تولید عنوان مربوط به هر بخش با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$t \propto Mult(\omega)$-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up">-->
+				<!--تولید متغیر تصادفی-->
+				<!--<span class="math-inline">-->
+				<!--$X$-->
+				<!--</span>-->
+				<!--با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$P( X | t , \omega) $-->
+				<!--</span>  -->
+				<!--</li>-->
 				<!--</ol>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</li>-->
+				<!--</ol>-->
+				<!--</blockquote>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--نگاشت دوطرفه تصاویر و جملات-->
+				<!--مدل مولد-->
 				<!--</h3>-->
-
+				<!--<h6 style="font-size: 35px;">-->
+				<!--«-->
+				<!--ادامه-->
+				<!--»-->
+				<!--</h6>-->
 				<!--<ul>-->
-					<!--<li class="fragment">-->
-						<!--تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله-->
-						<!--<blockquote class="math-block fragment zoom-in">-->
-							<!--$-->
-							<!--C_0(\Theta) = \Sigma_i \Sigma_j max(0 , 1 - y_{ij} \nu_i^T \cdot s_j)-->
-							<!--$-->
-						<!--</blockquote>-->
-					<!--</li>-->
-					<!--<li class="fragment" >-->
-						<!--رابطه کلی تابع هدف هم‌ترازسازی سراسری-->
-						<!--<blockquote class="math-block fragment zoom-in">-->
-							<!--\begin{equation}-->
-							<!--\begin{split}-->
-							<!--&C_F(\Theta) = min_{y_{ij}} C_0(\Theta)-->
-							<!--\\-->
-							<!--&s.t. \Sigma_{i \in p_j} \frac{y_{ij} + 1}{2} \geq 1 \land-->
-							<!--y_{ij} = -1, \forall i,j ;-->
-							<!--\\-->
-							<!--&m_\nu(i) \neq m_s(j) \land y_{ij} \in \{+1, -1\}-->
-							<!--\end{split}-->
-							<!--\end{equation}-->
-						<!--</blockquote>-->
-					<!--</li>-->
+				<!--<li class="fragment highlight-current-blue">اختصاص تصویر اجسام به تصویر ورودی با فرآیند مشابه</li>-->
+				<!--<li class="fragment highlight-current-blue"> هر تصویر می‌تواند بیش از یک جسم داشته باشد</li>-->
+				<!--<li class="fragment highlight-current-blue">تعداد کل اجسام موجود در تصویر با-->
+				<!--<span class="math-inline">-->
+				<!--$K$-->
+				<!--</span>-->
+				<!--نمایش داده‌ می‌شود</li>-->
+				<!--<li class="fragment highlight-current-blue">تعداد کل دسته‌های اجسام موجود با-->
+				<!--<span class="math-inline">-->
+				<!--$O$-->
+				<!--</span>-->
+				<!--نمایش داده می‌شود</li>-->
 				<!--</ul>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
+				<!--</section>-->
+				<!--<section>-->
 				<!--<h3>-->
-					<!--نگاشت دوطرفه تصاویر و جملات-->
+				<!--مدل مولد-->
 				<!--</h3>-->
-
+				<!--<h6 style="font-size: 35px;">-->
+				<!--«-->
+				<!--ادامه-->
+				<!--»-->
+				<!--</h6>-->
+				<!--<blockquote>-->
+				<!--<ol>-->
+				<!--فرآیند اختصاص تصویر اجسام به تصاویر-->
+				<!--<h6 style="font-size:30px;">-->
+				<!--«-->
+				<!--به ازای هریک از-->
+				<!--<span class="math-inline">-->
+				<!--$K$-->
+				<!--</span>-->
+				<!--جسم موجود در تصویر-->
+				<!--»-->
+				<!--</h6>-->
+				<!--<li class="fragment fade-up">-->
+				<!--اختصاص یک دسته اولیه با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$P(O | E , \pi)$-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up">-->
+				<!--با داشتن-->
+				<!--<span class="math-inline">-->
+				<!--$O$-->
+				<!--</span>-->
+				<!--می‌توان تمامی-->
+				<!--<span class="math-inline">-->
+				<!--$A$-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="math-inline">-->
+				<!--$G$-->
+				<!--</span>-->
+				<!--ها را تولید کرد:-->
+				<!--<ol>-->
+				<!--<li class="fragment fade-up">-->
+				<!--تولید عنوان مربوط به هر بخش با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$z \propto Mult(\lambda | O)$-->
+				<!--</span>-->
+				<!--</li>-->
+				<!--<li class="fragment fade-up">-->
+				<!--تولید نواحی مطلوب-->
+				<!--<span class="math-inline">-->
+				<!--$A$-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="math-inline">-->
+				<!--$G$-->
+				<!--</span>-->
+				<!--با توزیع-->
+				<!--<span class="math-inline">-->
+				<!--$P(A, G| z, \theta)$-->
+				<!--</span>  -->
+				<!--</li>-->
+				<!--</ol>-->
+				<!--</li>-->
+				<!--</ol>-->
+				<!--</blockquote>-->
+				<!--</section>-->
+				<!--<section>-->
+				<!--<h3>-->
+				<!--مدل مولد-->
+				<!--</h3>-->
+				<!--<h6 style="font-size: 35px;">-->
+				<!--«-->
+				<!--ادامه-->
+				<!--»-->
+				<!--</h6>-->
+				<!--<blockquote>-->
+				<!--توزیع احتمالی توام کل سیستم-->
+				<!--</blockquote>-->
+				<!--<blockquote class="math-block fragment">-->
+				<!--\begin{equation}-->
+				<!--\begin{split}-->
+				<!--P(E,S,O,X,A,G,&t,z,\omega |\rho ,\phi ,\lambda ,\psi ,\pi, \theta)\\-->
+				<!--&= P(E)\cdot P(S|E,\psi)\cdot P(\omega|S,\rho) \\-->
+				<!--&\cdot \Pi_{m=1}^M P(X_m|t_m,\theta)\cdot P(t_m|\omega) \\-->
+				<!--&\cdot \Pi_{k=1}^K P(O_k|E,\pi)\\-->
+				<!--&\cdot \Pi_{n=1}^N P(A_n,G_n|z_n,\phi)\cdot P(z_n|\lambda,O_k)-->
+				<!--\end{split}-->
+				<!--\end{equation}-->
+				<!--</blockquote>-->
+				<!--</section>-->
+				<!--<section>-->
+				<!--<h3>-->
+				<!--مدل مولد-->
+				<!--</h3>-->
+				<!--<h6 style="font-size: 35px;">-->
+				<!--«-->
+				<!--ادامه-->
+				<!--»-->
+				<!--</h6>-->
+				<!--<p>-->
+				<!--یک تخمین‌گر بیشینه احتمال بر مبنای توزیع احتمالی توام ارائه شده است-->
+				<!--</p>-->
+				<!--<blockquote class="math-block">-->
+				<!--$-->
+				<!--P(I|E) \propto \Sigma_j P(I|O_j) P(O_j|E) P(I|S) P(S|E)-->
+				<!--$-->
+				<!--</blockquote>-->
+				<!--<ul>-->
+				<!--<li>-->
+				<!--برای تخمین مقدار بهینه پارامترهای-->
+				<!--<span class="math-inline">-->
+				<!--$\psi$-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="math-inline">-->
+				<!--$\rho$-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="math-inline">-->
+				<!--$\theta$-->
+				<!--</span>-->
+				<!--از روش-->
+				<!--«-->
+				<!--<span class="fragment highlight-green">-->
+				<!--انتقال پیام متغیر-->
+				<!--</span>-->
+				<!--»-->
+				<!--استفاده شده است-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--برای تخمین مقدار بهینه پارامترهای-->
+				<!--<span class="math-inline">-->
+				<!--$\pi$-->
+				<!--</span>-->
+				<!--،-->
+				<!--<span class="math-inline">-->
+				<!--$\beta$-->
+				<!--</span>-->
+				<!--و-->
+				<!--<span class="math-inline">-->
+				<!--$\lambda$-->
+				<!--</span>-->
+				<!--از روش-->
+				<!--«-->
+				<!--<span class="fragment highlight-green">-->
+				<!--نمونه‌برداری گیبس-->
+				<!--</span>-->
+				<!--»-->
+				<!--استفاده شده است-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--</section>-->
+				<!--<section>-->
+				<!--<h3>-->
+				<!--مدل مولد-->
+				<!--</h3>-->
+				<!--<blockquote>-->
+				<!--نتایج-->
+				<!--</blockquote>-->
 				<!--<figure>-->
-					<!--<img src="Imgs/sceneann5.png">-->
-					<!--<figcaption class="figure_caption">-->
-								<!--<span class="cite">-->
-									<!--[7]-->
-								<!--</span>-->
-						<!--شکل ۹. محاسبه شباهت جملات و تصاویر-->
-					<!--</figcaption>-->
+				<!--<img src="Imgs/scenepgm4.png" style="width: 50%;">-->
+				<!--<figcaption class="figure_caption">-->
+				<!--<span class="cite">-->
+				<!--[5]-->
+				<!--</span>-->
+				<!--شکل ۴. ماتریس‌ درهم‌ریختگی مدل-->
+				<!--</figcaption>-->
 				<!--</figure>-->
-			<!--</section>-->
-
-			<section>
-				<h3>
-					نگاشت دوطرفه تصاویر و جملات
-				</h3>
-
-				<blockquote>
-					نتایج
-				</blockquote>
-
-				<figure>
-					<img src="Imgs/sceneann6.png">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[8]
-								</span>
-						شکل 10. نتایج تولید جمله برای تصاویر ورودی
-					</figcaption>
-				</figure>
-
-			</section>
-
-			<section>
-				<h3>
-					نگاشت دوطرفه تصاویر و جملات
-				</h3>
-
-				<blockquote>
-					نتایج
-				</blockquote>
-
-				<figure>
-					<img src="Imgs/sceneann7.png" style="width: 80%;">
-					<figcaption class="figure_caption">
-								<span class="cite">
-									[8]
-								</span>
-						شکل 11. نتایج جستجوی تصاویر مطابق با عبارت ورودی
-					</figcaption>
-				</figure>
-
-			</section>
-
-			<!--<section>-->
-			<!--<h3>-->
-			<!--ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر-->
-			<!--</h3>-->
-
-			<!--<blockquote>-->
-			<!--نتایج-->
-			<!--</blockquote>-->
-
-			<!--<figure>-->
-			<!--<figcaption>-->
-			<!--جدول 5. نتایج مدل ......-->
-			<!--</figcaption>-->
-			<!--<table>-->
-			<!--<thead>-->
-			<!--<tr>-->
-			<!--<td>-->
-			<!--مدل-->
-			<!--</td>-->
-			<!--<td>-->
-			<!--دقت-->
-			<!--</td>-->
-			<!--</tr>-->
-			<!--</thead>-->
-			<!--</table>-->
-			<!--</figure>-->
-
-			<!--</section>-->
-
-                <section data-background="#003333" data-state="chapter_conclusion">
-                    <h3>
-                        جمع‌بندی
-                    </h3>
-
-
-                    <!--start-->
-                    <div id="ninja-slider-scene">
-                        <div class="slider-inner">
-                            <ul style="width: 100%; height: 100%;">
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_scene_methods.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_feat_based.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_bayes.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_generative.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_mrf.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_crf.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_ann.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_rcnn.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_rcnn_res.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_li1.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                                <li>
-                                    <a class="ns-img" href="Imgs/Slider/pic_li1_res.png"></a>
-                                    <!--<div class="caption cap1 cap2">@colerise</div>-->
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--end-->
-
-
-
-                </section>
-
-		</section>
-
-
-		<section data-background="#224466"  data-state="chapter_sentence">
-			<section>
-				<h3>
-					تولید جمله
-				</h3>
-				<p>
-					چهار روش کلی برای این بخش ارائه شده است
-				</p>
-				<div class="extra-container">
-					<blockquote class="right-container fragment zoom-in">
-						تولید زبان طبیعی
-					</blockquote>
-					<blockquote class="left-container fragment zoom-in">
-						نزدیک‌ترین همسایه
-					</blockquote>
-					<blockquote class="right-container fragment zoom-in">
-						قالب‌های آماده
-					</blockquote>
-					<blockquote class="left-container fragment zoom-in">
-						شبکه‌های عصبی بازگشتی
-					</blockquote>
-				</div>
-			</section>
-
-			<section>
-				<h3>
-					تولید زبان طبیعی
-				</h3>
-
-				<blockquote>
-					قابل فهم کردن داده‌های تفسیرپذیر توسط ماشین برای کاربر انسانی
-				</blockquote>
-
-				<div class="extra-container">
-					<blockquote class="right-container fragment" data-fragment-index="1">
-						<p>
-							کاربردها
-						</p>
-						<ul>
-							<li>
-								<span class="fragment highlight-green" data-fragment-index="1">
-								هواشناسی
-								</span>
-							</li>
-							<li>
-								<span class="fragment highlight-green" data-fragment-index="1">
-								فرودگاه‌ها و ترمینال‌های مسافربری
-								</span>
-							</li>
-						</ul>
-
-					</blockquote>
-					<blockquote class="left-container fragment" data-fragment-index="2">
-						<p>
-							معایب
-						</p>
-						<ul style="width: 80%;">
-							<li class="fragment" data-fragment-index="3">
-								<span  class="fragment highlight-orange" data-fragment-index="3">
-								وابستگی به کاربرد
-									</span>
-							</li>
-							<li class="fragment" data-fragment-index="4">
-								<span class="fragment highlight-orange" data-fragment-index="4">
-								انعطاف‌پذیری کم جملات
-									</span>
-							</li>
-							<li class="fragment" data-fragment-index="5">
-								<span class="fragment highlight-orange" data-fragment-index="5">
-								پیچیدگی وضع قوانین
-									</span>
-							</li>
-						</ul>
-
-					</blockquote>
-				</div>
-
-			</section>
-
-			<section data-background-image="Imgs/nlg.gif">
-				 <blockquote>
-				<h3 style="color: black;">
-
-
-					چالش ارائه خودکار دستورالعمل در
-
-					دنیای
-
-					۳ بعدی
-
-
-
-
-				</h3>
-					 <p style="color: black;">
-					 <span class="cite" style="font-size: 40px;">
-						 [9]
-					 </span>
-
-						 نرم‌افزار ارائه شده در
-					 </p>
-				 </blockquote>
-			</section>
-
-
-			<section>
-				<h3>
-					نزدیک‌ترین همسایه
-				</h3>
-				<div class="extra-container">
-					<blockquote class="right-container" data-fragment-index="1">
-						<ul>
-							<li class="fragment" data-fragment-index="2"><span >
-
-									توسط هودوش و همکارانش
-									<span class="cite">
-										[10]
-									</span>
-							</span>
-							</li>
-							<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2012</span></li>
-							<li class="fragment" data-fragment-index="4"><span
-									class="fragment highlight-green" data-fragment-index="4">محاسبه شباهت بین تصاویر و جملات</span></li>
-							<li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">سادگی پیاده‌سازی</span></li>
-							<li class="fragment" data-fragment-index="6"><span
-									class="fragment highlight-blue" data-fragment-index="6">عدم تولید جمله جدید و سازگار</span></li>
-							<li class="fragment" data-fragment-index="7"><span
-									class="fragment highlight-orange" data-fragment-index="7">نیاز به وجود مجموعه‌ بزرگ جملات</span></li>
-							<li class="fragment" data-fragment-index="8"><span class="fragment highlight-blue" data-fragment-index="8">سرعت پایین</span></li>
-						</ul>
-
-					</blockquote>
-					<figure class="left-container" data-fragment-index="1">
-						<img src="Imgs/knn_firstpage.png" style="width: 400px;"/>
-
-						<figcaption class="figure_caption">
-									<span class="cite">
-										[10]
-									</span>
-
-							شکل 13. صفحه نخست مقاله
-						</figcaption>
-					</figure>
-
-				</div>
-
-			</section>
-
-			<section>
-				<h3>
-					نزدیک‌ترین همسایه
-				</h3>
-
-				<p>نتایج بصری</p>
-
-				<figure>
-					<img src="Imgs/knn1.png" style="width: 100%;"/>
-
-					<figcaption class="figure_caption">
-									<span class="cite">
-										[10]
-									</span>
-
-						شکل 14. نتایج کیفی اختصاص جملات و تصاویر به ترتیب میزان خطا
-					</figcaption>
-				</figure>
-
-			</section>
-
-			<section>
-				<h3>
-					استفاده از قالب‌های آماده
-				</h3>
-				<div class="extra-container">
-					<blockquote class="right-container" data-fragment-index="1">
-						<ul>
-							<li class="fragment" data-fragment-index="2"><span >
-
-									توسط گاپتا و همکارانش
-									<span class="cite">
-										[11]
-									</span>
-							</span>
-							</li>
-							<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2013</span></li>
-							<li class="fragment" data-fragment-index="4"><span
-									>مدل مبتنی بر دانش</span></li>
-							<li class="fragment" data-fragment-index="5"><span >پردازش زبان طبیعی</span></li>
-							<li class="fragment" data-fragment-index="6"><span
-									>استفاده از یک قالب آماده</span></li>
-							<li class="fragment" data-fragment-index="7"><span
-									class="fragment highlight-green" data-fragment-index="7">ایجاد جملات سازگار </span></li>
-							<li class="fragment" data-fragment-index="8"><span class="fragment highlight-orange" data-fragment-index="8">ایجاد جملات با قالب تکراری</span></li>
-						</ul>
-
-					</blockquote>
-					<figure class="left-container" data-fragment-index="1">
-						<img src="Imgs/template1.png" style="width: 400px;"/>
-
-						<figcaption class="figure_caption">
-									<span class="cite">
-										[11]
-									</span>
-
-							شکل 14. صفحه نخست مقاله
-						</figcaption>
-					</figure>
-
-				</div>
-
-			</section>
-
-			<section>
-				<h3>
-					استفاده از شبکه‌های عصبی بازگشتی
-				</h3>
-				<ul>
-					<li class="fragment" data-fragment-index="1">تولید توزیع شرطی کلمه بعدی به شرط کلمات تولید شده</li>
-					<li class="fragment" data-fragment-index="2"><span class="fragment highlight-green" data-fragment-index="2"> تولید جملات جدید و ابتکاری</span></li>
-					<li class="fragment" data-fragment-index="3"><span class="fragment highlight-green" data-fragment-index="3"> سرعت بالا</span></li>
-					<li class="fragment" data-fragment-index="4"><span class="fragment highlight-orange" data-fragment-index="4">
-						وجود پارامترهای بسیار زیاد
+				<!--</section>-->
+				</section>
+<section data-background="#004455">
+	<section>
+		<h3>
+		روش‌های مبتنی بر شبکه‌های عصبی عمیق
+		</h3>
+		<blockquote>
+			نگاشت تصاویر ورودی با استفاده از شبکه‌های عصبی عمیق به فضای معنایی
+		</blockquote>
+		<!--<p class="fragment zoom-in">-->
+		<!--در ادامه به بررسی دو نمونه از این روش‌ها می‌پردازیم-->
+		<!--</p>-->
+	</section>
+	<section>
+		<h3>
+		روش‌های مبتنی بر شبکه‌های عصبی عمیق
+		</h3>
+		<div class="extra-container">
+			<blockquote class="right-container">
+				<ol style="width: 90%;">
+					<li class="fragment zoom-in" data-fragment-index="1">
+						<span>گرشیک و همکارانش</span>
+						<span class="cite">
+							[7]
 						</span>
 					</li>
-					<li class="fragment" data-fragment-index="5"><span class="fragment highlight-orange" data-fragment-index="5">
-						آموزش سخت
+					<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2014</span></li>
+					<li class="fragment zoom-in" data-fragment-index="3"><span
+					class="fragment zoom-in" data-fragment-index="3">مبتنی بر شبکه کانولوشنی عمیق </span></li>
+					<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">استخراج زیرنواحی شامل اجسام</span>
+					<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">دسته‌بندی زیرنواحی </span>
+					<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">ناحیه‌بندی سلسله‌مراتبی</span>
+					<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">سرعت بالا</span>
+					<li class="fragment zoom-in" data-fragment-index="8"><span class="fragment highlight-orange" data-fragment-index="8">تعداد نواحی از پیش‌تعیین شده</span>
+					<li class="fragment zoom-in" data-fragment-index="9"><span class="fragment highlight-green" data-fragment-index="9">یکی از پرکاربردترین روش‌ها</span>
+				</ol>
+			</blockquote>
+			<figure class="left-container">
+				<img src="Imgs/ann0.png"/>
+				<figcaption class="figure_caption">
+				<span class="cite">
+					[7]
+				</span>
+				شکل 5. صفحه نخست مقاله
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+	<!--<section>-->
+	<!--<h3>-->
+	<!--<span class="cite">-->
+	<!--[7]-->
+	<!--</span>-->
+	<!--شبکه عصبی کانولوشنی ناحیه‌ای-->
+	<!--</h3>-->
+	<!--<ul>-->
+	<!--<li class="fragment fade-right">توسط گرشیک و همکارانش در سال 2014 مطرح شد</li>-->
+	<!--<li class="fragment fade-right">نواحی مختلف تصویر که شامل تصویر یک جسم هستند استخراج می‌شود</li>-->
+	<!--<li class="fragment fade-right">به هر یک از نواحی استخراج شده، یک برچسب اختصاص داده می‌شود</li>-->
+	<!--<li class="fragment fade-right">نواحی استخراج شده به شکل سلسله‌مراتبی سازمان‌دهی می‌شوند</li>-->
+	<!--</ul>-->
+	<!--</section>-->
+	<section>
+		<h3>
+		شبکه عصبی کانولوشنی ناحیه‌ای
+		</h3>
+		<p>
+			مراحل اصلی
+		</p>
+		<div class="extra-container">
+			<blockquote class="right-container fragment highlight-current-green">
+				ناحیه‌بندی تصویر
+			</blockquote>
+			<blockquote class="left-container fragment highlight-current-green">
+				استخراج ویژگی برای هر ناحیه
+			</blockquote>
+			<blockquote class="center-container fragment highlight-current-green">
+				دسته‌بندی
+			</blockquote>
+		</div>
+		<figure>
+			<img src="Imgs/sceneann1.png">
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[7]
+			</span>
+			شکل 6. مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+			</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h3>
+		شبکه عصبی کانولوشنی ناحیه‌ای
+		</h3>
+		<p>
+			طرح پیشنهاداتی برای ناحیه‌بندی به طور مستقل از دسته‌بندی
+		</p>
+		<ol>
+			<li>
+				ناحیه‌بندی اولیه تصویر به نواحی بسیار کوچک
+			</li>
+			<li>
+				توسعه نواحی از طریق ترکیب نواحی مشابه
+			</li>
+		</ol>
+		<div class="extra-container">
+			<blockquote class="right-container">
+				<p>
+					چالش‌ها
+				</p>
+				<ul>
+					<li class="fragment highlight-current-orange" data-fragment-index="1">استخراج نواحی با ابعاد مختلف</li>
+					<li class="fragment highlight-current-orange" data-fragment-index="3">ارائه نواحی مناسب در شرایط مختلف</li>
+				</ul>
+			</blockquote>
+			<blockquote class="left-container">
+				<p>
+					راه‌حل‌ها
+				</p>
+				<ul>
+					<li class="fragment highlight-current-green" data-fragment-index="2">ناحیه‌بندی سلسله‌مراتبی</li>
+					<li class="fragment highlight-current-green" data-fragment-index="4">استفاده از ویژگی‌های مختلف برای مشابهت نواحی</li>
+				</ul>
+			</blockquote>
+		</div>
+	</section>
+	<section>
+		<h3>
+		شبکه عصبی کانولوشنی ناحیه‌ای
+		</h3>
+		‍‍					<p class="fragment">
+			استفاده از یک شبکه عصبی کانولوشنی برای استخراج بردار ویژگی در هر ناحیه
+		</p>
+		<blockquote class="fragment">
+			شبکه عصبی کانولوشنی
+			<span class="fragment highlight-green">
+				کریشفسکی
+			</span>
+		</blockquote>
+		<ul class="fragment" style="width: 50%;">
+			<li>
+				شبکه از پیش آموزش ‌دیده
+			</li>
+			<li class="fragment">
+				کارآیی خوب در چالش
+				<span style="font-family: Georgia; font-size: 30px;">
+					ImageNet
+				</span>
+			</li>
+		</ul>
+		<blockquote class="fragment">
+			دسته‌بندی با استفاده از مجموعه‌ای از ماشین‌های بردار پشتیبان خطی مخصوص هر دسته
+		</blockquote>
+	</section>
+	<section>
+		<h3>
+		شبکه عصبی کانولوشنی ناحیه‌ای
+		</h3>
+		<blockquote>
+			نتایج
+		</blockquote>
+		<figure style="width: 120%; left: -10%; position: relative;">
+			<img src="Imgs/sceneann2.png">
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[7]
+			</span>
+			شکل 7. نواحی استخراج شده توسط روش شبکه عصبی کانولوشنی ناحیه‌ای
+			</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h3>
+		شبکه عصبی کانولوشنی ناحیه‌ای
+		</h3>
+		<blockquote>
+			نتایج
+		</blockquote>
+		<figure>
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[7]
+			</span>
+			جدول ۴. نتایج به‌دست‌آمده از تخصیص برچسب به اجسام در مدل شبکه عصبی کانولوشنی عمیق ناحیه‌ای
+			</figcaption>
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+						<td>هواپیما</td>
+						<td>دوچرخه</td>
+						<td>پرنده</td>
+						<td>قایق</td>
+						<td>بطری</td>
+						<td>اتوبوس</td>
+						<td>ماشین</td>
+						<td>گربه</td>
+						<td>صندلی</td>
+						<td>گاو</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>71.8</td>
+					<td>65.8</td>
+					<td>53.0</td>
+					<td>36.8</td>
+					<td>35.9</td>
+					<td>59.7</td>
+					<td>60.0</td>
+					<td>69.9</td>
+					<td>27.9</td>
+					<td>50.6</td>
+				</tr>
+			</table>
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+						<td>میز</td>
+						<td>سگ</td>
+						<td>اسب</td>
+						<td>موتور</td>
+						<td>انسان</td>
+						<td>گیاه</td>
+						<td>گوسفند</td>
+						<td>کاناپه</td>
+						<td>قطار</td>
+						<td>مانیتور</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>41.4</td>
+					<td>70.0</td>
+					<td>62.0</td>
+					<td>69.0</td>
+					<td>58.1</td>
+					<td>29.5</td>
+					<td>59.4</td>
+					<td>39.3</td>
+					<td>61.2</td>
+					<td>52.4</td>
+				</tr>
+			</table>
+		</figure>
+		<blockquote>
+			میانگین دقت:
+			<span class="fragment highlight-green">
+				53.7
+			</span>
+		</blockquote>
+	</section>
+	<section>
+		<h3>
+		روش‌‌های مبتنی بر شبکه‌های عصبی عمیق
+		</h3>
+		<div class="extra-container">
+			<blockquote class="left-container">
+				<ol >
+					<li class="fragment zoom-in" data-fragment-index="1">
+						<span>لی و همکارانش</span>
+						<span class="cite">
+							[8]
+						</span>
+					</li>
+					<li class="fragment zoom-in" data-fragment-index="2"><span class="fragment highlight-blue" data-fragment-index="2">سال 2014</span></li>
+					<li class="fragment zoom-in" data-fragment-index="3"><span
+					class="fragment highlight-orange" data-fragment-index="3">مبتنی بر شبکه کانولوشنی عمیق </span></li>
+					<li class="fragment zoom-in" data-fragment-index="4"><span class="fragment highlight-green" data-fragment-index="4">نگاشت دوطرفه تصاویر و جملات</span>
+					<li class="fragment zoom-in" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تولید جمله با ورود یک تصویر</span>
+					<li class="fragment zoom-in" data-fragment-index="6"><span class="fragment highlight-green" data-fragment-index="6">بازیابی تصاویر مربوط به یک جمله</span>
+					<li class="fragment zoom-in" data-fragment-index="7"><span class="fragment highlight-green" data-fragment-index="7">سرعت بالا</span>
+				</ol>
+			</blockquote>
+			<figure class="right-container">
+				<img src="Imgs/ann1.png" style="height: 500px;">
+				<figcaption class="figure_caption">
+				<span class="cite">
+					[8]
+				</span>
+				شکل 8. صفحه نخست مقاله ارائه شده در
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+	<section>
+		<h3>
+		نگاشت دوطرفه تصاویر و جملات
+		</h3>
+		<ul>
+			<li>
+				استفاده از روش شبکه عصبی کانولوشنی ناحیه‌ای برای استخراج نواحی حاوی اجسام
+				<div class="extra-container">
+					<blockquote class="right-container">
+						انتخاب 20 ناحیه از تصویر
+					</blockquote>
+					<blockquote class="left-container">
+						۴۰۹۶ ویژگی برای هر ناحیه
+					</blockquote>
+				</div>
+			</li>
+		</ul>
+		<figure>
+			<img src="Imgs/sceneann4.png" style="width: 80%;">
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[8]
+			</span>
+			شکل 9. محاسبه شباهت نواحی تصاویر با عبارات مختلف از جمله
+			</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h3>
+		نگاشت دوطرفه تصاویر و جملات
+		</h3>
+		<ul>
+			<li>
+				نگاشت تصاویر ورودی به فضای ویژگی‌ها بر اساس رابطه زیر
+				<blockquote class="math-block fragment zoom-in">
+					$
+					\nu = W_m[RCNN_{\theta_c}(I_b)] + b_m
+					$
+				</blockquote>
+			</li>
+		</ul>
+		<blockquote class="extra-container fragment zoom-in" >
+			استفاده از بهینه‌سازی با در نظر گرفتن دو تابع هدف
+			<blockquote class="right-container">
+				هم‌ترازسازی سراسری
+			</blockquote>
+			<blockquote class="left-container">
+				هم‌ترازسازی ناحیه‌ای
+			</blockquote>
+		</blockquote>
+	</section>
+	<section>
+		<h3>
+		نگاشت دوطرفه تصاویر و جملات
+		</h3>
+		<p class="fragment" data-fragment-index="1">
+			هم‌ترازسازی سراسری
+		</p>
+		<blockquote class="fragment" data-fragment-index="1">
+			بیشینه‌شدن شباهت تصویر و جمله موجود در مجموعه‌داده نسبت به مابقی تصاویر و جملات
+		</blockquote>
+		<p class="fragment" data-fragment-index="2">
+			هم‌ترازسازی ناحیه‌ای
+		</p>
+		<blockquote class="fragment" style="font-size: 30px;" data-fragment-index="2">
+			برجستگی شباهت نواحی تصویر با عبارات خاص از جمله نسبت به عبارات و نواحی دیگر
+		</blockquote>
+		<!--<ul>-->
+		<!--<li class="fragment fade-up">-->
+		<!--تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله-->
+		<!--<blockquote class="math-block">-->
+		<!--$-->
+		<!--S_{kl} = \frac{1}{|g_k| (|g_l| + n)} \Sigma_{i \in g_k}\Sigma_{j\in g_l}max(0,\nu_i^T\cdot s_j)-->
+		<!--$-->
+		<!--</blockquote>-->
+		<!--</li>-->
+		<!--<li class="fragment fade-up">-->
+		<!--رابطه کلی تابع هدف هم‌ترازسازی سراسری-->
+		<!--<blockquote class="math-block">-->
+		<!--\begin{equation}-->
+		<!--\begin{split}-->
+		<!--C_G(\Theta) = \Sigma_k(-->
+		<!--&\Sigma_l max(0, S_{kl} - S{kk} + \Delta) \\-->
+		<!--&+-->
+		<!--\Sigma_l max(0, S_{lk} - S{kk} + \Delta)-->
+		<!--)-->
+		<!--\end{split}-->
+		<!--\end{equation}-->
+		<!--</blockquote>-->
+		<!--</li>-->
+		<!--</ul>-->
+	</section>
+	<!--<section>-->
+	<!--<h3>-->
+	<!--نگاشت دوطرفه تصاویر و جملات-->
+	<!--</h3>-->
+	<!--<p>-->
+	<!--هم‌ترازسازی ناحیه‌ای-->
+	<!--</p>-->
+	<!--<blockquote class="fragment" style="font-size: 30px;">-->
+	<!--اگر یک جمله با یک تصویر شباهت زیادی پیدا کرد، حداقل یک ناحیه در تصویر باشد که با یک عبارت از جمله شباهت زیادی داشته باشد و بقیه نواحی با آن عبارت شباهت کمی داشته باشند-->
+	<!--</blockquote>-->
+	<!--<p class="fragment">-->
+	<!--شرایط رد فرض بالا-->
+	<!--</p>-->
+	<!--<ol class="fragment">-->
+	<!--<li class="fragment highlight-orange">-->
+	<!--ناحیه متشابه با عبارت، استخراج نشده باشد-->
+	<!--</li>-->
+	<!--<li class="fragment highlight-orange">-->
+	<!--عبارت موجود به هیچ بخشی از ویژگی‌های بصری تصویر اشاره نکند-->
+	<!--</li>-->
+	<!--<li class="fragment highlight-orange">-->
+	<!--عبارت توصیف کننده در هیچ یک از تصاویر دیگر تکرار نشده باشد-->
+	<!--</li>-->
+	<!--</ol>-->
+	<!--</section>-->
+	<!--<section>-->
+	<!--<h3>-->
+	<!--نگاشت دوطرفه تصاویر و جملات-->
+	<!--</h3>-->
+	<!--<ul>-->
+	<!--<li class="fragment">-->
+	<!--تعریف شباهت بر اساس شباهت دوبه‌دوی نواحی تصویر و عبارات جمله-->
+	<!--<blockquote class="math-block fragment zoom-in">-->
+	<!--$-->
+	<!--C_0(\Theta) = \Sigma_i \Sigma_j max(0 , 1 - y_{ij} \nu_i^T \cdot s_j)-->
+	<!--$-->
+	<!--</blockquote>-->
+	<!--</li>-->
+	<!--<li class="fragment" >-->
+	<!--رابطه کلی تابع هدف هم‌ترازسازی سراسری-->
+	<!--<blockquote class="math-block fragment zoom-in">-->
+	<!--\begin{equation}-->
+	<!--\begin{split}-->
+	<!--&C_F(\Theta) = min_{y_{ij}} C_0(\Theta)-->
+	<!--\\-->
+	<!--&s.t. \Sigma_{i \in p_j} \frac{y_{ij} + 1}{2} \geq 1 \land-->
+	<!--y_{ij} = -1, \forall i,j ;-->
+	<!--\\-->
+	<!--&m_\nu(i) \neq m_s(j) \land y_{ij} \in \{+1, -1\}-->
+	<!--\end{split}-->
+	<!--\end{equation}-->
+	<!--</blockquote>-->
+	<!--</li>-->
+	<!--</ul>-->
+	<!--</section>-->
+	<!--<section>-->
+	<!--<h3>-->
+	<!--نگاشت دوطرفه تصاویر و جملات-->
+	<!--</h3>-->
+	<!--<figure>-->
+	<!--<img src="Imgs/sceneann5.png">-->
+	<!--<figcaption class="figure_caption">-->
+	<!--<span class="cite">-->
+	<!--[7]-->
+	<!--</span>-->
+	<!--شکل ۹. محاسبه شباهت جملات و تصاویر-->
+	<!--</figcaption>-->
+	<!--</figure>-->
+	<!--</section>-->
+	<section>
+		<h3>
+		نگاشت دوطرفه تصاویر و جملات
+		</h3>
+		<blockquote>
+			نتایج
+		</blockquote>
+		<figure>
+			<img src="Imgs/sceneann6.png">
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[8]
+			</span>
+			شکل 10. نتایج تولید جمله برای تصاویر ورودی
+			</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h3>
+		نگاشت دوطرفه تصاویر و جملات
+		</h3>
+		<blockquote>
+			نتایج
+		</blockquote>
+		<figure>
+			<img src="Imgs/sceneann7.png" style="width: 80%;">
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[8]
+			</span>
+			شکل 11. نتایج جستجوی تصاویر مطابق با عبارت ورودی
+			</figcaption>
+		</figure>
+	</section>
+	<!--<section>-->
+	<!--<h3>-->
+	<!--ناحیه‌بندی عمیق تصاویر به منظور نگاشت دوطرفه جملات و تصاویر-->
+	<!--</h3>-->
+	<!--<blockquote>-->
+	<!--نتایج-->
+	<!--</blockquote>-->
+	<!--<figure>-->
+	<!--<figcaption>-->
+	<!--جدول 5. نتایج مدل ......-->
+	<!--</figcaption>-->
+	<!--<table>-->
+	<!--<thead>-->
+	<!--<tr>-->
+	<!--<td>-->
+	<!--مدل-->
+	<!--</td>-->
+	<!--<td>-->
+	<!--دقت-->
+	<!--</td>-->
+	<!--</tr>-->
+	<!--</thead>-->
+	<!--</table>-->
+	<!--</figure>-->
+	<!--</section>-->
+	<section data-background="#003333" data-state="chapter_conclusion">
+		<h3>
+		جمع‌بندی
+		</h3>
+		<!--start-->
+		<div id="ninja-slider-scene">
+			<div class="slider-inner">
+				<ul style="width: 100%; height: 100%;">
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_scene_methods.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_feat_based.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_bayes.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_generative.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_mrf.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_crf.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_ann.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_rcnn.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_rcnn_res.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_li1.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+					<li>
+						<a class="ns-img" href="Imgs/Slider/pic_li1_res.png"></a>
+						<!--<div class="caption cap1 cap2">@colerise</div>-->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+	</section>
+</section>
+<section data-background="#224466"  data-state="chapter_sentence">
+	<section>
+		<h3>
+		تولید جمله
+		</h3>
+		<p>
+			چهار روش کلی برای این بخش ارائه شده است
+		</p>
+		<div class="extra-container">
+			<blockquote class="right-container fragment zoom-in">
+				تولید زبان طبیعی
+			</blockquote>
+			<blockquote class="left-container fragment zoom-in">
+				نزدیک‌ترین همسایه
+			</blockquote>
+			<blockquote class="right-container fragment zoom-in">
+				قالب‌های آماده
+			</blockquote>
+			<blockquote class="left-container fragment zoom-in">
+				شبکه‌های عصبی بازگشتی
+			</blockquote>
+		</div>
+	</section>
+	<section>
+		<h3>
+		تولید زبان طبیعی
+		</h3>
+		<blockquote>
+			قابل فهم کردن داده‌های تفسیرپذیر توسط ماشین برای کاربر انسانی
+		</blockquote>
+		<div class="extra-container">
+			<blockquote class="right-container fragment" data-fragment-index="1">
+				<p>
+					کاربردها
+				</p>
+				<ul>
+					<li>
+						<span class="fragment highlight-green" data-fragment-index="1">
+							هواشناسی
+						</span>
+					</li>
+					<li>
+						<span class="fragment highlight-green" data-fragment-index="1">
+							فرودگاه‌ها و ترمینال‌های مسافربری
 						</span>
 					</li>
 				</ul>
-			</section>
- 		</section>
-
-		<section data-background="#004455">
-			<section>
-				<h3>
-					شبکه‌های عصبی بازگشتی
-				</h3>
+			</blockquote>
+			<blockquote class="left-container fragment" data-fragment-index="2">
 				<p>
-						<span class="fragment zoom-in" data-fragment-index="1">
-							یک شبکه عصبی پیش‌رو بسیار عمیق
+					معایب
+				</p>
+				<ul style="width: 80%;">
+					<li class="fragment" data-fragment-index="3">
+						<span  class="fragment highlight-orange" data-fragment-index="3">
+							وابستگی به کاربرد
 						</span>
-				</p>
-
-                <p class="fragment" data-fragment-index="2">
-					<span class="fragment highlight-blue" data-fragment-index="2">
-						ناپایداری روش پس‌انتشار خطا
-					</span>
-                </p>
-
-                <p class="fragment" data-fragment-index="3">
-					<span class="fragment highlight-orange" data-fragment-index="3">
-						عدم استفاده از سال‌های 1980 تا 2011
-					</span>
-                </p>
-
-                <figure class="fragment zoom-in" data-fragment-index="1">
-					<img src="Imgs/rnn1.png" style="width: 80%;">
-					<figcaption class="figure_caption">
-						شکل 15. نمای کلی یک شبکه عصبی بازگشتی، به عنوان یک شبکه عصبی پیش‌رو عمیق
-					</figcaption>
-				</figure>
-			</section>
-
-			<section>
-				<h3>
-					شبکه‌های عصبی بازگشتی
-				</h3>
-				<p class="fragment" data-fragment-index="1">
-					روش‌های جایگزین
-				</p>
-				<div class="extra-container">
-					<blockquote class="right-container fragment zoom-in" data-fragment-index="2">
+					</li>
+					<li class="fragment" data-fragment-index="4">
+						<span class="fragment highlight-orange" data-fragment-index="4">
+							انعطاف‌پذیری کم جملات
+						</span>
+					</li>
+					<li class="fragment" data-fragment-index="5">
 						<span class="fragment highlight-orange" data-fragment-index="5">
-						شبکه عصبی حافظه کوتاه‌مدت بلند
-							</span>
-					</blockquote>
-					<blockquote class="left-container fragment zoom-in" data-fragment-index="3">
-						<span class="fragment highlight-orange" data-fragment-index="6">
-						شبکه عصبی پژواک حالت
-							</span>
-					</blockquote>
-					<blockquote class="center-container fragment zoom-in" data-fragment-index="4">
-						شبکه عصبی ضربی
-					</blockquote>
-				</div>
-			</section>
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
-				<!--</h3>-->
-
-				<!--<div class="extra-container">-->
-					<!--<blockquote class="right-container fragment" data-fragment-index="1">-->
-						<!--<ul>-->
-							<!--<li class="fragment" data-fragment-index="2"><span >-->
-
-									<!--توسط سانکو و همکارانش-->
-									<!--<span class="cite">-->
-										<!--[12]-->
-									<!--</span>-->
-							<!--</span>-->
-							<!--</li>-->
-							<!--<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2014</span></li>-->
-							<!--<li class="fragment" data-fragment-index="4"><span-->
-									<!--class="fragment highlight-orange" data-fragment-index="4">استفاده از شبکه‌های عصبی عمیق</span></li>-->
-							<!--<li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تولید شرح بر یک ویدئو بدون محدودیت</span></li>-->
-							<!--<li class="fragment" data-fragment-index="6"><span-->
-									<!--class="fragment highlight- green" data-fragment-index="6">استفاده از بیش از 1.2 میلیون تصویر دسته‌بندی شده</span></li>-->
-							<!--<li class="fragment" data-fragment-index="7"><span-->
-									<!--class="fragment highlight-green" data-fragment-index="7">استفاده از بیش از 100000 تصویر با شرح </span></li>-->
-						<!--</ul>-->
-
-					<!--</blockquote>-->
-					<!--<figure class="fragment left-container" data-fragment-index="1">-->
-						<!--<img src="Imgs/lstm1.png" style="height: 400px;"/>-->
-
-						<!--<figcaption class="figure_caption">-->
-									<!--<span class="cite">-->
-										<!--[12]-->
-									<!--</span>-->
-
-							<!--شکل 16. مدل ارائه شده در-->
-						<!--</figcaption>-->
-					<!--</figure>-->
-
-				<!--</div>-->
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
-				<!--</h3>-->
-				<!--<p>-->
-					<!--استفاده در سیستم پرسش و پاسخ-->
-				<!--</p>-->
-				<!--<figure class="fragment zoom-in">-->
-					<!--<img src="Imgs/lstm1.jpg" style="width: 80%;">-->
-					<!--<figcaption class="figure_caption">-->
-						<!--شکل 14. استفاده از شبکه عصبی حافظه کوتاه‌مدت بلند در تست بصری تورینگ-->
-					<!--</figcaption>-->
-				<!--</figure>-->
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
-				<!--</h3>-->
-				<!--<p>-->
-					<!--استفاده در تولید شرح بر تصاویر-->
-				<!--</p>-->
-				<!--<figure class="fragment zoom-in">-->
-					<!--<img src="Imgs/lstm3.png" style="width: 80%;">-->
-					<!--<figcaption class="figure_caption">-->
-						<!--شکل ۱۰. استفاده از شبکه‌های عصبی حافظه کوتاه‌مدت بلند در تولید شرح بر تصاویر-->
-					<!--</figcaption>-->
-				<!--</figure>-->
-
-			<!--</section>-->
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--شبکه عصبی پژواک حالت-->
-				<!--</h3>-->
-				<!--<ul>-->
-					<!--<li class="fragment fade" data-fragment-index="1">-->
-<!--عدم به روز رسانی وزن‌های بازگشتی-->
-					<!--</li>-->
-					<!--<li class="fragment fade" data-fragment-index="2">-->
-						<!--<span class="fragment highlight-orange" data-fragment-index="2">-->
-							<!--کاربرد در تولید جمله یافت نشد!-->
-						<!--</span>-->
-					<!--</li>-->
-				<!--</ul>-->
-				<!--<figure class="fragment zoom-in" data-fragment-index="1">-->
-					<!--<img src="Imgs/wsn.png" style="width: 60%;">-->
-					<!--<figcaption class="figure_caption">-->
-						<!--شکل 11. شبکه عصبی پژواک حالت-->
-					<!--</figcaption>-->
-				<!--</figure>-->
-
-			<!--</section>-->
-
-
-            <section>
-                <h3>
-                    شبکه عصبی ضربی
-                </h3>
-                <div class="extra-container">
-                    <blockquote class="right-container" data-fragment-index="1">
-                        <ul>
-                            <li class="fragment" data-fragment-index="2"><span >
-
-									توسط هینتون و همکارانش
-									<span class="cite">
-										[12]
-									</span>
-							</span>
-                            </li>
-                            <li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2011</span></li>
-                            <li class="fragment" data-fragment-index="4"><span
-                                    class="fragment highlight-green" data-fragment-index="4">حل مشکل روش پس‌انتشار خطا</span></li>
-                            <li class="fragment" data-fragment-index="5"><span>بهینه‌سازی بدون هسین</span></li>
-                            <li class="fragment" data-fragment-index="6"><span
-                                    class="fragment highlight-green" data-fragment-index="6">وزن‌های بازگشتی تابعی از ورودی</span></li>
-                            <li class="fragment" data-fragment-index="7"><span
-                                    >استفاده در تولید جمله در سطح کاراکتر </span></li>
-                            <li class="fragment" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">عملکرد بهتر نسبت به دو مدل قبلی</span></li>
-                        </ul>
-
-                    </blockquote>
-                    <figure class="left-container" data-fragment-index="1">
-                        <img src="Imgs/hinton1.png" style="width: 440px;"/>
-
-                        <figcaption class="figure_caption">
-									<span class="cite">
-										[12]
-									</span>
-
-                            شکل 16. صفحه نخست مقاله
-                        </figcaption>
-                    </figure>
-
-                </div>
-
-            </section>
-
-			<section>
-				<h3>
-					شبکه عصبی ضربی
-				</h3>
-				<ul>
-					<li class="fragment zoom-in">
-						آموزش شبکه عصبی در ۸ روز
-					</li>
-					<li class="fragment zoom-in">
-						استفاده از ماتریس وزن‌های مخصوص برای هر ورودی
+							پیچیدگی وضع قوانین
+						</span>
 					</li>
 				</ul>
-				<figure>
-					<img src="Imgs/rnn2.png" style="width: 80%;">
-					<figcaption class="figure_caption">
-						شکل 17. نمای شبکه عصبی ضربی
-					</figcaption>
-				</figure>
-
-			</section>
-
-
-            <section data-background="#003333" data-state="chapter_conclusion">
-                <h3>
-                    جمع‌بندی
-                </h3>
-
-
-                <!--start-->
-                <div id="ninja-slider-sentence">
-                    <div class="slider-inner">
-                        <ul style="width: 100%; height: 100%;">
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_sen_methods.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/nlg.gif"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_knn.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_fix.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_rnn.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_rnn_methods.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                            <li>
-                                <a class="ns-img" href="Imgs/Slider/pic_mrnn.png"></a>
-                                <!--<div class="caption cap1 cap2">@colerise</div>-->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--end-->
-
-
-
-            </section>
-
-
-        </section>
-
-		<section data-background="#005555">
-            <section>
-                <h3>
-                    ارائه مدل کامل
-                </h3>
-                <div class="extra-container">
-                    <blockquote class="left-container" data-fragment-index="1">
-                        <ul>
-                            <li class="fragment" data-fragment-index="2"><span >
-
-									 توسط لی و همکارانش
-									<span class="cite">
-										[13]
-									</span>
-							</span>
-                            </li>
-                            <li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2015</span></li>
-                            <li class="fragment" data-fragment-index="4"><span
-                                    class="fragment highlight-green" data-fragment-index="4">استفاده از تصاویر و توصیف‌های آماده</span></li>
-                            <li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">استخراج حاشیه‌نویسی نواحی تصویر</span></li>
-                            <li class="fragment" data-fragment-index="6"><span
-                                    class="fragment highlight-green" data-fragment-index="6">جملات توصیفی کامل</span></li>
-                            <li class="fragment" data-fragment-index="7"><span
-                                    class="fragment highlight-green" data-fragment-index="7">نرخ ترجیح جملات بالاتر نسبت به کارهای قبلی</span></li>
-                            <li class="fragment" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">ارائه مدل ترکیبی</span></li>
-                        </ul>
-
-                    </blockquote>
-                    <figure class="right-container" data-fragment-index="1">
-                        <img src="Imgs/li1.png" style="width: 440px;"/>
-
-                        <figcaption class="figure_caption">
-									<span class="cite">
-										[13]
-									</span>
-
-                            شکل 18. صفحه نخست مقاله
-                        </figcaption>
-                    </figure>
-
-                </div>
-
-            </section>
-			<section>
-				<h3>
-				ارائه مدل کامل
-				</h3>
-				<ol>
-                    <li class="fragment zoom-in">
-					آموزش شبکه کانولوشنی با استفاده از عبارات موجود در مجموعه‌داده و مدل میدان تصادفی مارکف
-
-                    </li>
-				</ol>
-				<figure class="fragment zoom-in">
-					<img src="Imgs/model1.png" style="width: 50%;">
-					<figcaption class="figure_caption">
-									<span class="cite">
-										[13]
-									</span>
-						شکل 19. آموزش پارامترهای بخش استخراج ویژگی
-					</figcaption>
-				</figure>
-			</section>
-
-			<section>
-				<h3>
-					ارائه مدل کامل
-				</h3>
-				<ol start="2">
-                    <li class="fragment zoom-in">
-					تولید جمله با استفاده از شبکه عصبی بازگشتی
-                        <ul>
-                            <li class="fragment zoom-in">
-                                تولید احتمال شرطی کلمه بعدی به شرط کلمات قبلی و بردار معنایی
-                            </li>
-                        </ul>
-                    </li>
-				</ol>
-
-				<figure>
-					<img src="Imgs/model2.png" style="width: 60%;">
-					<figcaption class="figure_caption">
-									<span class="cite">
-										[13]
-									</span>
-						شکل 20. شبکه بازگشتی تولید جمله
-					</figcaption>
-				</figure>
-
-			</section>
-
-			<section>
-				<h3>
-					ارائه مدل کامل
-				</h3>
-                <blockquote class="fragment zoom-in" data-fragment-index="1">
-                    نتایج حاشیه‌نویسی بخش‌های مختلف تصویر
-                </blockquote>
-				<figure class="fragment zoom-in" data-fragment-index="1">
-					<img src="Imgs/model3.png" style="width: 55%;">
-					<figcaption class="figure_caption">
-									<span class="cite">
-										[13]
-									</span>
-						 شکل 21. حاشیه‌نویسی بخش‌های مختلف تصویر
-					</figcaption>
-				</figure>
-
-			</section>
-
-			<!--<section>-->
-				<!--<h3>-->
-					<!--مدل مورد استفاده-->
-				<!--</h3>-->
-                <!--<blockquote class="fragment zoom-in">-->
-                    <!--نتایج -->
-                <!--</blockquote>-->
-				<!--<figure class="fragment zoom-in" data-fragment-index="1">-->
-					<!--<img src="Imgs/model4.png" style="width: 150%;">-->
-					<!--<figcaption class="figure_caption">-->
-						<!--شکل 16. تخصیص عبارات و نواحی-->
-					<!--</figcaption>-->
-				<!--</figure>-->
-
-			<!--</section>-->
-
-			<section>
-				<h3>
-					ارائه مدل کامل
-				</h3>
-                <blockquote class="fragment zoom-in" data-fragment-index="1">
-                    نتایج تولید جمله برای تصاویر
-                </blockquote>
-				<figure class="fragment zoom-in" data-fragment-index="1">
-					<img src="Imgs/model5.png" style="width: 150%;">
-					<figcaption class="figure_caption">
-									<span class="cite">
-										[13]
-									</span>
-						شکل 22. جملات تولید شده نمونه
-					</figcaption>
-				</figure>
-
-			</section>
-
-
-		</section>
-
-		<section>
-			<section data-background="#003333" data-state="chapter_conclusion">
-				<h3>
-					جمع‌بندی
-				</h3>
-
-
-				<!--start-->
-				<div id="ninja-slider">
-					<div class="slider-inner">
-						<ul style="width: 100%; height: 100%;">
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_first.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_defin.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_idea.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_scene_methods.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_feat_based.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_mrf.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_rcnn.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_rcnn_res.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_li1.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_li1_res.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_sen_methods.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_nlg.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_rnn.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_mrnn.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_li2.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_li2_annotation.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-							<li>
-								<a class="ns-img" href="Imgs/Slider/pic_li2_res.png"></a>
-								<!--<div class="caption cap1 cap2">@colerise</div>-->
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!--end-->
-
-
-
-			</section>
-            <section data-background="#001111" data-state="chapter_refs">
-                <h3>
-                    نگاهی‌ به آینده
-                </h3>
-
-                <blockquote class="fragment zoom-in" data-fragment-index="1">
-
-                    استفاده از
-                    <span class="fragment highlight-green" data-fragment-index="1">
-                    شبکه‌های عصبی عمیق
-    </span>
-
-                    در هر دو چالش
-                </blockquote>
-
-                <blockquote class="fragment zoom-in" data-fragment-index="2">
-                    آموزش هر دو شبکه عمیق با هم
-                    <span class="fragment highlight-green" data-fragment-index="2">
-                    در یک مرحله
-                        </span>
-                </blockquote>
-
-                <blockquote class="fragment zoom-in" data-fragment-index="3">
-                    مدل‌های مبتنی بر
-                    <span class="fragment highlight-green" data-fragment-index="3">
-                    نقطه توجه
-                    </span>
-                </blockquote>
-
-            </section>
-            <section data-background="#001111" data-state="chapter_refs">
-                <h3>
-                    منابع و مراجع
-                </h3>
-
-                <div class="ref fragment highlight-current-green">
-                    [1]
-                    Ohta, Yuichi. Knowledge-based interpretation of outdoor natural color scenes. Vol. 4. Morgan Kaufmann, 1985.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [2]
-                    Smith, John R., and Chung-Sheng Li. "Image classification and querying using composite region templates." Computer Vision and Image Understanding 75.1 (1999): 165-174.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [3]
-                    Fei-Fei, Li, and Pietro Perona. "A bayesian hierarchical model for learning natural scene categories." 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05). Vol. 2. IEEE, 2005.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [4]
-                    Li, Li-Jia and Fei-Fei, Li. What, where and who? classifying events by scene and
-                    object recognition. in Computer Vision, 2007. ICCV 2007. IEEE 11th International
-                    Conference on, pp. 1–8. IEEE, 2007.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [5]
-                    Farhadi, Ali, Hejrati, Mohsen, Sadeghi, Mohammad Amin, Young, Peter, Rashtchian,
-                    Cyrus, Hockenmaier, Julia, and Forsyth, David. Every picture tells a story: Generating
-                    sentences from images. in Computer Vision–ECCV 2010, pp. 15–29. Springer, 2010.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [6]
-                    Fidler, Sanja, Sharma, Abhishek, and Urtasun, Raquel. A sentence is worth a thou-
-                    sand pixels. in Proceedings of the IEEE Conference on Computer Vision and Pattern
-                    Recognition, pp. 1995–2002, 2013.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [7]
-                    Girshick, Ross, Donahue, Jeff, Darrell, Trevor, and Malik, Jitendra. Rich feature hierar-
-                    chies for accurate object detection and semantic segmentation. in The IEEE Conference
-                    on Computer Vision and Pattern Recognition (CVPR), June 2014.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [8]
-                    Karpathy, Andrej, Joulin, Armand, and Li, Fei Fei F. Deep fragment embeddings for
-                    bidirectional image sentence mapping. in Advances in neural information processing
-                    systems, pp. 1889–1897, 2014.
-                </div>
-            </section>
-            <section data-background="#001111" data-state="chapter_refs">
-                <h3>
-                    منابع و مراجع
-                </h3>
-
-                <div class="ref fragment highlight-current-green">
-                    [9]
-                    Koller, Alexander, Donna Byron, Justine Cassell, Robert Dale, Johanna Moore, Jon Oberlander, and Kristina Striegnitz. "The software architecture for the first challenge on generating instructions in virtual environments." In Proceedings of the 12th Conference of the European Chapter of the Association for Computational Linguistics: Demonstrations Session, pp. 33-36. Association for Computational Linguistics, 2009.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [10]
-                    Hodosh, Micah, Peter Young, and Julia Hockenmaier. "Framing image description as a ranking task: Data, models and evaluation metrics." Journal of Artificial Intelligence Research 47 (2013): 853-899.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [11]
-                    Gupta, Ankush, and Prashanth Mannem. "From image annotation to image description." In International Conference on Neural Information Processing, pp. 196-204. Springer Berlin Heidelberg, 2012.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [12]
-                    Sutskever, Ilya, James Martens, and Geoffrey E. Hinton. "Generating text with recurrent neural networks." In Proceedings of the 28th International Conference on Machine Learning (ICML-11), pp. 1017-1024. 2011.
-                </div>
-                <div class="ref fragment highlight-current-green">
-                    [13]
-                    Karpathy, Andrej, and Li Fei-Fei. "Deep visual-semantic alignments for generating image descriptions." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 3128-3137. 2015.
-                </div>
-            </section>
-
+			</blockquote>
+		</div>
+	</section>
+	<section data-background-image="Imgs/nlg.gif">
+		<blockquote>
+			<h3 style="color: black;">
+			چالش ارائه خودکار دستورالعمل در
+			دنیای
+			۳ بعدی
+			</h3>
+			<p style="color: black;">
+				<span class="cite" style="font-size: 40px;">
+					[9]
+				</span>
+				نرم‌افزار ارائه شده در
+			</p>
+		</blockquote>
+	</section>
+	<section>
+		<h3>
+		نزدیک‌ترین همسایه
+		</h3>
+		<div class="extra-container">
+			<blockquote class="right-container" data-fragment-index="1">
+				<ul>
+					<li class="fragment" data-fragment-index="2"><span >
+						توسط هودوش و همکارانش
+						<span class="cite">
+							[10]
+						</span>
+					</span>
+				</li>
+				<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2012</span></li>
+				<li class="fragment" data-fragment-index="4"><span
+				class="fragment highlight-green" data-fragment-index="4">محاسبه شباهت بین تصاویر و جملات</span></li>
+				<li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">سادگی پیاده‌سازی</span></li>
+				<li class="fragment" data-fragment-index="6"><span
+				class="fragment highlight-blue" data-fragment-index="6">عدم تولید جمله جدید و سازگار</span></li>
+				<li class="fragment" data-fragment-index="7"><span
+				class="fragment highlight-orange" data-fragment-index="7">نیاز به وجود مجموعه‌ بزرگ جملات</span></li>
+				<li class="fragment" data-fragment-index="8"><span class="fragment highlight-blue" data-fragment-index="8">سرعت پایین</span></li>
+			</ul>
+		</blockquote>
+		<figure class="left-container" data-fragment-index="1">
+			<img src="Imgs/knn_firstpage.png" style="width: 400px;"/>
+			<figcaption class="figure_caption">
+			<span class="cite">
+				[10]
+			</span>
+			شکل 13. صفحه نخست مقاله
+			</figcaption>
+		</figure>
 	</div>
-
-
+</section>
+<section>
+	<h3>
+	نزدیک‌ترین همسایه
+	</h3>
+	<p>نتایج بصری</p>
+	<figure>
+		<img src="Imgs/knn1.png" style="width: 100%;"/>
+		<figcaption class="figure_caption">
+		<span class="cite">
+			[10]
+		</span>
+		شکل 14. نتایج کیفی اختصاص جملات و تصاویر به ترتیب میزان خطا
+		</figcaption>
+	</figure>
+</section>
+<section>
+	<h3>
+	استفاده از قالب‌های آماده
+	</h3>
+	<div class="extra-container">
+		<blockquote class="right-container" data-fragment-index="1">
+			<ul>
+				<li class="fragment" data-fragment-index="2"><span >
+					توسط گاپتا و همکارانش
+					<span class="cite">
+						[11]
+					</span>
+				</span>
+			</li>
+			<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2013</span></li>
+			<li class="fragment" data-fragment-index="4"><span
+			>مدل مبتنی بر دانش</span></li>
+			<li class="fragment" data-fragment-index="5"><span >پردازش زبان طبیعی</span></li>
+			<li class="fragment" data-fragment-index="6"><span
+			>استفاده از یک قالب آماده</span></li>
+			<li class="fragment" data-fragment-index="7"><span
+			class="fragment highlight-green" data-fragment-index="7">ایجاد جملات سازگار </span></li>
+			<li class="fragment" data-fragment-index="8"><span class="fragment highlight-orange" data-fragment-index="8">ایجاد جملات با قالب تکراری</span></li>
+		</ul>
+	</blockquote>
+	<figure class="left-container" data-fragment-index="1">
+		<img src="Imgs/template1.png" style="width: 400px;"/>
+		<figcaption class="figure_caption">
+		<span class="cite">
+			[11]
+		</span>
+		شکل 14. صفحه نخست مقاله
+		</figcaption>
+	</figure>
+</div>
+</section>
+<section>
+<h3>
+استفاده از شبکه‌های عصبی بازگشتی
+</h3>
+<ul>
+	<li class="fragment" data-fragment-index="1">تولید توزیع شرطی کلمه بعدی به شرط کلمات تولید شده</li>
+	<li class="fragment" data-fragment-index="2"><span class="fragment highlight-green" data-fragment-index="2"> تولید جملات جدید و ابتکاری</span></li>
+	<li class="fragment" data-fragment-index="3"><span class="fragment highlight-green" data-fragment-index="3"> سرعت بالا</span></li>
+	<li class="fragment" data-fragment-index="4"><span class="fragment highlight-orange" data-fragment-index="4">
+		وجود پارامترهای بسیار زیاد
+	</span>
+</li>
+<li class="fragment" data-fragment-index="5"><span class="fragment highlight-orange" data-fragment-index="5">
+	آموزش سخت
+</span>
+</li>
+</ul>
+</section>
+</section>
+<section data-background="#004455">
+<section>
+<h3>
+شبکه‌های عصبی بازگشتی
+</h3>
+<p>
+<span class="fragment zoom-in" data-fragment-index="1">
+یک شبکه عصبی پیش‌رو بسیار عمیق
+</span>
+</p>
+<p class="fragment" data-fragment-index="2">
+<span class="fragment highlight-blue" data-fragment-index="2">
+ناپایداری روش پس‌انتشار خطا
+</span>
+</p>
+<p class="fragment" data-fragment-index="3">
+<span class="fragment highlight-orange" data-fragment-index="3">
+عدم استفاده از سال‌های 1980 تا 2011
+</span>
+</p>
+<figure class="fragment zoom-in" data-fragment-index="1">
+<img src="Imgs/rnn1.png" style="width: 80%;">
+<figcaption class="figure_caption">
+شکل 15. نمای کلی یک شبکه عصبی بازگشتی، به عنوان یک شبکه عصبی پیش‌رو عمیق
+</figcaption>
+</figure>
+</section>
+<section>
+<h3>
+شبکه‌های عصبی بازگشتی
+</h3>
+<p class="fragment" data-fragment-index="1">
+روش‌های جایگزین
+</p>
+<div class="extra-container">
+<blockquote class="right-container fragment zoom-in" data-fragment-index="2">
+<span class="fragment highlight-orange" data-fragment-index="5">
+	شبکه عصبی حافظه کوتاه‌مدت بلند
+</span>
+</blockquote>
+<blockquote class="left-container fragment zoom-in" data-fragment-index="3">
+<span class="fragment highlight-orange" data-fragment-index="6">
+	شبکه عصبی پژواک حالت
+</span>
+</blockquote>
+<blockquote class="center-container fragment zoom-in" data-fragment-index="4">
+شبکه عصبی ضربی
+</blockquote>
+</div>
+</section>
+<!--<section>-->
+<!--<h3>-->
+<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
+<!--</h3>-->
+<!--<div class="extra-container">-->
+<!--<blockquote class="right-container fragment" data-fragment-index="1">-->
+<!--<ul>-->
+<!--<li class="fragment" data-fragment-index="2"><span >-->
+<!--توسط سانکو و همکارانش-->
+<!--<span class="cite">-->
+<!--[12]-->
+<!--</span>-->
+<!--</span>-->
+<!--</li>-->
+<!--<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2014</span></li>-->
+<!--<li class="fragment" data-fragment-index="4"><span-->
+<!--class="fragment highlight-orange" data-fragment-index="4">استفاده از شبکه‌های عصبی عمیق</span></li>-->
+<!--<li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">تولید شرح بر یک ویدئو بدون محدودیت</span></li>-->
+<!--<li class="fragment" data-fragment-index="6"><span-->
+<!--class="fragment highlight- green" data-fragment-index="6">استفاده از بیش از 1.2 میلیون تصویر دسته‌بندی شده</span></li>-->
+<!--<li class="fragment" data-fragment-index="7"><span-->
+<!--class="fragment highlight-green" data-fragment-index="7">استفاده از بیش از 100000 تصویر با شرح </span></li>-->
+<!--</ul>-->
+<!--</blockquote>-->
+<!--<figure class="fragment left-container" data-fragment-index="1">-->
+<!--<img src="Imgs/lstm1.png" style="height: 400px;"/>-->
+<!--<figcaption class="figure_caption">-->
+<!--<span class="cite">-->
+<!--[12]-->
+<!--</span>-->
+<!--شکل 16. مدل ارائه شده در-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</div>-->
+<!--</section>-->
+<!--<section>-->
+<!--<h3>-->
+<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
+<!--</h3>-->
+<!--<p>-->
+<!--استفاده در سیستم پرسش و پاسخ-->
+<!--</p>-->
+<!--<figure class="fragment zoom-in">-->
+<!--<img src="Imgs/lstm1.jpg" style="width: 80%;">-->
+<!--<figcaption class="figure_caption">-->
+<!--شکل 14. استفاده از شبکه عصبی حافظه کوتاه‌مدت بلند در تست بصری تورینگ-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</section>-->
+<!--<section>-->
+<!--<h3>-->
+<!--شبکه‌های عصبی حافظه کوتاه‌مدت بلند-->
+<!--</h3>-->
+<!--<p>-->
+<!--استفاده در تولید شرح بر تصاویر-->
+<!--</p>-->
+<!--<figure class="fragment zoom-in">-->
+<!--<img src="Imgs/lstm3.png" style="width: 80%;">-->
+<!--<figcaption class="figure_caption">-->
+<!--شکل ۱۰. استفاده از شبکه‌های عصبی حافظه کوتاه‌مدت بلند در تولید شرح بر تصاویر-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</section>-->
+<!--<section>-->
+<!--<h3>-->
+<!--شبکه عصبی پژواک حالت-->
+<!--</h3>-->
+<!--<ul>-->
+<!--<li class="fragment fade" data-fragment-index="1">-->
+<!--عدم به روز رسانی وزن‌های بازگشتی-->
+<!--</li>-->
+<!--<li class="fragment fade" data-fragment-index="2">-->
+<!--<span class="fragment highlight-orange" data-fragment-index="2">-->
+<!--کاربرد در تولید جمله یافت نشد!-->
+<!--</span>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<figure class="fragment zoom-in" data-fragment-index="1">-->
+<!--<img src="Imgs/wsn.png" style="width: 60%;">-->
+<!--<figcaption class="figure_caption">-->
+<!--شکل 11. شبکه عصبی پژواک حالت-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</section>-->
+<section>
+<h3>
+شبکه عصبی ضربی
+</h3>
+<div class="extra-container">
+<blockquote class="right-container" data-fragment-index="1">
+<ul>
+	<li class="fragment" data-fragment-index="2"><span >
+		توسط هینتون و همکارانش
+		<span class="cite">
+			[12]
+		</span>
+	</span>
+</li>
+<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2011</span></li>
+<li class="fragment" data-fragment-index="4"><span
+class="fragment highlight-green" data-fragment-index="4">حل مشکل روش پس‌انتشار خطا</span></li>
+<li class="fragment" data-fragment-index="5"><span>بهینه‌سازی بدون هسین</span></li>
+<li class="fragment" data-fragment-index="6"><span
+class="fragment highlight-green" data-fragment-index="6">وزن‌های بازگشتی تابعی از ورودی</span></li>
+<li class="fragment" data-fragment-index="7"><span
+>استفاده در تولید جمله در سطح کاراکتر </span></li>
+<li class="fragment" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">عملکرد بهتر نسبت به دو مدل قبلی</span></li>
+</ul>
+</blockquote>
+<figure class="left-container" data-fragment-index="1">
+<img src="Imgs/hinton1.png" style="width: 440px;"/>
+<figcaption class="figure_caption">
+<span class="cite">
+[12]
+</span>
+شکل 16. صفحه نخست مقاله
+</figcaption>
+</figure>
+</div>
+</section>
+<section>
+<h3>
+شبکه عصبی ضربی
+</h3>
+<ul>
+<li class="fragment zoom-in">
+آموزش شبکه عصبی در ۸ روز
+</li>
+<li class="fragment zoom-in">
+استفاده از ماتریس وزن‌های مخصوص برای هر ورودی
+</li>
+</ul>
+<figure>
+<img src="Imgs/rnn2.png" style="width: 80%;">
+<figcaption class="figure_caption">
+شکل 17. نمای شبکه عصبی ضربی
+</figcaption>
+</figure>
+</section>
+<section data-background="#003333" data-state="chapter_conclusion">
+<h3>
+جمع‌بندی
+</h3>
+<!--start-->
+<div id="ninja-slider-sentence">
+<div class="slider-inner">
+<ul style="width: 100%; height: 100%;">
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_sen_methods.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/nlg.gif"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_knn.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_fix.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_rnn.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_rnn_methods.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+	<a class="ns-img" href="Imgs/Slider/pic_mrnn.png"></a>
+	<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+</ul>
 </div>
 </div>
-
+<!--end-->
+</section>
+</section>
+<section data-background="#005555">
+<section>
+<h3>
+ارائه مدل کامل
+</h3>
+<div class="extra-container">
+<blockquote class="left-container" data-fragment-index="1">
+<ul>
+<li class="fragment" data-fragment-index="2"><span >
+	توسط لی و همکارانش
+	<span class="cite">
+		[13]
+	</span>
+</span>
+</li>
+<li class="fragment" data-fragment-index="3"><span class="fragment highlight-blue" data-fragment-index="3">در سال 2015</span></li>
+<li class="fragment" data-fragment-index="4"><span
+class="fragment highlight-green" data-fragment-index="4">استفاده از تصاویر و توصیف‌های آماده</span></li>
+<li class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="5">استخراج حاشیه‌نویسی نواحی تصویر</span></li>
+<li class="fragment" data-fragment-index="6"><span
+class="fragment highlight-green" data-fragment-index="6">جملات توصیفی کامل</span></li>
+<li class="fragment" data-fragment-index="7"><span
+class="fragment highlight-green" data-fragment-index="7">نرخ ترجیح جملات بالاتر نسبت به کارهای قبلی</span></li>
+<li class="fragment" data-fragment-index="8"><span class="fragment highlight-green" data-fragment-index="8">ارائه مدل ترکیبی</span></li>
+</ul>
+</blockquote>
+<figure class="right-container" data-fragment-index="1">
+<img src="Imgs/li1.png" style="width: 440px;"/>
+<figcaption class="figure_caption">
+<span class="cite">
+[13]
+</span>
+شکل 18. صفحه نخست مقاله
+</figcaption>
+</figure>
+</div>
+</section>
+<section>
+<h3>
+ارائه مدل کامل
+</h3>
+<ol>
+<li class="fragment zoom-in">
+آموزش شبکه کانولوشنی با استفاده از عبارات موجود در مجموعه‌داده و مدل میدان تصادفی مارکف
+</li>
+</ol>
+<figure class="fragment zoom-in">
+<img src="Imgs/model1.png" style="width: 50%;">
+<figcaption class="figure_caption">
+<span class="cite">
+[13]
+</span>
+شکل 19. آموزش پارامترهای بخش استخراج ویژگی
+</figcaption>
+</figure>
+</section>
+<section>
+<h3>
+ارائه مدل کامل
+</h3>
+<ol start="2">
+<li class="fragment zoom-in">
+تولید جمله با استفاده از شبکه عصبی بازگشتی
+<ul>
+<li class="fragment zoom-in">
+تولید احتمال شرطی کلمه بعدی به شرط کلمات قبلی و بردار معنایی
+</li>
+</ul>
+</li>
+</ol>
+<figure>
+<img src="Imgs/model2.png" style="width: 60%;">
+<figcaption class="figure_caption">
+<span class="cite">
+[13]
+</span>
+شکل 20. شبکه بازگشتی تولید جمله
+</figcaption>
+</figure>
+</section>
+<section>
+<h3>
+ارائه مدل کامل
+</h3>
+<blockquote class="fragment zoom-in" data-fragment-index="1">
+نتایج حاشیه‌نویسی بخش‌های مختلف تصویر
+</blockquote>
+<figure class="fragment zoom-in" data-fragment-index="1">
+<img src="Imgs/model3.png" style="width: 55%;">
+<figcaption class="figure_caption">
+<span class="cite">
+[13]
+</span>
+شکل 21. حاشیه‌نویسی بخش‌های مختلف تصویر
+</figcaption>
+</figure>
+</section>
+<!--<section>-->
+<!--<h3>-->
+<!--مدل مورد استفاده-->
+<!--</h3>-->
+<!--<blockquote class="fragment zoom-in">-->
+<!--نتایج -->
+<!--</blockquote>-->
+<!--<figure class="fragment zoom-in" data-fragment-index="1">-->
+<!--<img src="Imgs/model4.png" style="width: 150%;">-->
+<!--<figcaption class="figure_caption">-->
+<!--شکل 16. تخصیص عبارات و نواحی-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</section>-->
+<section>
+<h3>
+ارائه مدل کامل
+</h3>
+<blockquote class="fragment zoom-in" data-fragment-index="1">
+نتایج تولید جمله برای تصاویر
+</blockquote>
+<figure class="fragment zoom-in" data-fragment-index="1">
+<img src="Imgs/model5.png" style="width: 150%;">
+<figcaption class="figure_caption">
+<span class="cite">
+[13]
+</span>
+شکل 22. جملات تولید شده نمونه
+</figcaption>
+</figure>
+</section>
+</section>
+<section>
+<section data-background="#003333" data-state="chapter_conclusion">
+<h3>
+جمع‌بندی
+</h3>
+<!--start-->
+<div id="ninja-slider">
+<div class="slider-inner">
+<ul style="width: 100%; height: 100%;">
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_first.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_defin.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_idea.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_scene_methods.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_feat_based.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_mrf.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_rcnn.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_rcnn_res.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_li1.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_li1_res.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_sen_methods.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_nlg.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_rnn.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_mrnn.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_li2.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_li2_annotation.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+<li>
+<a class="ns-img" href="Imgs/Slider/pic_li2_res.png"></a>
+<!--<div class="caption cap1 cap2">@colerise</div>-->
+</li>
+</ul>
+</div>
+</div>
+<!--end-->
+</section>
+<section data-background="#001111" data-state="chapter_refs">
+<h3>
+نگاهی‌ به آینده
+</h3>
+<blockquote class="fragment zoom-in" data-fragment-index="1">
+استفاده از
+<span class="fragment highlight-green" data-fragment-index="1">
+شبکه‌های عصبی عمیق
+</span>
+در هر دو چالش
+</blockquote>
+<blockquote class="fragment zoom-in" data-fragment-index="2">
+آموزش هر دو شبکه عمیق با هم
+<span class="fragment highlight-green" data-fragment-index="2">
+در یک مرحله
+</span>
+</blockquote>
+<blockquote class="fragment zoom-in" data-fragment-index="3">
+مدل‌های مبتنی بر
+<span class="fragment highlight-green" data-fragment-index="3">
+نقطه توجه
+</span>
+</blockquote>
+</section>
+<section data-background="#001111" data-state="chapter_refs">
+<h3>
+منابع و مراجع
+</h3>
+<div class="ref fragment highlight-current-green">
+[1]
+Ohta, Yuichi. Knowledge-based interpretation of outdoor natural color scenes. Vol. 4. Morgan Kaufmann, 1985.
+</div>
+<div class="ref fragment highlight-current-green">
+[2]
+Smith, John R., and Chung-Sheng Li. "Image classification and querying using composite region templates." Computer Vision and Image Understanding 75.1 (1999): 165-174.
+</div>
+<div class="ref fragment highlight-current-green">
+[3]
+Fei-Fei, Li, and Pietro Perona. "A bayesian hierarchical model for learning natural scene categories." 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05). Vol. 2. IEEE, 2005.
+</div>
+<div class="ref fragment highlight-current-green">
+[4]
+Li, Li-Jia and Fei-Fei, Li. What, where and who? classifying events by scene and
+object recognition. in Computer Vision, 2007. ICCV 2007. IEEE 11th International
+Conference on, pp. 1–8. IEEE, 2007.
+</div>
+<div class="ref fragment highlight-current-green">
+[5]
+Farhadi, Ali, Hejrati, Mohsen, Sadeghi, Mohammad Amin, Young, Peter, Rashtchian,
+Cyrus, Hockenmaier, Julia, and Forsyth, David. Every picture tells a story: Generating
+sentences from images. in Computer Vision–ECCV 2010, pp. 15–29. Springer, 2010.
+</div>
+<div class="ref fragment highlight-current-green">
+[6]
+Fidler, Sanja, Sharma, Abhishek, and Urtasun, Raquel. A sentence is worth a thou-
+sand pixels. in Proceedings of the IEEE Conference on Computer Vision and Pattern
+Recognition, pp. 1995–2002, 2013.
+</div>
+<div class="ref fragment highlight-current-green">
+[7]
+Girshick, Ross, Donahue, Jeff, Darrell, Trevor, and Malik, Jitendra. Rich feature hierar-
+chies for accurate object detection and semantic segmentation. in The IEEE Conference
+on Computer Vision and Pattern Recognition (CVPR), June 2014.
+</div>
+<div class="ref fragment highlight-current-green">
+[8]
+Karpathy, Andrej, Joulin, Armand, and Li, Fei Fei F. Deep fragment embeddings for
+bidirectional image sentence mapping. in Advances in neural information processing
+systems, pp. 1889–1897, 2014.
+</div>
+</section>
+<section data-background="#001111" data-state="chapter_refs">
+<h3>
+منابع و مراجع
+</h3>
+<div class="ref fragment highlight-current-green">
+[9]
+Koller, Alexander, Donna Byron, Justine Cassell, Robert Dale, Johanna Moore, Jon Oberlander, and Kristina Striegnitz. "The software architecture for the first challenge on generating instructions in virtual environments." In Proceedings of the 12th Conference of the European Chapter of the Association for Computational Linguistics: Demonstrations Session, pp. 33-36. Association for Computational Linguistics, 2009.
+</div>
+<div class="ref fragment highlight-current-green">
+[10]
+Hodosh, Micah, Peter Young, and Julia Hockenmaier. "Framing image description as a ranking task: Data, models and evaluation metrics." Journal of Artificial Intelligence Research 47 (2013): 853-899.
+</div>
+<div class="ref fragment highlight-current-green">
+[11]
+Gupta, Ankush, and Prashanth Mannem. "From image annotation to image description." In International Conference on Neural Information Processing, pp. 196-204. Springer Berlin Heidelberg, 2012.
+</div>
+<div class="ref fragment highlight-current-green">
+[12]
+Sutskever, Ilya, James Martens, and Geoffrey E. Hinton. "Generating text with recurrent neural networks." In Proceedings of the 28th International Conference on Machine Learning (ICML-11), pp. 1017-1024. 2011.
+</div>
+<div class="ref fragment highlight-current-green">
+[13]
+Karpathy, Andrej, and Li Fei-Fei. "Deep visual-semantic alignments for generating image descriptions." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 3128-3137. 2015.
+</div>
+</section>
+</div>
+</div>
+</div>
 <!--<div id="current_slide_cursor_container">-->
 <!--<input type="button" id="current_slide" value="صفحه نخست">-->
 <!--</div>-->
-
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
-
 <script>
 	// More info https://github.com/hakimel/reveal.js#configuration
 	Reveal.initialize({
@@ -2878,33 +2505,27 @@
 			{ src: 'plugin/reveal.js-breadcrumb/breadcrumb.js', async: true }, // the last comma is supported actually! ;)
 		]
 	});
-
 	Reveal.addEventListener( 'ready', function( event ) {
 		// event.currentSlide, event.indexh, event.indexv
 		// Shows the slide number using default formatting
 		Reveal.configure({ slideNumber: true });
-
 // Slide number formatting can be configuorange using these variables:
 //  "h.v":  horizontal . vertical slide number (default)
 //  "h/v":  horizontal / vertical slide number
 //    "c":  flattened slide number
 //  "c/t":  flattened slide number / total slides
 		Reveal.configure({ slideNumber: 'c/t' });
-
 		Reveal.configure({backgroundTransition: "zoom"});
-
-
-//				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
-//				Reveal.addEventListener('chapter_intro', changeSlideState("مقدمات"),false);
-//				Reveal.addEventListener('chapter_definition', changeSlideState("تعاریف"),true);
-//				Reveal.addEventListener('chapter_overview', changeSlideState("اولین ایده‌ها"),false);
-//				Reveal.addEventListener('chapter_scene', changeSlideState("درک صحنه"),false);
-//				Reveal.addEventListener('chapter_sentence', changeSlideState("تولید جمله"),false);
-//				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
-//				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
-//				Reveal.addEventListener('eventchanged', nextSlide(event),false)
+				//				Reveal.addEventListener('chapter_intro' , startSlideStates(),false);
+				//				Reveal.addEventListener('chapter_intro', changeSlideState("مقدمات"),false);
+				//				Reveal.addEventListener('chapter_definition', changeSlideState("تعاریف"),true);
+				//				Reveal.addEventListener('chapter_overview', changeSlideState("اولین ایده‌ها"),false);
+				//				Reveal.addEventListener('chapter_scene', changeSlideState("درک صحنه"),false);
+				//				Reveal.addEventListener('chapter_sentence', changeSlideState("تولید جمله"),false);
+				//				Reveal.addEventListener('chapter_conclusion', changeSlideState("جمع‌بندی"),false);
+				//				Reveal.addEventListener('chapter_refs', changeSlideState("منابع"),false);
+				//				Reveal.addEventListener('eventchanged', nextSlide(event),false)
 	} );
-
 	var currentSlide ;
 	var currentSlideBtn ;
 	function startSlideStates() {
@@ -2913,22 +2534,16 @@
 		currentSlide = createSingletonNode(wrapper, 'div', 'current_slide',
 				'<button class="current_slide_btn" ></button>');
 		currentSlideBtn = currentSlide.querySelector('button')
-
 	}
-
 	function nextSlide(event) {
 		console.log(event.currentSlide);
 	}
-
 	function changeSlideState(state) {
 		currentSlideBtn.innerHTML = state ;
 	}
-
 	function createSingletonNode( container, tagname, classname, innerHTML ) {
-
 		// Find all nodes matching the description
 		var nodes = container.querySelectorAll( '.' + classname );
-
 		// Check all matches to find one which is a direct child of
 		// the specified container
 		for( var i = 0; i < nodes.length; i++ ) {
@@ -2937,7 +2552,6 @@
 				return testNode;
 			}
 		}
-
 		// If no node was found, create it now
 		var node = document.createElement( tagname );
 		node.classList.add( classname );
@@ -2945,12 +2559,8 @@
 			node.innerHTML = innerHTML;
 		}
 		container.appendChild( node );
-
 		return node;
-
 	}
-
-
 </script>
 </body>
 </html>
